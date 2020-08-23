@@ -29,6 +29,7 @@ const Head = (props) => (
     <meta property="og:image:height" content="630" />
       <link rel="shortcut icon" href="/static/img/favicon.png" type="image/x-icon" />
       <link href="/static/css/bootstrap.min.css" rel="stylesheet" />
+      <link href="/static/css/owl.carousel.min.css" rel="stylesheet" />
       <link href="/static/css/font-awesome-all.min.css" rel="stylesheet" />
       <link href="/static/css/animate.css" rel="stylesheet" />
       <link href="/static/css/jquery.fancybox.min.css" rel="stylesheet" />
