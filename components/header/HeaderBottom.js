@@ -1,7 +1,9 @@
 import React from 'react';
 import Select from 'react-select';
 import {Form, Button} from 'react-bootstrap';
-
+import Link from 'next/link'
+import MegaMenu, { MenuItem } from './MegaMenu';
+import { categories } from '../../constants/data';
 
 const HeaderBottom  = ({searchText, category, categoriesOptions, handleSearch, handleCategory, handleSubmit}) => {
 
@@ -13,8 +15,15 @@ const HeaderBottom  = ({searchText, category, categoriesOptions, handleSearch, h
 					<div className="col-lg-3">
 						<div className="logo-and-category">
 							<div className="logo-area">
-								<a href="index.html"><img src="../../static/uploads/documents/GeneralSetting/PUxf1TNoP24Yq9D0lEVGV5bc2rRaEOlTddW2z2aj.png" alt="" /></a>
+								<Link href="/">
+										<a >
+											<img
+												src="../../static/uploads/documents/GeneralSetting/PUxf1TNoP24Yq9D0lEVGV5bc2rRaEOlTddW2z2aj.png"
+												alt="" />
+										</a>
+								</Link>
 							</div>
+							<MegaMenu/>
 							<nav className="navbar navbar-expand-lg navbar-light">
 								<div className="collapse navbar-collapse" id="navbarSupportedContent">
 									<ul className="navbar-nav mr-auto">
@@ -23,24 +32,9 @@ const HeaderBottom  = ({searchText, category, categoriesOptions, handleSearch, h
 												<i className="fas fa-bars"></i>&nbsp;&nbsp;Categories
 											</a>
 											<div className="dropdown-menu" aria-labelledby="navbarDropdown">
-												<a className="dropdown-item" href="#">
-													<img src="https://beta.mystore.az/uploads/documents/Category/computer-01-01 copy.png" /> Elektronika
-												</a>
-												<a className="dropdown-item" href="#">
-													<img src="https://beta.mystore.az/uploads/documents/Category/computer-01-01 copy.png" /> Elektronika
-												</a>
-												<a className="dropdown-item" href="#">
-													<img src="https://beta.mystore.az/uploads/documents/Category/computer-01-01 copy.png" /> Elektronika
-												</a>
-												<a className="dropdown-item" href="#">
-													<img src="https://beta.mystore.az/uploads/documents/Category/computer-01-01 copy.png" /> Elektronika
-												</a>
-												<a className="dropdown-item" href="#">
-													<img src="https://beta.mystore.az/uploads/documents/Category/computer-01-01 copy.png" /> Geyim, ayaqqabı və aksesuarlar
-												</a>
-												<a className="dropdown-item" href="#">
-													<img src="https://beta.mystore.az/uploads/documents/Category/computer-01-01 copy.png" /> Heyvan məhsulları
-												</a>
+												<ul className="menu">
+													{categories.map(category=><MenuItem category={category} key={category.name}/>)}
+												</ul>
 											</div>
 										</li>
 									</ul>

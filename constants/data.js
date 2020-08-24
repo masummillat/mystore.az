@@ -152,3 +152,45 @@ export const categories = [
         availableProduct: 22
     },
 ];
+export const featuredStore = [
+    {
+        id: 1,
+        name: 'MyStore.Az',
+        img: '../../static/uploads/documents/shop/23621966_1772482562784565_5243729752846279838_n.jpg',
+        alt: 'MyStore.Az',
+        ratedNumber: 0,
+        sold: 19
+    },
+    {
+        id: 2,
+        name: 'DG Shop',
+        img: '../../static/uploads/documents/shop/DG.jpg',
+        alt: 'DG Shop',
+        ratedNumber: 3,
+        sold: 11
+    },
+    {
+        id: 3,
+        name: 'Update tech shop',
+        img: '../../static/uploads/documents/shop/90431606_640554376764220_8874958813719953408_n.jpg',
+        alt: 'Update tech shop',
+        ratedNumber: 1,
+        sold: 7
+    },
+    {
+        id: 4,
+        name: 'EasyShop',
+        img: '../../static/uploads/documents/shop/store.svg',
+        alt: 'EasyShop',
+        ratedNumber: 5,
+        sold: 23
+    },
+    {
+        id: 5,
+        name: 'DG Shop',
+        img: '../../static/uploads/documents/shop/DG.jpg',
+        alt: 'DG Shop',
+        ratedNumber: 3,
+        sold: 11
+    },
+];

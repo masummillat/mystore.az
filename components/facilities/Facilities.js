@@ -1,7 +1,7 @@
 import React from 'react';
-import { useTranslation, Trans } from "react-i18next";
+// import { useTranslation, Trans } from "react-i18next";
 const Facilities = () => {
-  const { t, i18n } = useTranslation();
+  // const { t, i18n } = useTranslation();
 
   return(<section className="features-area common-padding">
     <div className="container">
@@ -16,9 +16,9 @@ const Facilities = () => {
             </div>
             <div className="single-feature-info">
               {/*<h4>{t("Great value")}</h4>*/}
-              <h4><Trans><Trans>
+              <h4>
                 Great value
-              </Trans></Trans></h4>
+              </h4>
               <p>Məhsullara rəqabətli qiymətlər təklif edirik</p>
             </div>
           </div>

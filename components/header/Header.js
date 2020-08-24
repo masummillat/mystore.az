@@ -45,21 +45,8 @@ class Header extends React.Component{
     this.state={
       searchText: "",
       category: "",
-      lang: 'English',
-      currency: 'USD',
     };
   }
-
-  handleCurrency = (currency) => {
-    this.setState({
-      currency
-    })
-  };
-  handleLang = (lang) => {
-    this.setState({
-      lang
-    })
-  };
 
   handleSubmit = (e) => {
     e.preventDefault();
@@ -84,7 +71,8 @@ class Header extends React.Component{
     })
   };
   render() {;
-    const { lang, currency, searchText, category } = this.state;
+  const {lang, currency, handleCurrency, handleLang } = this.props;
+    const { searchText, category } = this.state;
     return(
       <div>
         <div className="header-fixed">
@@ -92,8 +80,8 @@ class Header extends React.Component{
             lang={lang}
             currency={currency}
             currencyOptions={currencyOptions}
-            handleCurrency={this.handleCurrency}
-            handleLang={this.handleLang}
+            handleCurrency={handleCurrency}
+            handleLang={handleLang}
             langOptions={langOptions}
             handleLangCurrencySubmit={this.handleLangCurrencySubmit}
           />

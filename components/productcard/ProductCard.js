@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProductCard = ({product}) => {
   const {id, name, shopName, status, online, off, sold, img } = product;
-  console.log(product)
+
   return(<div className="item">
     <div
       className="single-product-box

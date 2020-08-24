@@ -1,7 +1,7 @@
 import React from 'react';
-import {Dropdown, Button, Form,OverlayTrigger, Popover, Col, Row} from 'react-bootstrap';
+import {Button, Form} from 'react-bootstrap';
 import Select from 'react-select';
-
+import Link from 'next/link'
 
 const langOptions = [
 	{ value: 'Azerbaijani', label: 'Azerbaijani' },
@@ -33,9 +33,11 @@ const HeaderTop = ({
 
 						<div className="col-8 col-sm-8 text-center">
 							<div className="logo">
-								<a href="index.html">
-									<img src="../../static/uploads/documents/GeneralSetting/PUxf1TNoP24Yq9D0lEVGV5bc2rRaEOlTddW2z2aj.png" alt="" />
-								</a>
+								<Link href="/" as="/">
+									<a >
+										<img src="../../static/uploads/documents/GeneralSetting/PUxf1TNoP24Yq9D0lEVGV5bc2rRaEOlTddW2z2aj.png" alt="" />
+									</a>
+								</Link>
 							</div>
 						</div>
 						<div className="col-2 col-sm-2 text-right">

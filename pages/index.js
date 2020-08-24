@@ -14,6 +14,23 @@ import Facilities from '../components/facilities/Facilities';
 import {categories, products} from "../constants/data";
 
 export default class extends React.Component{
+  constructor(props){
+    super(props);
+    this.state={
+      lang: 'English',
+      currency: 'USD',
+    };
+  }
+  handleCurrency = (currency) => {
+    this.setState({
+      currency
+    })
+  };
+  handleLang = (lang) => {
+    this.setState({
+      lang
+    })
+  };
 
   render() {
 
@@ -21,8 +38,8 @@ export default class extends React.Component{
     return(
       <div>
         <Head title="Mystore.az" />
-        <Header />
-        <MobileMenu/>
+        <Header handleCurrency={this.handleCurrency} handleLang={this.handleLang}/>
+        <MobileMenu handleCurrency={this.handleCurrency} handleLang={this.handleLang}/>
         <MobileCategory/>
         <div className="header-fixed-content-layout" />
         <BannerAdArea/>

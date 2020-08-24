@@ -1,6 +1,18 @@
 import React from 'react';
+import Select from 'react-select';
 
-const MobileMenu = () => {
+
+const langOptions = [
+  { value: 'Azerbaijani', label: 'Azerbaijani' },
+  { value: 'English', label: 'English' },
+  { value: 'Russian', label: 'Russian' },
+]
+const currencyOptions = [
+  { value: 'AZN', label: 'AZN' },
+  { value: 'USD', label: 'USD' },
+  { value: 'EUR', label: 'EUR' },
+]
+const MobileMenu = ({lang, currency, handleCurrency, handleLang}) => {
 
 
   return(<div className="drawer-menu-area d-xl-none">
@@ -34,19 +46,18 @@ const MobileMenu = () => {
 
         <div className="form-group">
           <label htmlFor="m-top-language">Dil</label>
-          <select name="language" id="m-top-language">
-            <option value="1" selected>Azerbaijani</option>
-            <option value="3">Russian</option>
-            <option value="4">English</option>
-          </select>
+          <Select name="language" id="m-top-language" instanceId="mLang" defaultValue={langOptions[0]}
+                  label="Single select"
+                  options={langOptions}
+                  onChange={handleLang}/>
         </div>
         <div className="form-group">
           <label htmlFor="m-top-currency">Valyuta</label>
-          <select name="currency" id="m-top-currency">
-            <option value="AZN" selected>AZN</option>
-            <option value="USD">USD</option>
-            <option value="EUR">EUR</option>
-          </select>
+          <Select name="currency" id="m-top-currency" instanceId="mCurr" defaultValue={currencyOptions[0]}
+                  label="Single select"
+                  options={currencyOptions}
+                  onChange={handleCurrency}/>
+
         </div>
         <div className="form-group">
           <input type="submit" value="Save" className="top-submit"/>

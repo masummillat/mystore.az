@@ -55,11 +55,6 @@ const SingleProduct = ({ product }) => {
               <div className="single-product-rating">
                 <div
                   className="rateit"
-                  data-rateit-value=""
-                  data-rateit-ispreset="true"
-                  data-rateit-readonly="true"
-                  data-rateit-starwidth="12"
-                  data-rateit-starheight="12"
                 />
                 <div className="rated-number">(0)</div>
               </div>
@@ -69,8 +64,6 @@ const SingleProduct = ({ product }) => {
             <div className="single-product-sold-count-number">{sold} Sold</div>
             <div
               className="single-product-sold-count-bar"
-              data-sold-count="0"
-              data-total-count="41"
             />
           </div>
           <div className="single-product-meta-info mb-0">
@@ -84,11 +77,6 @@ const SingleProduct = ({ product }) => {
               <div className="single-product-rating single-product-rating--mobile">
                 <div
                   className="rateit"
-                  data-rateit-value=""
-                  data-rateit-ispreset="true"
-                  data-rateit-readonly="true"
-                  data-rateit-starwidth="12"
-                  data-rateit-starheight="12"
                 ></div>
                 <div className="rated-number">(0)</div>
               </div>

@@ -1,9 +1,21 @@
 import React from 'react';
+import Slider from 'react-slick';
+var settings = {
+  dots: false,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false
 
+
+};
 const ShopBannerArea = () => {
+
   return (
     <div className="shop-banner-area">
-      <div className="shop-banner-carousel owl-carousel">
+      {/*<div className="shop-banner-carousel">*/}
+        <Slider {...settings}>
         <div className="shop-banner-image">
           <img
             src="../../static/uploads/documents/shop/E-Caldwell-Style-Closet-Overhaul-Banner-1400x400.jpg"
@@ -16,7 +28,8 @@ const ShopBannerArea = () => {
             alt="2017-Bedroom-Slider-1400x400.jpg"
           />
         </div>
-      </div>
+        </Slider>
+      {/*</div>*/}
       <div className="shop-info-area">
         <div className="shop-left-info">
           <div className="shop-profile-picture">

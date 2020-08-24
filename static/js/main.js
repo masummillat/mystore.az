@@ -156,129 +156,129 @@
             }
         });
 
-        $(".hero-banner-carousel").owlCarousel({
-            loop: true,
-            margin: 0,
-            items: 1,
-            stagePadding: 0,
-            autoplay: false,
-            autoplayTimeout: 7000,
-            dots: true,
-            animateOut: "slideOutLeft",
-            animateIn: "slideInRight",
-            nav: true,
-            navText: [
-                "<i class='fas fa-chevron-left'></i>",
-                "<i class='fas fa-chevron-right'></i>"
-            ],
-            responsiveClass: true,
-            responsive: {
-                0: {},
-                480: {},
-                768: {},
-                992: {},
-                1200: {}
-            }
-        });
+        // $(".hero-banner-carousel").owlCarousel({
+        //     loop: true,
+        //     margin: 0,
+        //     items: 1,
+        //     stagePadding: 0,
+        //     autoplay: false,
+        //     autoplayTimeout: 7000,
+        //     dots: true,
+        //     animateOut: "slideOutLeft",
+        //     animateIn: "slideInRight",
+        //     nav: true,
+        //     navText: [
+        //         "<i class='fas fa-chevron-left'></i>",
+        //         "<i class='fas fa-chevron-right'></i>"
+        //     ],
+        //     responsiveClass: true,
+        //     responsive: {
+        //         0: {},
+        //         480: {},
+        //         768: {},
+        //         992: {},
+        //         1200: {}
+        //     }
+        // });
 
-        if($(".shop-banner-image").length > 1) {
-            $(".shop-banner-carousel").owlCarousel({
-                loop: true,
-                margin: 0,
-                items: 1,
-                stagePadding: 0,
-                autoplay: false,
-                autoplayTimeout: 7000,
-                dots: false,
-                animateOut: "slideOutLeft",
-                animateIn: "slideInRight",
-                nav: true,
-                navText: [
-                    "<i class='fas fa-chevron-left'></i>",
-                    "<i class='fas fa-chevron-right'></i>"
-                ],
-                responsiveClass: true,
-                responsive: {
-                    0: {},
-                    480: {},
-                    768: {},
-                    992: {},
-                    1200: {}
-                }
-            });
-        }
+        // if($(".shop-banner-image").length > 1) {
+        //     $(".shop-banner-carousel").owlCarousel({
+        //         loop: true,
+        //         margin: 0,
+        //         items: 1,
+        //         stagePadding: 0,
+        //         autoplay: false,
+        //         autoplayTimeout: 7000,
+        //         dots: false,
+        //         animateOut: "slideOutLeft",
+        //         animateIn: "slideInRight",
+        //         nav: true,
+        //         navText: [
+        //             "<i class='fas fa-chevron-left'></i>",
+        //             "<i class='fas fa-chevron-right'></i>"
+        //         ],
+        //         responsiveClass: true,
+        //         responsive: {
+        //             0: {},
+        //             480: {},
+        //             768: {},
+        //             992: {},
+        //             1200: {}
+        //         }
+        //     });
+        // }
 
-        $(".featured-categories-carousel").owlCarousel({
-            loop: false,
-            margin: 20,
-            items: 6,
-            stagePadding: 0,
-            autoplay: false,
-            autoplayTimeout: 7000,
-            dots: false,
-            animateOut: "slideOutLeft",
-            animateIn: "slideInRight",
-            nav: true,
-            navText: [
-                "<i class='fas fa-chevron-left'></i>",
-                "<i class='fas fa-chevron-right'></i>"
-            ],
-            responsiveClass: true,
-            responsive: {
-                0: {
-                    items: 2,
-                    margin: 8,
-                },
-                480: {
-                    items: 3,
-                },
-                768: {
-                    items: 4,
-                },
-                992: {
-                    items: 5,
-                },
-                1200: {}
-            }
-        });
+        // $(".featured-categories-carousel").owlCarousel({
+        //     loop: false,
+        //     margin: 20,
+        //     items: 6,
+        //     stagePadding: 0,
+        //     autoplay: false,
+        //     autoplayTimeout: 7000,
+        //     dots: false,
+        //     animateOut: "slideOutLeft",
+        //     animateIn: "slideInRight",
+        //     nav: true,
+        //     navText: [
+        //         "<i class='fas fa-chevron-left'></i>",
+        //         "<i class='fas fa-chevron-right'></i>"
+        //     ],
+        //     responsiveClass: true,
+        //     responsive: {
+        //         0: {
+        //             items: 2,
+        //             margin: 8,
+        //         },
+        //         480: {
+        //             items: 3,
+        //         },
+        //         768: {
+        //             items: 4,
+        //         },
+        //         992: {
+        //             items: 5,
+        //         },
+        //         1200: {}
+        //     }
+        // });
 
-        $(".top-trending-carousel").owlCarousel({
-            loop: false,
-            margin: 20,
-            items: 2,
-            stagePadding: 0,
-            autoplay: false,
-            autoplayTimeout: 7000,
-            dots: false,
-            animateOut: "slideOutLeft",
-            animateIn: "slideInRight",
-            nav: true,
-            navText: [
-                "<i class='fas fa-chevron-left'></i>",
-                "<i class='fas fa-chevron-right'></i>"
-            ],
-            responsiveClass: true,
-            responsive: {
-                0: {
-                    items: 1,
-                    margin: 8,
-                },
-                480: {
-                    items: 2,
-                },
-                768: {
-                    items: 3,
-                },
-                992: {},
-                1200: {},
-                1600: {
-                    items: 3,
-                },
-                2000: {
-                    items: 4,
-                }
-            }
-        });
+        // $(".top-trending-carousel").owlCarousel({
+        //     loop: false,
+        //     margin: 20,
+        //     items: 2,
+        //     stagePadding: 0,
+        //     autoplay: false,
+        //     autoplayTimeout: 7000,
+        //     dots: false,
+        //     animateOut: "slideOutLeft",
+        //     animateIn: "slideInRight",
+        //     nav: true,
+        //     navText: [
+        //         "<i class='fas fa-chevron-left'></i>",
+        //         "<i class='fas fa-chevron-right'></i>"
+        //     ],
+        //     responsiveClass: true,
+        //     responsive: {
+        //         0: {
+        //             items: 1,
+        //             margin: 8,
+        //         },
+        //         480: {
+        //             items: 2,
+        //         },
+        //         768: {
+        //             items: 3,
+        //         },
+        //         992: {},
+        //         1200: {},
+        //         1600: {
+        //             items: 3,
+        //         },
+        //         2000: {
+        //             items: 4,
+        //         }
+        //     }
+        // });
 
         $(".related-products-carousel").owlCarousel({
             loop: false,

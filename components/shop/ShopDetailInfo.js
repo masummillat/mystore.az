@@ -5,11 +5,11 @@ import ShoppingContents from "./tabcontents/shopingContent";
 
 const ShopDetailInfo = () => {
   return (
-    <div class="shop-details-info">
-      <div class="tab-content">
+    <div className="shop-details-info">
+      <div className="tab-content">
         {/*Shop Home Tab Start -->*/}
         <div
-          class="tab-pane fade show active"
+          className="tab-pane fade show active"
           id="home"
           role="tabpanel"
           aria-labelledby="home-tab"
@@ -17,7 +17,7 @@ const ShopDetailInfo = () => {
           <HomeContents />
         </div>
         <div
-          class="tab-pane fade"
+          className="tab-pane fade"
           id="reviews"
           role="tabpanel"
           aria-labelledby="reviews-tab"
