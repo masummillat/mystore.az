@@ -23,7 +23,6 @@ const HeaderBottom  = ({searchText, category, categoriesOptions, handleSearch, h
 										</a>
 								</Link>
 							</div>
-							<MegaMenu/>
 							<nav className="navbar navbar-expand-lg navbar-light">
 								<div className="collapse navbar-collapse" id="navbarSupportedContent">
 									<ul className="navbar-nav mr-auto">
