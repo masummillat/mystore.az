@@ -1,4 +1,4 @@
-/* COLOR SET 1 */
+/*/* COLOR SET 1 */
 a:hover,
 .top-bar-right-area > ul > li > a > i.fas,
 .top-bar-account-buttons a,
@@ -145,7 +145,6 @@ span.ui-slider-handle.ui-corner-all.ui-state-default,
 .header-go-to-cart-btn,
 .shop-follow-area .shop-follow-btn,
 .shop-store-location-area h3:before,
-.header-fixed .top-bar-area,
 .rewards-deals-results-btn,
 .bootstrap-datetimepicker-widget table td .btn-primary:not(:disabled):not(.disabled).active,
 .bootstrap-datetimepicker-widget table td .btn-primary:not(:disabled):not(.disabled):active,
@@ -162,7 +161,7 @@ span.ui-slider-handle.ui-corner-all.ui-state-default,
 .blog-categories ul li,
 .single-recommend-product-buy-button,
 .blog-tags ul li.tag-title {
-    background-color: #1f87cd !important;
+    background-color: rgb(243, 244, 245);
 }
 
 .single-feature-store-info .percentage span.bordered,
@@ -328,11 +327,7 @@ button.btn-submit:hover,
 }
 
 .header-fixed .header-area {
-    background: #1f87cd;
-    background: -moz-linear-gradient(top, #1f87cd 0%, #2593df 100%);
-    background: -webkit-linear-gradient(top, #1f87cd 0%, #2593df 100%);
-    background: linear-gradient(to bottom, #1f87cd 0%, #2593df 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f87cd', endColorstr='#2593df',GradientType=0 );
+    background: #fff;
 }
 
 .forget-pasword a:hover,
@@ -394,7 +389,6 @@ span.ui-slider-handle.ui-corner-all.ui-state-default,
 .quantity-add-remove .quantity input[type='submit']:focus,
 .quantity-add-remove .quantity input[type='button']:focus,
 .product-related-shop-details .product-related-shop-follow-btn,
-.header-fixed .top-bar-area,
 .bootstrap-datetimepicker-widget table td .btn-primary:not(:disabled):not(.disabled).active,
 .bootstrap-datetimepicker-widget table td .btn-primary:not(:disabled):not(.disabled):active,
 .bootstrap-datetimepicker-widget table td .show > .btn-primary.dropdown-toggle,
@@ -447,10 +441,6 @@ button.btn-submit:hover,
     background-color: rgba(31, 135, 205, 0.25) !important;
     border-color: rgba(31, 135, 205, 0.3) !important;
 }
-.header-area,
-ul.search-result-menu {
-    border-color: rgba(31, 135, 205, 0.3) !important;
-}
 
 .common-padded-box-header a,
 .single-product-store,
@@ -479,7 +469,7 @@ ul.search-result-menu {
 
 .header-fixed .top-bar-left-area ul li a,
 .header-fixed .top-bar-right-area ul li a {
-    color: #fff !important;
+    color: rgba(49, 53, 59, 0.68);
 }
 .header-fixed .top-bar-left-area ul li .dropdown-menu a,
 .header-fixed .top-bar-right-area ul li .dropdown-menu a {
@@ -489,10 +479,10 @@ ul.search-result-menu {
 .header-fixed .top-bar-right-area ul li a:hover {
     color: #ddd !important;
 }
-.header-fixed .top-bar-left-area ul li a:before,
+/*.header-fixed .top-bar-left-area ul li a:before,
 .header-fixed .top-bar-right-area ul li a:before {
     color: #1669a0 !important;
-}
+}*/
 .header-fixed .top-bar-right-area .dropdown-item:focus,
 .header-fixed .top-bar-right-area .dropdown-item:hover {
     color: #333 !important;
@@ -688,3 +678,4 @@ ul.search-result-menu {
 /* Mobile Layout(iPhone 4): 320px. */
 @media only screen and (max-width: 330px) {
 }
+*/

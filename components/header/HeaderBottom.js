@@ -126,13 +126,6 @@ const HeaderBottom = ({
                                             Смартфон Apple iPhone 11 Pro Max 64GB Gold
                                         </a>{' '}
                                     </li>
-                                    <li>
-                                        {' '}
-                                        <a href="-Huawei-Watch-GT2-Matte-Black-8ltIi.html">
-                                            {' '}
-                                            Huawei Watch GT2 Matte Black
-                                        </a>{' '}
-                                    </li>
                                 </ul>
                             </div>
                         </div>
