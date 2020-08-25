@@ -84,15 +84,6 @@ const HeaderBottom = ({
                                             required
                                         />
                                     </Form.Group>
-                                    <Form.Group style={{ width: 250 }}>
-                                        <Select
-                                            instanceId="category"
-                                            label="Select category"
-                                            defaultValue={categoriesOptions[0]}
-                                            options={categoriesOptions}
-                                            onChange={handleCategory}
-                                        />
-                                    </Form.Group>
                                     <Button onClick={handleSubmit} type="submit">
                                         <i className="fas fa-search"></i>
                                     </Button>
