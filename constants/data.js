@@ -9,7 +9,7 @@ export const products = [
         sold: '10',
         img: '',
         previousPrice: null,
-        newPrice: '46245,00 ₼'
+        newPrice: '46245,00 ₼',
     },
     {
         id: 2,
@@ -21,7 +21,7 @@ export const products = [
         sold: '2',
         img: '',
         previousPrice: '233,00 ₼',
-        newPrice: '43 245,00 ₼'
+        newPrice: '43 245,00 ₼',
     },
     {
         id: 3,
@@ -33,7 +33,7 @@ export const products = [
         sold: '100',
         img: '',
         previousPrice: '134,00 ₼',
-        newPrice: '53 245,00 ₼'
+        newPrice: '53 245,00 ₼',
     },
     {
         id: 4,
@@ -45,7 +45,7 @@ export const products = [
         sold: '0',
         img: '',
         previousPrice: '4,00 ₼',
-        newPrice: '23 245,00 ₼'
+        newPrice: '23 245,00 ₼',
     },
     {
         id: 5,
@@ -57,7 +57,7 @@ export const products = [
         sold: '0',
         img: '',
         previousPrice: '134,00 ₼',
-        newPrice: '13 245,00 ₼'
+        newPrice: '13 245,00 ₼',
     },
     {
         id: 6,
@@ -69,7 +69,7 @@ export const products = [
         sold: '0',
         img: '',
         previousPrice: '434,00 ₼',
-        newPrice: '42 245,00 ₼'
+        newPrice: '42 245,00 ₼',
     },
     {
         id: 7,
@@ -81,7 +81,7 @@ export const products = [
         sold: '0',
         img: '',
         previousPrice: '134,00 ₼',
-        newPrice: '43 245,00 ₼'
+        newPrice: '43 245,00 ₼',
     },
     {
         id: 8,
@@ -93,73 +93,82 @@ export const products = [
         sold: '300',
         img: '../../static/img/product_placeholder.png',
         previousPrice: '134,00 ₼',
-        newPrice: '43 245,00 ₼'
-    }
+        newPrice: '43 245,00 ₼',
+    },
 ];
-export const categories = [
+export const featured = [
     {
+        id: 1,
         name: 'Geyim',
         img: '../../static/uploads/documents/Category/icon_new-03.png',
         alt: '',
-        availableProduct: 4
+        availableProduct: 4,
     },
     {
+        id: 2,
         name: 'Elektronika',
         img: '../../static/uploads/documents/Category/icon_new-01.png',
         alt: '',
-        availableProduct: 15
+        availableProduct: 15,
     },
     {
         name: 'Ev &amp; bağça',
         img: '../../static/uploads/documents/Category/icon_new-02.png',
         alt: '',
-        availableProduct: 7
+        availableProduct: 7,
     },
     {
+        id: 3,
         name: 'Körpə məhsulları',
         img: '../../static/uploads/documents/Category/icon_new-04.png',
         alt: '',
-        availableProduct: 11
+        availableProduct: 11,
     },
     {
+        id: 4,
         name: 'Gözəllik və sağlamlıq',
         img: '../../static/uploads/documents/Category/icon_new-05.png',
         alt: '',
-        availableProduct: 8
+        availableProduct: 8,
     },
     {
+        id: 5,
         name: 'Kitablar',
         img: '../../static/uploads/documents/Category/icon_new-06.png',
         alt: '',
-        availableProduct: 112
+        availableProduct: 112,
     },
     {
+        id: 6,
         name: 'İdman malları',
         img: '../../static/uploads/documents/Category/icon_new-07.png',
         alt: '',
-        availableProduct: 4
+        availableProduct: 4,
     },
     {
+        id: 7,
         name: 'Tikinti və təmir',
         img: '../../static/uploads/documents/Category/icon_new-08.png',
         alt: '',
-        availableProduct: 22
+        availableProduct: 22,
     },
     {
+        id: 17,
         name: 'Qida məhsulları',
         img: '../../static/uploads/documents/Category/icon_new-09.png',
         alt: 'Qida məhsulları',
-        availableProduct: 22
+        availableProduct: 22,
     },
 ];
 export const featuredStore = [
     {
         id: 1,
         name: 'MyStore.Az',
-        img: '../../static/uploads/documents/shop/23621966_1772482562784565_5243729752846279838_n.jpg',
+        img:
+            '../../static/uploads/documents/shop/23621966_1772482562784565_5243729752846279838_n.jpg',
         alt: 'MyStore.Az',
         ratedNumber: 0,
-        sold: 19
+        sold: 19,
     },
     {
         id: 2,
@@ -167,15 +176,16 @@ export const featuredStore = [
         img: '../../static/uploads/documents/shop/DG.jpg',
         alt: 'DG Shop',
         ratedNumber: 3,
-        sold: 11
+        sold: 11,
     },
     {
         id: 3,
         name: 'Update tech shop',
-        img: '../../static/uploads/documents/shop/90431606_640554376764220_8874958813719953408_n.jpg',
+        img:
+            '../../static/uploads/documents/shop/90431606_640554376764220_8874958813719953408_n.jpg',
         alt: 'Update tech shop',
         ratedNumber: 1,
-        sold: 7
+        sold: 7,
     },
     {
         id: 4,
@@ -183,7 +193,7 @@ export const featuredStore = [
         img: '../../static/uploads/documents/shop/store.svg',
         alt: 'EasyShop',
         ratedNumber: 5,
-        sold: 23
+        sold: 23,
     },
     {
         id: 5,
@@ -191,6 +201,187 @@ export const featuredStore = [
         img: '../../static/uploads/documents/shop/DG.jpg',
         alt: 'DG Shop',
         ratedNumber: 3,
-        sold: 11
+        sold: 11,
+    },
+];
+
+export const categories = [
+    {
+        id: '1',
+        title: 'Elektronika',
+        img: '../../static/uploads/documents/Category/icon_new-01.png',
+        availableProduct: 12,
+        sub: [
+            {
+                id: 12,
+                title: 'Phone and Smart Watches',
+                img: '',
+                sub: [
+                    {
+                        id: 121,
+                        title: 'Smartphones',
+                    },
+                    {
+                        id: 122,
+                        title: 'Smart watches and fitness bracelet',
+                    },
+                    {
+                        id: 123,
+                        title: 'Accessories for smartphones and phones',
+                    },
+                    { id: 124, title: 'Accessories for smart watches and fitness bracelets' },
+                    { id: 125, title: 'Mobile phones' },
+                    { id: 126, title: 'DECT phones' },
+                    { id: 127, title: 'Cable phones' },
+                ],
+            },
+            {
+                id: 13,
+                title: 'Headphones and sound equipment',
+                sub: [
+                    { id: 131, title: 'Headphones and earphones' },
+                    { id: 132, title: 'Acoustics and speakers' },
+                    { id: 133, title: 'Microphones and Accessories' },
+                    { id: 134, title: 'MP3 players' },
+                    // Radio receivers,
+                    // Vinyl readers and accessories,
+                    // Cassettes,
+                    // Studio and stage equipment,
+                    // Hi-Res players,
+                    // Voice recorders,
+                    // Music centers,
+                    // CD readers and players,
+                    // Amplifiers, receivers and DAC,
+                    // Accessories for sound equipment,
+                    // Oxuducular cassette
+                ],
+            },
+        ],
+    },
+    {
+        id: '2',
+        title: 'Ev &amp; bağça',
+        img: '../../static/uploads/documents/Category/icon_new-02.png',
+        availableProduct: 1,
+    },
+    {
+        id: '3',
+        title: 'Körpə məhsulları',
+        img: '../../static/uploads/documents/Category/icon_new-03.png',
+        availableProduct: 22,
+    },
+    {
+        id: '4',
+        title: 'Gözəllik və sağlamlıq',
+        img: '../../static/uploads/documents/Category/icon_new-04.png',
+        availableProduct: 14,
+    },
+    {
+        id: '5',
+        title: 'Kitablar',
+        img: '../../static/uploads/documents/Category/icon_new-05.png',
+        availableProduct: 1,
+    },
+    {
+        id: '6',
+        title: 'İdman malları',
+        img: '../../static/uploads/documents/Category/icon_new-06.png',
+        availableProduct: 2,
+    },
+    {
+        id: '7',
+        title: 'Tikinti və təmir',
+        img: '../../static/uploads/documents/Category/icon_new-07.png',
+        availableProduct: 3,
+    },
+    {
+        id: '8',
+        title: 'Qida məhsulları',
+        img: '../../static/uploads/documents/Category/icon_new-08.png',
+        availableProduct: 15,
+    },
+    {
+        id: '9',
+        title: 'Heyvan məhsulları',
+        img: '../../static/uploads/documents/Category/icon_new-09.png',
+        availableProduct: 62,
+    },
+    {
+        id: '10',
+        title: 'Aptek',
+        img: '../../static/uploads/documents/Category/icon_new-10.png',
+        availableProduct: 11,
+    },
+    {
+        id: '11',
+        title: 'Məişət texnikası',
+        img: '../../static/uploads/documents/Category/icon_new-11.png',
+        availableProduct: 12,
+    },
+    {
+        id: '12',
+        title: 'Avtomobil məhsulları',
+        img: '../../static/uploads/documents/Category/icon_new-12.png',
+        availableProduct: 12,
+    },
+    {
+        id: '13',
+        title: 'Mebel',
+        img: '../../static/uploads/documents/Category/icon_new-01.png',
+        availableProduct: 12,
+    },
+    {
+        id: '14',
+        title: 'Hobbi və yaradıcılıq',
+        img: '../../static/uploads/documents/Category/icon_new-01.png',
+        availableProduct: 7,
+    },
+    {
+        id: '15',
+        title: 'urizm, balıqçılıq, ovçuluq',
+        img: '../../static/uploads/documents/Category/icon_new-01.png',
+        availableProduct: 22,
+    },
+    {
+        id: '16',
+        title: 'Zərgərlik',
+        img: '../../static/uploads/documents/Category/icon_new-01.png',
+        availableProduct: 12,
+    },
+    {
+        id: '17',
+        title: 'Oyunlar üçün hər şey',
+        img: '../../static/uploads/documents/Category/icon_new-01.png',
+        availableProduct: 12,
+    },
+    {
+        id: '18',
+        title: 'Dəftərxana ləvazimatları',
+        img: '../../static/uploads/documents/Category/icon_new-01.png',
+        availableProduct: 112,
+    },
+    {
+        id: '19',
+        title: 'Rəqəmsal məhsullar',
+        img: '../../static/uploads/documents/Category/icon_new-01.png',
+        availableProduct: 12,
+    },
+    {
+        id: '20',
+        title: 'Əntiq əşyaları və kolleksiya əşyaları',
+        img: '../../static/uploads/documents/Category/icon_new-01.png',
+        availableProduct: 12,
+    },
+    {
+        id: '21',
+        title: 'Məişət kimyəvi maddələr',
+        img: '../../static/uploads/documents/Category/icon_new-01.png',
+        availableProduct: 12,
+    },
+    {
+        id: '22',
+        title: 'Geyim',
+        img: '../../static/uploads/documents/Category/icon_new-01.png',
+        availableProduct: 11,
     },
 ];

@@ -80,22 +80,22 @@ a:hover,
 .blog-related-author-posts .nav-tabs .nav-link.active,
 .blog-page-area .common-padded-box-header h3 a:hover,
 a.order-details-print:hover {
-  color: #1f87cd !important;
+    color: #1f87cd !important;
 }
 
 .header-menu ul li a span.number,
 .header-search-form button,
 .top-bar-right-area .dropdown-item.active,
 .top-bar-right-area .dropdown-item:active,
-.top-bar-language-country-currency-form input[type="submit"],
+.top-bar-language-country-currency-form input[type='submit'],
 .hero-area:before,
-.hero-search-form input[type="submit"],
+.hero-search-form input[type='submit'],
 .common-padded-box-header h3:before,
 .common-padded-box-header a:hover:before,
 .single-feature-store-info .percentage span.boxed,
 .filled-link,
 .have-store-info .action-links .filled,
-.newsletter-form button[type="submit"],
+.newsletter-form button[type='submit'],
 .footer-links ul li a:before,
 .products-load-more-button:hover,
 .registration-login-form .form-group button,
@@ -124,14 +124,14 @@ a.order-details-print:hover {
 .imageuploadify .imageuploadify-images-list .imageuploadify-container button.btn-danger,
 .product-details-tags ul li a,
 .product-meta-details.product-shipping-details .free-shipping,
-.quantity-add-remove .quantity input[type="submit"]:focus,
-.quantity-add-remove .quantity input[type="button"]:focus,
+.quantity-add-remove .quantity input[type='submit']:focus,
+.quantity-add-remove .quantity input[type='button']:focus,
 .product-action-list button,
 .product-related-shop-details .product-related-shop-follow-btn,
 .product-review-form-area h3:before,
 .btn-submit,
 .product-review-form-buttons .btn-submit,
-.product-review-form input[type="submit"],
+.product-review-form input[type='submit'],
 .checkout-continue-clear-buttons .submit,
 .cart-coupon-code-area.seller-profile-form h3 .clear-coupon:hover,
 button.btn-submit,
@@ -162,17 +162,18 @@ span.ui-slider-handle.ui-corner-all.ui-state-default,
 .blog-categories ul li,
 .single-recommend-product-buy-button,
 .blog-tags ul li.tag-title {
-  background-color: #1f87cd !important;
+    background-color: #1f87cd !important;
 }
 
 .single-feature-store-info .percentage span.bordered,
 .single-feature-store-info .percentage span.boxed,
 .bordered-link,
-.select2-container--default.select2-container--above.select2-container--open .select2-selection--single,
+.select2-container--default.select2-container--above.select2-container--open
+    .select2-selection--single,
 .cart-coupon-code-area.seller-profile-form h3 .clear-coupon,
 .hero-search-form.search-page-search-form input:focus,
 .header-search-form,
-.newsletter-form input[type="email"],
+.newsletter-form input[type='email'],
 .products-load-more-button,
 .header-fixed .top-bar-right-area > ul > li > a span.number,
 .single-product-review-option.active .option-radio,
@@ -190,11 +191,11 @@ span.ui-slider-handle.ui-corner-all.ui-state-default,
 .product-review-form input:focus,
 .product-review-form textarea:focus,
 .cart-to-payment-links li.active .icon,
-.single-shipping-address-box input[type="radio"]:checked ~ .single-shipping-address-label,
+.single-shipping-address-box input[type='radio']:checked ~ .single-shipping-address-label,
 .add-shipping-address:hover,
 .owl-carousel .owl-item.active.current .single-product-details-images-thumbnail,
 .single-product-filter-option.active .option-check,
-.product-search-form input[type="text"]:focus,
+.product-search-form input[type='text']:focus,
 a.order-details-print:hover,
 .single-box-category:hover,
 .single-feature-box:before,
@@ -208,27 +209,28 @@ a.order-details-print:hover,
 .blog-related-author-posts .nav-tabs .nav-item.show .nav-link,
 .blog-related-author-posts .nav-tabs .nav-link.active,
 .blog-tags ul li.tag-title,
-.seller-profile-form .select2-container--default.select2-container--focus .select2-selection--multiple {
-  border-color: #1f87cd !important;
+.seller-profile-form
+    .select2-container--default.select2-container--focus
+    .select2-selection--multiple {
+    border-color: #1f87cd !important;
 }
 .swal2-styled.swal2-confirm {
     border-left-color: #1f87cd !important;
     border-right-color: #1f87cd !important;
 }
 
-
 /* COLOR SET 2 */
 .header-menu ul li a span.number,
 .header-search-form button,
-.top-bar-language-country-currency-form input[type="submit"],
+.top-bar-language-country-currency-form input[type='submit'],
 .top-bar-account-buttons a.active,
 .top-bar-account-buttons a.active:hover,
-.hero-search-form input[type="submit"],
-.hero-search-form input[type="submit"]:hover,
+.hero-search-form input[type='submit'],
+.hero-search-form input[type='submit']:hover,
 .single-feature-store-info .percentage span.boxed,
 .filled-link,
 .have-store-info .action-links .filled,
-.newsletter-form button[type="submit"],
+.newsletter-form button[type='submit'],
 .products-load-more-button:hover,
 .registration-login-form .form-group button,
 .seller-profile-sidebar-menu ul li.active a:hover,
@@ -256,17 +258,17 @@ a.order-details-print:hover,
 .product-details-tags ul li a,
 .product-details-tags ul li a:hover,
 .product-meta-details.product-shipping-details .free-shipping,
-.quantity-add-remove .quantity input[type="submit"]:focus,
-.quantity-add-remove .quantity input[type="button"]:focus,
+.quantity-add-remove .quantity input[type='submit']:focus,
+.quantity-add-remove .quantity input[type='button']:focus,
 .product-action-list button,
 .product-action-list button:hover,
 .product-related-shop-details .product-related-shop-follow-btn,
 .btn-submit,
 .product-review-form-buttons .btn-submit,
-.product-review-form input[type="submit"],
+.product-review-form input[type='submit'],
 .btn-submit:hover,
 .product-review-form-buttons .btn-submit:hover,
-.product-review-form input[type="submit"]:hover,
+.product-review-form input[type='submit']:hover,
 .checkout-continue-clear-buttons .submit,
 .checkout-continue-clear-buttons .submit:hover,
 .cart-coupon-code-area.seller-profile-form h3 .clear-coupon:hover,
@@ -308,7 +310,8 @@ button.btn-submit:hover,
 .datepicker table tr td.active:active:hover,
 .header-fixed .top-bar-right-area ul li.dropdown.account-links .dropdown-menu a.active,
 .other-register-login-option ul li a,
-.product-share ul li a:hover, .invitation-share ul li a:hover,
+.product-share ul li a:hover,
+.invitation-share ul li a:hover,
 .common-page-content a.rewards-deals-results-btn,
 .common-page-content a.rewards-deals-results-btn:hover,
 .table-actions .dropdown-item:hover,
@@ -317,18 +320,18 @@ button.btn-submit:hover,
 .single-recommend-product-buy-button:hover,
 .status,
 .single-feature-store-info .status {
-  color: #fff !important;
+    color: #fff !important;
 }
 .category-mega-menu-mobile-container.hc-offcanvas-nav li.level-open > a span.nav-next:before,
 .header-fixed .header-search-form {
-  border-color: #fff !important;
+    border-color: #fff !important;
 }
 
 .header-fixed .header-area {
     background: #1f87cd;
-    background: -moz-linear-gradient(top,  #1f87cd 0%, #2593df 100%);
-    background: -webkit-linear-gradient(top,  #1f87cd 0%,#2593df 100%);
-    background: linear-gradient(to bottom,  #1f87cd 0%,#2593df 100%);
+    background: -moz-linear-gradient(top, #1f87cd 0%, #2593df 100%);
+    background: -webkit-linear-gradient(top, #1f87cd 0%, #2593df 100%);
+    background: linear-gradient(to bottom, #1f87cd 0%, #2593df 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f87cd', endColorstr='#2593df',GradientType=0 );
 }
 
@@ -349,7 +352,7 @@ button.btn-submit:hover,
     color: #1777b8 !important;
 }
 .top-bar-account-buttons a.active:hover,
-.hero-search-form input[type="submit"]:hover,
+.hero-search-form input[type='submit']:hover,
 .filled-link:hover,
 .have-store-info .action-links .filled:hover,
 .seller-profile-content-header h3 a:hover,
@@ -363,7 +366,7 @@ button.btn-submit:hover,
 
 .btn-submit,
 .product-review-form-buttons .btn-submit,
-.product-review-form input[type="submit"],
+.product-review-form input[type='submit'],
 .checkout-continue-clear-buttons .submit,
 button.btn-submit,
 span.ui-slider-handle.ui-corner-all.ui-state-default,
@@ -388,8 +391,8 @@ span.ui-slider-handle.ui-corner-all.ui-state-default,
 .datepicker table tr td.active.highlighted.active,
 .datepicker table tr td.active.highlighted:active,
 .datepicker table tr td.active:active,
-.quantity-add-remove .quantity input[type="submit"]:focus,
-.quantity-add-remove .quantity input[type="button"]:focus,
+.quantity-add-remove .quantity input[type='submit']:focus,
+.quantity-add-remove .quantity input[type='button']:focus,
 .product-related-shop-details .product-related-shop-follow-btn,
 .header-fixed .top-bar-area,
 .bootstrap-datetimepicker-widget table td .btn-primary:not(:disabled):not(.disabled).active,
@@ -401,7 +404,7 @@ span.ui-slider-handle.ui-corner-all.ui-state-default,
 }
 .btn-submit:hover,
 .product-review-form-buttons .btn-submit:hover,
-.product-review-form input[type="submit"]:hover,
+.product-review-form input[type='submit']:hover,
 .checkout-continue-clear-buttons .submit:hover,
 button.btn-submit:hover,
 .product-view-button:hover,
@@ -442,10 +445,11 @@ button.btn-submit:hover,
 }
 .no-product-review-message {
     background-color: rgba(31, 135, 205, 0.25) !important;
-    border-color: rgba(31, 135, 205, 0.30) !important;
+    border-color: rgba(31, 135, 205, 0.3) !important;
 }
-.header-area, ul.search-result-menu {
-    border-color:  rgba(31, 135, 205, 0.30) !important;
+.header-area,
+ul.search-result-menu {
+    border-color: rgba(31, 135, 205, 0.3) !important;
 }
 
 .common-padded-box-header a,
@@ -472,7 +476,6 @@ button.btn-submit:hover,
 .single-product-image .off-sticker .offer-number {
     color: #333;
 }
-
 
 .header-fixed .top-bar-left-area ul li a,
 .header-fixed .top-bar-right-area ul li a {
@@ -560,12 +563,14 @@ button.btn-submit:hover,
     border-color: #222 !important;
 }
 
-.header-fixed .popular-search-list ul li:hover, .popular-search-list ul li:hover a,
+.header-fixed .popular-search-list ul li:hover,
+.popular-search-list ul li:hover a,
 .product-single-options ul li:not(.active) a:hover {
     color: #1d1d1d !important;
 }
 
-.table-actions .dropdown-item.view:hover, .table-actions .dropdown-item.view:active {
+.table-actions .dropdown-item.view:hover,
+.table-actions .dropdown-item.view:active {
     background-color: #3a98fd !important;
 }
 .table-actions .dropdown-item.edit:hover,
@@ -582,7 +587,8 @@ button.btn-submit:hover,
     background-color: #ecffed !important;
 }
 
-.product-view-button[disabled], .product-view-button[disabled]:hover {
+.product-view-button[disabled],
+.product-view-button[disabled]:hover {
     background: #6193b5 !important;
     border-color: #6193b5 !important;
 }
@@ -594,12 +600,10 @@ button.btn-submit:hover,
 
 /* HD Layout: 1920px. */
 @media only screen and (min-width: 1601px) and (max-width: 2200px) {
-
 }
 
 /* Laptop with HDPI: 1440px */
 @media only screen and (min-width: 1400px) and (max-width: 1600px) {
-
 }
 
 /* Normal PC: 1366px */
@@ -607,19 +611,20 @@ button.btn-submit:hover,
 }
 
 /* Laptop with MDPI: 1280px */
-@media only screen and (min-width: 1201px) and (max-width: 1300px) {}
+@media only screen and (min-width: 1201px) and (max-width: 1300px) {
+}
 
 /* Medium Layout(iPad Pro): 1024px. */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .main-menu-area,
-    .header-fixed .header-area  {
-    	background: transparent !important;
+    .header-fixed .header-area {
+        background: transparent !important;
     }
     .header-fixed {
         background: #2086cb;
-        background: -moz-linear-gradient(top,  #2086cb 0%, #2e9be5 100%);
-        background: -webkit-linear-gradient(top,  #2086cb 0%,#2e9be5 100%);
-        background: linear-gradient(to bottom,  #2086cb 0%,#2e9be5 100%);
+        background: -moz-linear-gradient(top, #2086cb 0%, #2e9be5 100%);
+        background: -webkit-linear-gradient(top, #2086cb 0%, #2e9be5 100%);
+        background: linear-gradient(to bottom, #2086cb 0%, #2e9be5 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e9be5', endColorstr='#2086cb',GradientType=0 );
     }
 }
@@ -631,14 +636,14 @@ button.btn-submit:hover,
     }
 
     .main-menu-area,
-    .header-fixed .header-area  {
-    	background: transparent !important;
+    .header-fixed .header-area {
+        background: transparent !important;
     }
     .header-fixed {
         background: #2086cb;
-        background: -moz-linear-gradient(top,  #2086cb 0%, #2e9be5 100%);
-        background: -webkit-linear-gradient(top,  #2086cb 0%,#2e9be5 100%);
-        background: linear-gradient(to bottom,  #2086cb 0%,#2e9be5 100%);
+        background: -moz-linear-gradient(top, #2086cb 0%, #2e9be5 100%);
+        background: -webkit-linear-gradient(top, #2086cb 0%, #2e9be5 100%);
+        background: linear-gradient(to bottom, #2086cb 0%, #2e9be5 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e9be5', endColorstr='#2086cb',GradientType=0 );
     }
 }
@@ -653,20 +658,21 @@ button.btn-submit:hover,
         text-shadow: 1px 1px rgba(31, 135, 205, 0.35);
     }
     .main-menu-area,
-    .header-fixed .header-area  {
-    	background: transparent !important;
+    .header-fixed .header-area {
+        background: transparent !important;
     }
     .header-fixed {
         background: #2086cb;
-        background: -moz-linear-gradient(top,  #2086cb 0%, #2e9be5 100%);
-        background: -webkit-linear-gradient(top,  #2086cb 0%,#2e9be5 100%);
-        background: linear-gradient(to bottom,  #2086cb 0%,#2e9be5 100%);
+        background: -moz-linear-gradient(top, #2086cb 0%, #2e9be5 100%);
+        background: -webkit-linear-gradient(top, #2086cb 0%, #2e9be5 100%);
+        background: linear-gradient(to bottom, #2086cb 0%, #2e9be5 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e9be5', endColorstr='#2086cb',GradientType=0 );
     }
 }
 
 /* Wide Mobile Layout(Nexus 7): 600px. */
-@media only screen and (max-width: 610px) {}
+@media only screen and (max-width: 610px) {
+}
 
 /* Wide Mobile Layout: 480px. */
 @media only screen and (max-width: 500px) {
@@ -676,7 +682,9 @@ button.btn-submit:hover,
 }
 
 /* Mobile Layout(Samsung Galaxy S5): 360px. */
-@media only screen and (max-width: 370px) {}
+@media only screen and (max-width: 370px) {
+}
 
 /* Mobile Layout(iPhone 4): 320px. */
-@media only screen and (max-width: 330px) {}
+@media only screen and (max-width: 330px) {
+}

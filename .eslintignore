@@ -1,3 +1,7 @@
-build/
 node_modules/
-src/serviceWorker.js
+static/
+.next/
+public/*
+build/*
+config/*
+next.config.js
