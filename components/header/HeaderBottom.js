@@ -84,15 +84,6 @@ const HeaderBottom = ({
                                             required
                                         />
                                     </Form.Group>
-                                    <Form.Group style={{ width: 250 }}>
-                                        <Select
-                                            instanceId="category"
-                                            label="Select category"
-                                            defaultValue={categoriesOptions[0]}
-                                            options={categoriesOptions}
-                                            onChange={handleCategory}
-                                        />
-                                    </Form.Group>
                                     <Button onClick={handleSubmit} type="submit">
                                         <i className="fas fa-search"></i>
                                     </Button>
@@ -124,13 +115,6 @@ const HeaderBottom = ({
                                         <a href="--Apple-iPhone-11-Pro-Max-64GB-Gold-pu9B2.html">
                                             {' '}
                                             Смартфон Apple iPhone 11 Pro Max 64GB Gold
-                                        </a>{' '}
-                                    </li>
-                                    <li>
-                                        {' '}
-                                        <a href="-Huawei-Watch-GT2-Matte-Black-8ltIi.html">
-                                            {' '}
-                                            Huawei Watch GT2 Matte Black
                                         </a>{' '}
                                     </li>
                                 </ul>
