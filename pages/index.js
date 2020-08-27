@@ -37,17 +37,12 @@ export default class extends React.Component {
         return (
             <div>
                 <Head title="Mystore.az" />
-                <Header handleCurrency={this.handleCurrency} handleLang={this.handleLang} />
-                <MobileMenu handleCurrency={this.handleCurrency} handleLang={this.handleLang} />
-                <MobileCategory />
-                <div className="header-fixed-content-layout" />
                 <BannerAdArea />
                 <FeaturedCategories featuredCats={featuredCats} />
                 <FlashDeal flashDeals={flashDeals} />
                 <ProductStatusCategory products={flashDeals} />
                 <FeaturedStore />
                 <Facilities />
-                <Footer />
                 <style jsx>{``}</style>
             </div>
         );
