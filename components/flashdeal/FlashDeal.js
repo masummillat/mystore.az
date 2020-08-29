@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 
 import ProductCard from '../productcard/ProductCard';
 
-const FlashDeal = ({ flashDeals }) => {
+const FlashDeal = ({ flashDeals, handleShowWishModal }) => {
     const settings = {
         dots: true,
         infinite: false,
@@ -59,7 +59,11 @@ const FlashDeal = ({ flashDeals }) => {
                                     <div className="flash-deals-products-carousel">
                                         <Slider {...settings}>
                                             {flashDeals.map((product, ind) => (
-                                                <ProductCard product={product} key={ind} />
+                                                <ProductCard
+                                                    handleShowWishModal={handleShowWishModal}
+                                                    product={product}
+                                                    key={ind}
+                                                />
                                             ))}
                                         </Slider>
                                     </div>

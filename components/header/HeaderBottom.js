@@ -25,10 +25,7 @@ const HeaderBottom = ({
                             <div className="logo-area">
                                 <Link href="/">
                                     <a>
-                                        <img
-                                            src="../../static/uploads/documents/GeneralSetting/PUxf1TNoP24Yq9D0lEVGV5bc2rRaEOlTddW2z2aj.png"
-                                            alt=""
-                                        />
+                                        <img src="../../static/img/logo.jpeg" alt="" />
                                     </a>
                                 </Link>
                             </div>

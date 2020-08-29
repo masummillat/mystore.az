@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 
 import ProductCard from '../productcard/ProductCard';
 
-const ProductStatusCategory = ({ products }) => {
+const ProductStatusCategory = ({ products, handleShowWishModal }) => {
     return (
         <section className="all-products-area common-padding">
             <div className="product-menu-fixed-area-wrapper">
@@ -81,7 +81,10 @@ const ProductStatusCategory = ({ products }) => {
                                         <div className="row">
                                             {products.map((product, ind) => (
                                                 <div key={ind} className="col-lg-3 col-sm-6">
-                                                    <ProductCard product={product} />
+                                                    <ProductCard
+                                                        handleShowWishModal={handleShowWishModal}
+                                                        product={product}
+                                                    />
                                                 </div>
                                             ))}
                                         </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, handleShowWishModal }) => {
     const { id, name, shopName, status, online, off, sold, img } = product;
 
     return (
@@ -63,6 +63,7 @@ const ProductCard = ({ product }) => {
                         </div>
                         <div className="right-info">
                             <button
+                                onClick={handleShowWishModal}
                                 type="button"
                                 className="product-view-button product-wishlist-button"
                                 title="Add to Wishlist">

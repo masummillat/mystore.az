@@ -1,5 +1,7 @@
+import React from 'react';
 import Link from 'next/link';
 import { useEffect } from 'react';
+import { Modal, Button } from 'react-bootstrap';
 import Head from '../components/Head';
 import Header from '../components/header/Header';
 import Footer from '../components/footer/footer';
@@ -18,33 +20,56 @@ class Home extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            lang: 'English',
-            currency: 'USD',
+            wishModalShow: false,
         };
     }
-    handleCurrency = currency => {
+
+    handleCloseWishModal = () => {
         this.setState({
-            currency,
+            wishModalShow: false,
         });
     };
-    handleLang = lang => {
+
+    handleShowWishModal = () => {
         this.setState({
-            lang,
+            wishModalShow: true,
         });
     };
 
     render() {
         const { featuredCats, flashDeals } = this.props;
+        const { wishModalShow } = this.state;
         return (
             <div>
                 <Head title="Mystore.az" />
                 <BannerAdArea />
                 <FeaturedCategories featuredCats={featuredCats} />
-                <FlashDeal flashDeals={flashDeals} />
-                <ProductStatusCategory products={flashDeals} />
+                <FlashDeal handleShowWishModal={this.handleShowWishModal} flashDeals={flashDeals} />
+                <ProductStatusCategory
+                    handleShowWishModal={this.handleShowWishModal}
+                    products={flashDeals}
+                />
                 <FeaturedStore />
                 <Facilities />
                 <style jsx>{``}</style>
+
+                <Modal
+                    aria-labelledby="contained-modal-title-vcenter"
+                    centered
+                    show={wishModalShow}>
+                    <Modal.Body>
+                        <h5> Please Login For Add to Wishlist</h5>
+                    </Modal.Body>
+
+                    <Modal.Footer>
+                        <Button onClick={this.handleCloseWishModal} variant="danger">
+                            Close
+                        </Button>
+                        <Link href="/login">
+                            <Button variant="primary">Login</Button>
+                        </Link>
+                    </Modal.Footer>
+                </Modal>
             </div>
         );
     }
