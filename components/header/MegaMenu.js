@@ -4,7 +4,6 @@ import { Button, OverlayTrigger, Popover } from 'react-bootstrap';
 import { featured } from '../../constants/data';
 
 export const MenuItem = ({ category }) => {
-    console.log(category);
     return (
         <li className="dropdown-item">
             <a>

@@ -93,16 +93,16 @@
             $(this).addClass('active');
         });
         //megamenu
-        jQuery(document).ready(function() {
-            $('.dropdown').click(
-                function() {
-                    $('.dropdown-menu', this).fadeIn('fast');
-                },
-                function() {
-                    $('.dropdown-menu', this).fadeOut('fast');
-                }
-            );
-        });
+        // jQuery(document).ready(function() {
+        //     $('.dropdown').click(
+        //         function() {
+        //             $('.dropdown-menu', this).fadeIn('fast');
+        //         },
+        //         function() {
+        //             $('.dropdown-menu', this).fadeOut('fast');
+        //         }
+        //     );
+        // });
 
         /* Flash Deals */
         // $('.flash-deals-products-carousel').owlCarousel({

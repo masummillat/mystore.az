@@ -12,8 +12,9 @@ import ProductStatusCategory from '../components/productstatus/ProductStatusCate
 import FeaturedStore from '../components/featuredstore/FeaturedStore';
 import Facilities from '../components/facilities/Facilities';
 import { featured, products } from '../constants/data';
+import DefaultLayout from '../components/layouts/default';
 
-export default class extends React.Component {
+class Home extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -48,6 +49,8 @@ export default class extends React.Component {
         );
     }
 }
+
+export default Home;
 
 export async function getStaticProps(context) {
     return {

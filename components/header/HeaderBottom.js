@@ -1,10 +1,11 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import Select from 'react-select';
 
 import { categories, featured } from '../../constants/data';
 import MegaMenu, { MenuItem } from './MegaMenu';
+import AllCategoryModal from './AllCategoryModal';
 
 const HeaderBottom = ({
     searchText,
@@ -14,6 +15,7 @@ const HeaderBottom = ({
     handleCategory,
     handleSubmit,
 }) => {
+    const [modalShow, setModalShow] = useState(false);
     return (
         <div className="header-area">
             <div className="container">
@@ -57,6 +59,18 @@ const HeaderBottom = ({
                                                             key={category.id}
                                                         />
                                                     ))}
+                                                    <li
+                                                        style={{
+                                                            width: '100%',
+                                                            textAlign: 'center',
+                                                            fontWeight: 700,
+                                                            backgroundColor: '#f5f5f5',
+                                                            padding: 10,
+                                                            cursor: 'pointer',
+                                                        }}
+                                                        onClick={() => setModalShow(true)}>
+                                                        All Category
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </li>
@@ -65,7 +79,7 @@ const HeaderBottom = ({
                             </nav>
                         </div>
                     </div>
-
+                    <AllCategoryModal show={modalShow} onHide={() => setModalShow(false)} />
                     <div className="col-lg-8">
                         <div className="header-search-area">
                             <Form
