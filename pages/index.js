@@ -43,7 +43,7 @@ class Home extends React.Component {
         return (
             <div>
                 <Head title="Mystore.az" />
-                <BannerAdArea/>
+                <BannerAdArea />
                 <FeaturedCategories featuredCats={featuredCats} />
                 <FlashDeal handleShowWishModal={this.handleShowWishModal} flashDeals={flashDeals} />
                 <ProductStatusCategory

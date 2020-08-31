@@ -19,7 +19,7 @@ const BannerAdArea = () => {
                         <div className="bordered-shadow-box">
                             <div className="bordered-shadow-box-overflow-hidden">
                                 <div className="banner-ad-area">
-                                    {
+                                    {(
                                         <a
                                             href="http://localhost/mystore-az/public/-shoes-vh00-arSvf"
                                             className="banner-ad one">
@@ -27,8 +27,8 @@ const BannerAdArea = () => {
                                                 src="../../static/uploads/documents/ads/ad-1.jpg"
                                                 alt=""
                                             />
-                                        </a> || <Skeleton count={5}/>
-                                    }
+                                        </a>
+                                    ) || <Skeleton count={5} />}
                                     <a
                                         href="http://localhost/mystore-az/public/-shoes-vh00-arSvf"
                                         className="banner-ad ">

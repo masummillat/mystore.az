@@ -81,16 +81,17 @@ class Blogs extends React.Component {
                                                         <a
                                                             className="single-hero-blog hero-blog-one-third"
                                                             target="_blank">
-                                                        <span className="blog-image">
-                                                            <img
-                                                                src="../static/uploads/documents/blog/FI-Innisfree-696x522.png"
-                                                                alt="19 Bütün Sinqapurluların sınaması üçün yüksək dərəcədə bədbəxt məhsullar"
-                                                            />
-                                                        </span>
+                                                            <span className="blog-image">
+                                                                <img
+                                                                    src="../static/uploads/documents/blog/FI-Innisfree-696x522.png"
+                                                                    alt="19 Bütün Sinqapurluların sınaması üçün yüksək dərəcədə bədbəxt məhsullar"
+                                                                />
+                                                            </span>
                                                             <span className="blog-title">
-                                                            19 Bütün Sinqapurluların sınaması üçün
-                                                            yüksək dərəcədə bədbəxt məhsullar
-                                                        </span>
+                                                                19 Bütün Sinqapurluların sınaması
+                                                                üçün yüksək dərəcədə bədbəxt
+                                                                məhsullar
+                                                            </span>
                                                         </a>
                                                     </Link>
                                                 </div>
@@ -101,30 +102,30 @@ class Blogs extends React.Component {
                                                         <a
                                                             className="single-hero-blog hero-blog-one-fourth"
                                                             target="_blank">
-                                                        <span className="blog-image">
-                                                            <img
-                                                                src="../static/uploads/documents/blog/easy-rice-cooker-recipes-singapore-696x522.jpg"
-                                                                alt=""
-                                                            />
-                                                        </span>
+                                                            <span className="blog-image">
+                                                                <img
+                                                                    src="../static/uploads/documents/blog/easy-rice-cooker-recipes-singapore-696x522.jpg"
+                                                                    alt=""
+                                                                />
+                                                            </span>
                                                             <span className="blog-title"></span>
                                                         </a>
                                                     </Link>
                                                 </div>
                                                 <div className="col-sm-6">
-                                                   <Link href="blog-details/7">
-                                                       <a
-                                                           className="single-hero-blog hero-blog-one-fourth"
-                                                           target="_blank">
-                                                        <span className="blog-image">
-                                                            <img
-                                                                src="../static/uploads/documents/blog/feature-image-durian-cake-recipe-696x522.jpg"
-                                                                alt=""
-                                                            />
-                                                        </span>
-                                                           <span className="blog-title"></span>
-                                                       </a>
-                                                   </Link>
+                                                    <Link href="blog-details/7">
+                                                        <a
+                                                            className="single-hero-blog hero-blog-one-fourth"
+                                                            target="_blank">
+                                                            <span className="blog-image">
+                                                                <img
+                                                                    src="../static/uploads/documents/blog/feature-image-durian-cake-recipe-696x522.jpg"
+                                                                    alt=""
+                                                                />
+                                                            </span>
+                                                            <span className="blog-title"></span>
+                                                        </a>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -161,8 +162,9 @@ class Blogs extends React.Component {
                         </div>
 
                         <div className="row grid-view-compact-row common-padding-top">
-                            <div className="col-lg-12">{/*   Tech and Gadget*/}
-                                <TechAndGadgets/>
+                            <div className="col-lg-12">
+                                {/*   Tech and Gadget*/}
+                                <TechAndGadgets />
                             </div>
                         </div>
 

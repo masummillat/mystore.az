@@ -392,25 +392,30 @@ export const blogs = [
         title: '19 Bütün Sinqapurluların sınaması üçün yüksək dərəcədə bədbəxt məhsullar',
         img: '../../static/uploads/documents/blog/FI-Innisfree-696x522.png',
         date: 'Jun 28, 2020',
-    } ,{
+    },
+    {
         id: 2,
         title: 'Cook',
         img: '../../static/uploads/documents/blog/easy-rice-cooker-recipes-singapore-696x522.jpg',
         date: 'Jun 18, 2020',
-    }, {
+    },
+    {
         id: 3,
         title: 'Hungry for food ?',
         img: '../../static/uploads/documents/blog/feature-image-durian-cake-recipe-696x522.jpg',
         date: 'Jun 28, 2020',
-    }, {
+    },
+    {
         id: 4,
         title: 'Get you fitness',
         img: '../../static/uploads/documents/blog/home-gym-equipment-featured-696x522.jpg',
         date: 'Jun 28, 2020',
-    },{
+    },
+    {
         id: 5,
         title: 'what is the title ? ',
-        img: '../../static/uploads/documents/blog/rsz_2avrielle-suleiman-gpvak9-cl6e-unsplash-696x522.jpg',
+        img:
+            '../../static/uploads/documents/blog/rsz_2avrielle-suleiman-gpvak9-cl6e-unsplash-696x522.jpg',
         date: 'Jun 28, 2020',
-    }
-]
+    },
+];

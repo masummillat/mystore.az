@@ -15,7 +15,9 @@ const BlogDetails = () => {
                                 <div className="blog-breadcrumb">
                                     <ul>
                                         <li>
-                                            <Link href="/"><a>Home</a></Link>
+                                            <Link href="/">
+                                                <a>Home</a>
+                                            </Link>
                                         </li>
                                         <li>
                                             <a href="#">Food and drinks</a>
@@ -283,7 +285,7 @@ const BlogDetails = () => {
 
                             {/*Latest Articles Start -->*/}
                             <div className="col-lg-4">
-                                <LatestArticles/>
+                                <LatestArticles />
                             </div>
                         </div>
                     </div>

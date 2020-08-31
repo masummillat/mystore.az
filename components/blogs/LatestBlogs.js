@@ -10,9 +10,9 @@ const LatestBlogs = () => {
                 {/*<a href="#" target="_blank">View All</a>*/}
             </div>
             <div className="upcoming-blogs-area">
-                {
-                    blogs.map((blog,i)=><BlogCard key={blog.id} blog={blog}/>)
-                }
+                {blogs.map((blog, i) => (
+                    <BlogCard key={blog.id} blog={blog} />
+                ))}
             </div>
         </div>
     );
