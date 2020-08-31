@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Link from 'next/link';
 const Footer = () => {
     return (
         <div>
@@ -125,22 +125,34 @@ const Footer = () => {
                                 <h3>Müştəri xidməti</h3>
                                 <ul>
                                     <li>
-                                        <a href="blogs.html">Blog</a>
+                                        <Link href="/blogs">
+                                            <a>Blog</a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="customer-service.html">Müştəri xidməti</a>
+                                        <Link href="/customer-service">
+                                            <a>Müştəri xidməti</a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="terms-condition.html">Şərtlər və qaydalar</a>
+                                        <Link href="/terms-condition">
+                                            <a>Şərtlər və qaydalar</a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="faq.html">Sual-cavab</a>
+                                        <Link href="/faq">
+                                            <a>Sual-cavab</a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="privacy-policy.html">Gizlilik siyasəti</a>
+                                        <Link href="/privacy-policy">
+                                            <a>Gizlilik siyasəti</a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="contact.html">Bizimlə əlaqə</a>
+                                        <Link href="/contact">
+                                            <a>Bizimlə əlaqə</a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>
@@ -150,10 +162,14 @@ const Footer = () => {
                                 <h3>Partnyor təşviqi</h3>
                                 <ul>
                                     <li>
-                                        <a href="partnership.html">footer.Partnership</a>
+                                        <Link href="/partnership">
+                                            <a>footer.Partnership</a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="affiliate.html">footer.Affiliate Program</a>
+                                        <Link href="/affiliate">
+                                            <a>footer.Affiliate Program</a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>

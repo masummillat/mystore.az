@@ -15,6 +15,7 @@ import FeaturedStore from '../components/featuredstore/FeaturedStore';
 import Facilities from '../components/facilities/Facilities';
 import { featured, products } from '../constants/data';
 import DefaultLayout from '../components/layouts/default';
+import Skeleton from 'react-loading-skeleton';
 
 class Home extends React.Component {
     constructor(props) {
@@ -42,7 +43,7 @@ class Home extends React.Component {
         return (
             <div>
                 <Head title="Mystore.az" />
-                <BannerAdArea />
+                <BannerAdArea/>
                 <FeaturedCategories featuredCats={featuredCats} />
                 <FlashDeal handleShowWishModal={this.handleShowWishModal} flashDeals={flashDeals} />
                 <ProductStatusCategory
