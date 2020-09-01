@@ -39,7 +39,13 @@ class Contact extends React.Component {
                                             </p>
                                             <div className="row">
                                                 <Formik
-                                                    initialValues={{ contact_name: '', contact_email:'', contact_phone: '', queryType: '', contact_message:'' }}
+                                                    initialValues={{
+                                                        contact_name: '',
+                                                        contact_email: '',
+                                                        contact_phone: '',
+                                                        queryType: '',
+                                                        contact_message: '',
+                                                    }}
                                                     onSubmit={(values, actions) => {
                                                         setTimeout(() => {
                                                             alert(JSON.stringify(values, null, 2));
@@ -47,7 +53,9 @@ class Contact extends React.Component {
                                                         }, 1000);
                                                     }}>
                                                     {props => (
-                                                        <form onSubmit={props.handleSubmit} className="col-lg-7">
+                                                        <form
+                                                            onSubmit={props.handleSubmit}
+                                                            className="col-lg-7">
                                                             <div className="seller-profile-form contact-us-form">
                                                                 <div className="row">
                                                                     <div className="col-sm-6">
@@ -58,9 +66,16 @@ class Contact extends React.Component {
                                                                                 name="contact_name"
                                                                                 placeholder="Your Name*"
                                                                                 required
-                                                                                onChange={props.handleChange}
-                                                                                onBlur={props.handleBlur}
-                                                                                value={props.values.contact_name}
+                                                                                onChange={
+                                                                                    props.handleChange
+                                                                                }
+                                                                                onBlur={
+                                                                                    props.handleBlur
+                                                                                }
+                                                                                value={
+                                                                                    props.values
+                                                                                        .contact_name
+                                                                                }
                                                                             />
                                                                         </div>
                                                                     </div>
@@ -72,9 +87,16 @@ class Contact extends React.Component {
                                                                                 name="contact_email"
                                                                                 placeholder="Your Email*"
                                                                                 required
-                                                                                onChange={props.handleChange}
-                                                                                onBlur={props.handleBlur}
-                                                                                value={props.values.contact_email}
+                                                                                onChange={
+                                                                                    props.handleChange
+                                                                                }
+                                                                                onBlur={
+                                                                                    props.handleBlur
+                                                                                }
+                                                                                value={
+                                                                                    props.values
+                                                                                        .contact_email
+                                                                                }
                                                                             />
                                                                         </div>
                                                                     </div>
@@ -88,9 +110,16 @@ class Contact extends React.Component {
                                                                                 name="contact_phone"
                                                                                 placeholder="Your Phone*"
                                                                                 required
-                                                                                onChange={props.handleChange}
-                                                                                onBlur={props.handleBlur}
-                                                                                value={props.values.contact_phone}
+                                                                                onChange={
+                                                                                    props.handleChange
+                                                                                }
+                                                                                onBlur={
+                                                                                    props.handleBlur
+                                                                                }
+                                                                                value={
+                                                                                    props.values
+                                                                                        .contact_phone
+                                                                                }
                                                                             />
                                                                         </div>
                                                                     </div>
@@ -100,10 +129,16 @@ class Contact extends React.Component {
                                                                                 className="form-control"
                                                                                 name="queryType"
                                                                                 required
-                                                                                onChange={props.handleChange}
-                                                                                onBlur={props.handleBlur}
-                                                                                value={props.values.queryType}
-                                                                            >
+                                                                                onChange={
+                                                                                    props.handleChange
+                                                                                }
+                                                                                onBlur={
+                                                                                    props.handleBlur
+                                                                                }
+                                                                                value={
+                                                                                    props.values
+                                                                                        .queryType
+                                                                                }>
                                                                                 <option
                                                                                     value=""
                                                                                     disabled>
@@ -131,9 +166,16 @@ class Contact extends React.Component {
                                                                                 className="form-control"
                                                                                 name="contact_message"
                                                                                 placeholder="Your Message*"
-                                                                                onChange={props.handleChange}
-                                                                                onBlur={props.handleBlur}
-                                                                                value={props.values.contact_message}
+                                                                                onChange={
+                                                                                    props.handleChange
+                                                                                }
+                                                                                onBlur={
+                                                                                    props.handleBlur
+                                                                                }
+                                                                                value={
+                                                                                    props.values
+                                                                                        .contact_message
+                                                                                }
                                                                                 required></textarea>
                                                                         </div>
                                                                     </div>

@@ -40,6 +40,7 @@ class Home extends React.Component {
     render() {
         const { featuredCats, flashDeals } = this.props;
         const { wishModalShow } = this.state;
+
         return (
             <div>
                 <Head title="Mystore.az" />

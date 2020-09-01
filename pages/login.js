@@ -1,14 +1,15 @@
 import React from 'react';
 import { Formik } from 'formik';
+import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Head from '../components/Head';
 import LoginLayout from '../components/layouts/login';
 
-class Login extends React.Component {
+class LoginComponent extends React.Component {
     render() {
+        console.log(this.props);
         return (
             <div>
-                <Head title="Login" />
                 <div className="registration-login-content-layout">
                     <section
                         className="registration-login-area registration-login-fixed-area"
@@ -54,13 +55,22 @@ class Login extends React.Component {
                                                                 { setSubmitting },
                                                             ) => {
                                                                 setTimeout(() => {
-                                                                    alert(
-                                                                        JSON.stringify(
-                                                                            values,
-                                                                            null,
-                                                                            2,
-                                                                        ),
+                                                                    localStorage.setItem(
+                                                                        'loggedIn',
+                                                                        true,
                                                                     );
+                                                                    localStorage.setItem(
+                                                                        'email',
+                                                                        values.email,
+                                                                    );
+                                                                    this.props.router.push('/');
+                                                                    // alert(
+                                                                    //     JSON.stringify(
+                                                                    //         values,
+                                                                    //         null,
+                                                                    //         2,
+                                                                    //     ),
+                                                                    // );
                                                                     setSubmitting(false);
                                                                 }, 400);
                                                             }}>
@@ -239,6 +249,16 @@ class Login extends React.Component {
         );
     }
 }
+
+const Login = props => {
+    const router = useRouter();
+    return (
+        <div>
+            <Head title="Login" />
+            <LoginComponent {...props} router={router} />
+        </div>
+    );
+};
 
 Login.Layout = LoginLayout;
 
