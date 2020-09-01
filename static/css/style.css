@@ -1534,6 +1534,9 @@ ul.search-result-menu li:hover {
     /* background-color: #f5f5f5; */
     background-color: #f3f3f3;
 }
+.newsletter-form button[type='submit'] {
+    background-color: #1f87cd !important;
+}
 .footer-section-two-area {
     background: #f0f0f0;
 }
@@ -6557,6 +6560,10 @@ a.order-details-print:hover {
     border-radius: 0 5px 5px 0;
     overflow: hidden;
     margin-top: -16px;
+    background-color: rgb(229, 231, 233);
+}
+.header-fixed .header-search-form button:hover {
+    background-color: rgb(207, 210, 212);
 }
 .header-fixed .header-search-form .select2-selection.select2-selection--single {
     background-color: #eee;
@@ -7343,6 +7350,7 @@ p.deals-end-message,
     background-color: transparent;
     color: rgba(49, 53, 59, 0.68);
     border: none;
+    text-transform: uppercase;
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
@@ -11670,10 +11678,6 @@ div.single-product-rating div.rateit-reset:hover {
 .dropdown-menu {
     padding: 0px;
 }
-
-.navbar-nav .dropdown-menu {
-    top: 70px !important;
-}
 .menu-container {
     width: 100%;
     margin: 0 auto;
@@ -11687,7 +11691,6 @@ div.single-product-rating div.rateit-reset:hover {
     font-size: 15px;
     line-height: 15px;
     position: relative;
-    padding: 0 0 0 4px;
     margin: 0;
     /*background-color: #227087;*/
 }
@@ -11706,13 +11709,30 @@ span {
 .menu > li {
     display: block;
     text-align: left;
-    margin-left: -4px;
-    border-left: 1px solid rgba(255, 255, 255, 0.11);
-    box-shadow: -1px 0 0 rgba(0, 0, 0, 0.2);
 }
 .menu > li > a {
-    padding: 10px 18px;
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    white-space: nowrap;
+    padding: 7px 10px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.menu > li a img {
+    margin-right: 5px;
+}
+.menu .dropdown-item {
+    padding: 0.25rem .5rem;
+}
+.navbar-nav .dropdown-menu {
+    width: 260px;
+    box-shadow: 1px 2px 5px #ccc;
+    left: -125px;
+    top: 64px;
 }
 .menu > li:hover > a {
     color: #227087;
@@ -11766,17 +11786,17 @@ span {
     font-size: 11px;
 }
 .menu .col h3 {
-    font-size: 16px;
-    padding: 10px 0;
-    font-weight: bold;
-    margin: 5px 0 5px 0;
-    color: #227087;
-    background: #eee;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #111;
+    line-height: 4;
 }
 .menu .col ul li a {
-    display: block;
+    display: inline-block;
+    font-size: 12px;
     padding: 0 0 15px 0;
-    color: #227087;
+    color: #111;
 }
 .menu .col ul li a:hover {
     color: #111;
