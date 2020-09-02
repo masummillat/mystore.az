@@ -23,19 +23,13 @@ const BannerAdArea = () => {
                                         <a
                                             href="http://localhost/mystore-az/public/-shoes-vh00-arSvf"
                                             className="banner-ad one">
-                                            <img
-                                                src="../../static/uploads/documents/ads/ad-1.jpg"
-                                                alt=""
-                                            />
+                                            <img src="../../static/uploads/documents/ads/ad-1.jpg" alt="" />
                                         </a>
                                     ) || <Skeleton count={5} />}
                                     <a
                                         href="http://localhost/mystore-az/public/-shoes-vh00-arSvf"
                                         className="banner-ad ">
-                                        <img
-                                            src="../../static/uploads/documents/ads/ad-2.jpg"
-                                            alt=""
-                                        />
+                                        <img src="../../static/uploads/documents/ads/ad-2.jpg" alt="" />
                                     </a>
                                 </div>
                             </div>

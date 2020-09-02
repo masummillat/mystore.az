@@ -88,9 +88,8 @@ class Blogs extends React.Component {
                                                                 />
                                                             </span>
                                                             <span className="blog-title">
-                                                                19 Bütün Sinqapurluların sınaması
-                                                                üçün yüksək dərəcədə bədbəxt
-                                                                məhsullar
+                                                                19 Bütün Sinqapurluların sınaması üçün yüksək dərəcədə
+                                                                bədbəxt məhsullar
                                                             </span>
                                                         </a>
                                                     </Link>

@@ -164,8 +164,7 @@ export const featuredStore = [
     {
         id: 1,
         name: 'MyStore.Az',
-        img:
-            '../../static/uploads/documents/shop/23621966_1772482562784565_5243729752846279838_n.jpg',
+        img: '../../static/uploads/documents/shop/23621966_1772482562784565_5243729752846279838_n.jpg',
         alt: 'MyStore.Az',
         ratedNumber: 0,
         sold: 19,
@@ -181,8 +180,7 @@ export const featuredStore = [
     {
         id: 3,
         name: 'Update tech shop',
-        img:
-            '../../static/uploads/documents/shop/90431606_640554376764220_8874958813719953408_n.jpg',
+        img: '../../static/uploads/documents/shop/90431606_640554376764220_8874958813719953408_n.jpg',
         alt: 'Update tech shop',
         ratedNumber: 1,
         sold: 7,
@@ -414,8 +412,7 @@ export const blogs = [
     {
         id: 5,
         title: 'what is the title ? ',
-        img:
-            '../../static/uploads/documents/blog/rsz_2avrielle-suleiman-gpvak9-cl6e-unsplash-696x522.jpg',
+        img: '../../static/uploads/documents/blog/rsz_2avrielle-suleiman-gpvak9-cl6e-unsplash-696x522.jpg',
         date: 'Jun 28, 2020',
     },
 ];

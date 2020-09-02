@@ -18,11 +18,7 @@ const AllCategoryModal = props => {
             </Modal.Header>
             <Modal.Body style={{ height: 760, overflow: 'hidden' }}>
                 <Row>
-                    <Col
-                        lg={5}
-                        md={5}
-                        className="border-right"
-                        style={{ height: 760, overflow: 'auto' }}>
+                    <Col lg={5} md={5} className="border-right" style={{ height: 760, overflow: 'auto' }}>
                         <ul>
                             <li>Categories</li>
                             {categories.map((category, ind) => (

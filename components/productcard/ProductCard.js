@@ -51,10 +51,7 @@ const ProductCard = ({ product, handleShowWishModal }) => {
 
                     <div className="single-product-sold-count">
                         <div className="single-product-sold-count-number">{sold} Sold</div>
-                        <div
-                            className="single-product-sold-count-bar"
-                            data-sold-count="0"
-                            data-total-count="0"></div>
+                        <div className="single-product-sold-count-bar" data-sold-count="0" data-total-count="0"></div>
                     </div>
 
                     <div className="single-product-meta-info mb-0">

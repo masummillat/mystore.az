@@ -19,10 +19,7 @@ const TechAndGadgets = () => {
                         className="single-blog-grid-view single-blog-grid-view--compact"
                         target="_blank">
                         <span className="blog-image">
-                            <img
-                                src="../static/uploads/documents/blog/imageedit_1_6507305620-696x522.jpg"
-                                alt=""
-                            />
+                            <img src="../static/uploads/documents/blog/imageedit_1_6507305620-696x522.jpg" alt="" />
                         </span>
                         <span className="blog-title"></span>
                         <span className="blogger-name-date">
@@ -40,10 +37,7 @@ const TechAndGadgets = () => {
                         className="single-blog-grid-view single-blog-grid-view--compact"
                         target="_blank">
                         <span className="blog-image">
-                            <img
-                                src="../static/uploads/documents/blog/BeFunky-collage-40-696x522.jpg"
-                                alt=""
-                            />
+                            <img src="../static/uploads/documents/blog/BeFunky-collage-40-696x522.jpg" alt="" />
                         </span>
                         <span className="blog-title"></span>
                         <span className="blogger-name-date">

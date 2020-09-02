@@ -47,18 +47,12 @@ class Home extends React.Component {
                 <BannerAdArea />
                 <FeaturedCategories featuredCats={featuredCats} />
                 <FlashDeal handleShowWishModal={this.handleShowWishModal} flashDeals={flashDeals} />
-                <ProductStatusCategory
-                    handleShowWishModal={this.handleShowWishModal}
-                    products={flashDeals}
-                />
+                <ProductStatusCategory handleShowWishModal={this.handleShowWishModal} products={flashDeals} />
                 <FeaturedStore />
                 <Facilities />
                 <style jsx>{``}</style>
 
-                <Modal
-                    aria-labelledby="contained-modal-title-vcenter"
-                    centered
-                    show={wishModalShow}>
+                <Modal aria-labelledby="contained-modal-title-vcenter" centered show={wishModalShow}>
                     <Modal.Body>
                         <h5> Please Login For Add to Wishlist</h5>
                     </Modal.Body>

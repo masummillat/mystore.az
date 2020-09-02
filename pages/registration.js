@@ -28,9 +28,7 @@ class Registration extends React.Component {
                                     </div>
                                     <div className="registration-login-message">
                                         <h3>Buy and Sell Easy Only at Mystore</h3>
-                                        <p>
-                                            Join and feel the ease of doing transactions on Mystore
-                                        </p>
+                                        <p>Join and feel the ease of doing transactions on Mystore</p>
                                         <Link href="/">
                                             <a>Go to Homepage</a>
                                         </Link>
@@ -41,9 +39,7 @@ class Registration extends React.Component {
                                 <div className="bordered-shadow-box">
                                     <div className="bordered-shadow-box-overflow-hidden">
                                         <div className="common-padded-box registration-login-box">
-                                            <div className="registration-login-header mb-2">
-                                                Hesabı yarat
-                                            </div>
+                                            <div className="registration-login-header mb-2">Hesabı yarat</div>
                                             <div className="row">
                                                 <div className="col-lg-12">
                                                     <div className="register-login-footer register-login-header mt-0 mb-3">
@@ -70,45 +66,37 @@ class Registration extends React.Component {
                                                                     values.email,
                                                                 )
                                                             ) {
-                                                                errors.email =
-                                                                    'Invalid email address';
+                                                                errors.email = 'Invalid email address';
                                                             }
                                                             if (!values.name) {
                                                                 errors.name = 'Name is required';
                                                             }
                                                             if (!values.phone_number) {
-                                                                errors.phone_number =
-                                                                    'Phone number is required';
+                                                                errors.phone_number = 'Phone number is required';
                                                             } else if (
                                                                 !/^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/i.test(
                                                                     values.phone_number,
                                                                 )
                                                             ) {
-                                                                errors.phone_number =
-                                                                    'Invalid phone number';
+                                                                errors.phone_number = 'Invalid phone number';
                                                             }
                                                             if (!values.password) {
-                                                                errors.password =
-                                                                    'Password is required';
+                                                                errors.password = 'Password is required';
                                                             }
                                                             if (!values.password_confirmation) {
                                                                 errors.password_confirmation =
                                                                     'Password confirmation is required';
                                                             } else if (
-                                                                values.password !==
-                                                                values.password_confirmation
+                                                                values.password !== values.password_confirmation
                                                             ) {
-                                                                errors.password_confirmation =
-                                                                    "Password doesn't match";
+                                                                errors.password_confirmation = "Password doesn't match";
                                                             }
 
                                                             return errors;
                                                         }}
                                                         onSubmit={(values, { setSubmitting }) => {
                                                             setTimeout(() => {
-                                                                alert(
-                                                                    JSON.stringify(values, null, 2),
-                                                                );
+                                                                alert(JSON.stringify(values, null, 2));
                                                                 setSubmitting(false);
                                                             }, 400);
                                                         }}>
@@ -139,9 +127,7 @@ class Registration extends React.Component {
                                                                             onBlur={handleBlur}
                                                                             value={values.name}
                                                                         />
-                                                                        {errors.name &&
-                                                                            touched.name &&
-                                                                            errors.name}
+                                                                        {errors.name && touched.name && errors.name}
                                                                     </div>
                                                                     <div className="form-group">
                                                                         <label htmlFor="email">
@@ -156,9 +142,7 @@ class Registration extends React.Component {
                                                                             onBlur={handleBlur}
                                                                             value={values.email}
                                                                         />
-                                                                        {errors.email &&
-                                                                            touched.email &&
-                                                                            errors.email}
+                                                                        {errors.email && touched.email && errors.email}
                                                                     </div>
 
                                                                     <div className="form-group">
@@ -171,9 +155,7 @@ class Registration extends React.Component {
                                                                             placeholder="Mobil nömrə"
                                                                             onChange={handleChange}
                                                                             onBlur={handleBlur}
-                                                                            value={
-                                                                                values.phone_number
-                                                                            }
+                                                                            value={values.phone_number}
                                                                         />
                                                                         {errors.phone_number &&
                                                                             touched.phone_number &&
@@ -207,9 +189,7 @@ class Registration extends React.Component {
                                                                             placeholder="Şifrəni təsdiqləyin"
                                                                             onChange={handleChange}
                                                                             onBlur={handleBlur}
-                                                                            value={
-                                                                                values.password_confirmation
-                                                                            }
+                                                                            value={values.password_confirmation}
                                                                         />
                                                                         {errors.password_confirmation &&
                                                                             touched.password &&
@@ -221,13 +201,9 @@ class Registration extends React.Component {
                                                                                 type="checkbox"
                                                                                 name="tos_accept"
                                                                                 id="terms-check"
-                                                                                onChange={
-                                                                                    handleChange
-                                                                                }
+                                                                                onChange={handleChange}
                                                                                 onBlur={handleBlur}
-                                                                                value={
-                                                                                    values.tos_accept
-                                                                                }
+                                                                                value={values.tos_accept}
                                                                             />
                                                                             {errors.tos_accept &&
                                                                                 touched.tos_accept &&
@@ -235,13 +211,11 @@ class Registration extends React.Component {
                                                                             <label htmlFor="terms-check">
                                                                                 {' '}
                                                                                 <span>
-                                                                                    registration.By
-                                                                                    signing up you
-                                                                                    agree to our
+                                                                                    registration.By signing up you agree
+                                                                                    to our
                                                                                 </span>{' '}
                                                                                 <a href="terms-condition.html">
-                                                                                    Şərtlər və
-                                                                                    qaydalar
+                                                                                    Şərtlər və qaydalar
                                                                                 </a>{' '}
                                                                             </label>
                                                                         </div>
@@ -249,8 +223,7 @@ class Registration extends React.Component {
                                                                     <div className="form-group">
                                                                         <button
                                                                             disabled={
-                                                                                !values.tos_accept ||
-                                                                                isSubmitting
+                                                                                !values.tos_accept || isSubmitting
                                                                             }
                                                                             type="submit">
                                                                             Hesabı yarat
@@ -273,9 +246,7 @@ class Registration extends React.Component {
                                                                     <span className="icon">
                                                                         <i className="fab fa-google"></i>
                                                                     </span>
-                                                                    <span className="text">
-                                                                        Google
-                                                                    </span>
+                                                                    <span className="text">Google</span>
                                                                 </a>
                                                             </li>
                                                             <li>
@@ -285,9 +256,7 @@ class Registration extends React.Component {
                                                                     <span className="icon">
                                                                         <i className="fab fa-facebook-f"></i>
                                                                     </span>
-                                                                    <span className="text">
-                                                                        Facebook
-                                                                    </span>
+                                                                    <span className="text">Facebook</span>
                                                                 </a>
                                                             </li>
                                                         </ul>

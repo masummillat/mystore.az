@@ -15,22 +15,10 @@ var settings = {
 const HeroBanner = () => {
     return (
         <Slider {...settings}>
-            <img
-                className="d-block w-100"
-                src="../../static/uploads/documents/slider/b-4.jpg"
-                alt="First slide"
-            />
-            <img
-                className="d-block w-100"
-                src="../../static/uploads/documents/slider/b-3.jpg"
-                alt="Second slide"
-            />
+            <img className="d-block w-100" src="../../static/uploads/documents/slider/b-4.jpg" alt="First slide" />
+            <img className="d-block w-100" src="../../static/uploads/documents/slider/b-3.jpg" alt="Second slide" />
 
-            <img
-                className="d-block w-100"
-                src="../../static/uploads/documents/slider/b-1.jpg"
-                alt="Third slide"
-            />
+            <img className="d-block w-100" src="../../static/uploads/documents/slider/b-1.jpg" alt="Third slide" />
         </Slider>
     );
 };

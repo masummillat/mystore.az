@@ -33,22 +33,20 @@ class CustomerService extends React.Component {
                                         </div>
                                         <div className="common-page-content">
                                             <p>
-                                                Mystore.az takes pride in providing excellent
-                                                customer service and response. We are committed to
-                                                serve our customer within the shortest response time
-                                                as possible. Have a question or an issue with your
-                                                account? No worries, just let us know, and
-                                                we&#039;ll get back to you, anytime of the day!
-                                                Having questions on how to use Freelor to earn
-                                                cashback? View our New User Guide here. We welcome
-                                                feedback on our products and services as well,
-                                                please share with us how we can better serve you!
+                                                Mystore.az takes pride in providing excellent customer service and
+                                                response. We are committed to serve our customer within the shortest
+                                                response time as possible. Have a question or an issue with your
+                                                account? No worries, just let us know, and we&#039;ll get back to you,
+                                                anytime of the day! Having questions on how to use Freelor to earn
+                                                cashback? View our New User Guide here. We welcome feedback on our
+                                                products and services as well, please share with us how we can better
+                                                serve you!
                                             </p>
                                             <h3>Our Customer Support:</h3>
                                             <ul>
                                                 <li>
-                                                    Email to us - support@mystore.az Contact us via
-                                                    our Facebook Page - mystore
+                                                    Email to us - support@mystore.az Contact us via our Facebook Page -
+                                                    mystore
                                                 </li>
                                             </ul>
                                             <p>

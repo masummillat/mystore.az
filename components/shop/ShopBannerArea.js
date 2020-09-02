@@ -49,10 +49,7 @@ const ShopBannerArea = () => {
                                 </a>
 
                                 <div className="shop-follow-area">
-                                    <a
-                                        href="../login.html"
-                                        name="button"
-                                        className="shop-follow-btn">
+                                    <a href="../login.html" name="button" className="shop-follow-btn">
                                         Follow
                                     </a>
                                     <div className="follow-number">1 Following</div>

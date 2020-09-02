@@ -31,15 +31,7 @@ const ProductFilter = () => {
                             setSubmitting(false);
                         }, 400);
                     }}>
-                    {({
-                        values,
-                        errors,
-                        touched,
-                        handleChange,
-                        handleBlur,
-                        handleSubmit,
-                        isSubmitting,
-                    }) => (
+                    {({ values, errors, touched, handleChange, handleBlur, handleSubmit, isSubmitting }) => (
                         <Form className="product-filter-area">
                             <Form.Group>
                                 <div className="product-filter-box">
@@ -57,11 +49,7 @@ const ProductFilter = () => {
                                             aria-labelledby="checkbox-group">
                                             {categories.map((category, ind) => (
                                                 <Form.Label key={category.id}>
-                                                    <Field
-                                                        type="checkbox"
-                                                        name="checked"
-                                                        value={category.id}
-                                                    />
+                                                    <Field type="checkbox" name="checked" value={category.id} />
                                                     <span>
                                                         {category.title} {category.availableProduct}
                                                     </span>
@@ -80,28 +68,18 @@ const ProductFilter = () => {
                             {/*    Filter*/}
                             {/*</button>*/}
                             <Form.Group className="product-filter-box">
-                                <Form.Label className="product-filter-header">
-                                    Shipping Options
-                                </Form.Label>
+                                <Form.Label className="product-filter-header">Shipping Options</Form.Label>
                                 <div className="product-filter-list">
                                     <div
                                         style={{ display: 'flex', flexDirection: 'column' }}
                                         role="group"
                                         aria-labelledby="checkbox-group">
                                         <Form.Label>
-                                            <Field
-                                                type="checkbox"
-                                                name="shipping"
-                                                value="Overseas: Standard Express"
-                                            />
+                                            <Field type="checkbox" name="shipping" value="Overseas: Standard Express" />
                                             Overseas: Standard Express
                                         </Form.Label>
                                         <Form.Label>
-                                            <Field
-                                                type="checkbox"
-                                                name="shipping"
-                                                value="Overseas: Standard Economy"
-                                            />
+                                            <Field type="checkbox" name="shipping" value="Overseas: Standard Economy" />
                                             Overseas: Standard Economy
                                         </Form.Label>
                                     </div>
@@ -109,9 +87,7 @@ const ProductFilter = () => {
                             </Form.Group>
 
                             <Form.Group className="product-filter-box">
-                                <Form.Label className="product-filter-header">
-                                    Price Range
-                                </Form.Label>
+                                <Form.Label className="product-filter-header">Price Range</Form.Label>
                                 <div className="price-range-filter">
                                     <div className="product-price-filter">
                                         <Field type="range" name="price-range" />
@@ -126,10 +102,7 @@ const ProductFilter = () => {
                             <Form.Group className="product-filter-box">
                                 <Form.Label className="product-filter-header">Reviews</Form.Label>
                                 <div className="product-review-list">
-                                    <a
-                                        href="#"
-                                        className="single-product-review-option active"
-                                        data-filter="7">
+                                    <a href="#" className="single-product-review-option active" data-filter="7">
                                         <span className="option-name-area">
                                             <span className="option-radio" />
                                             <span className="option-name">All Reviews</span>
@@ -168,19 +141,11 @@ const ProductFilter = () => {
                                         role="group"
                                         aria-labelledby="checkbox-group">
                                         <Form.Label>
-                                            <Field
-                                                type="checkbox"
-                                                name="payment"
-                                                value="Credit Card"
-                                            />
+                                            <Field type="checkbox" name="payment" value="Credit Card" />
                                             Credit Card
                                         </Form.Label>
                                         <Form.Label>
-                                            <Field
-                                                type="checkbox"
-                                                name="payment"
-                                                value="Cash On Delivery"
-                                            />
+                                            <Field type="checkbox" name="payment" value="Cash On Delivery" />
                                             Cash On Delivery
                                         </Form.Label>
                                     </div>

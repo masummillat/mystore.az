@@ -25,19 +25,13 @@ const FeaturedStore = () => {
                                                         <a className="official">Rəsmi satıcılar</a>
                                                     </li>
                                                     <li>
-                                                        <a className="feature">
-                                                            Seçilmiş mağazalar
-                                                        </a>
+                                                        <a className="feature">Seçilmiş mağazalar</a>
                                                     </li>
                                                     <li>
-                                                        <a className="selling_merchants">
-                                                            Ən çox satan satıcılar
-                                                        </a>
+                                                        <a className="selling_merchants">Ən çox satan satıcılar</a>
                                                     </li>
                                                     <li>
-                                                        <a className="top_rated_merchants">
-                                                            Ən reytinqli satıcılar
-                                                        </a>
+                                                        <a className="top_rated_merchants">Ən reytinqli satıcılar</a>
                                                     </li>
                                                 </ul>
                                             </div>

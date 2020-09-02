@@ -89,9 +89,7 @@ const BlogDetails = () => {
                                                                 Men&#039;s Casual Shirt-1070
                                                             </a>
                                                         </h5>
-                                                        <div className="single-recommend-product-price">
-                                                            $1500
-                                                        </div>
+                                                        <div className="single-recommend-product-price">$1500</div>
                                                         <a
                                                             href="../-Mens-Casual-Shirt-1070-WXIuy.html"
                                                             className="single-recommend-product-buy-button">
@@ -106,8 +104,8 @@ const BlogDetails = () => {
                                     <p></p>
 
                                     <p className="blog-credit">
-                                        This article was updated on Jun 09, 2020. Additional
-                                        research done by MyStore Team.
+                                        This article was updated on Jun 09, 2020. Additional research done by MyStore
+                                        Team.
                                     </p>
 
                                     <div className="blog-tags">
@@ -171,9 +169,7 @@ const BlogDetails = () => {
                                         <div className="row">
                                             <div className="col-6 text-right">
                                                 <div className="blog-previous-post">
-                                                    <div className="blog-prev-next-post-title">
-                                                        Next article
-                                                    </div>
+                                                    <div className="blog-prev-next-post-title">Next article</div>
                                                     <a href="3-.html"></a>
                                                 </div>
                                             </div>
@@ -228,9 +224,7 @@ const BlogDetails = () => {
                                                 aria-labelledby="related-post-tab">
                                                 <div className="related-post-carousel owl-carousel">
                                                     <div className="single-related-post">
-                                                        <a
-                                                            href="2-.html"
-                                                            className="related-post-image">
+                                                        <a href="2-.html" className="related-post-image">
                                                             <img
                                                                 src="../../static/uploads/documents/blog/hair-care-routine-singapore-featured-1-696x522.jpg"
                                                                 alt=""
@@ -262,18 +256,14 @@ const BlogDetails = () => {
                                                 aria-labelledby="more-author-tab">
                                                 <div className="more-author-post-carousel owl-carousel">
                                                     <div className="single-more-author-post">
-                                                        <a
-                                                            href="#"
-                                                            className="more-author-post-image">
+                                                        <a href="#" className="more-author-post-image">
                                                             <img
                                                                 src="../../static/uploads/documents/products/1070.2.jpg"
                                                                 alt=""
                                                             />
                                                         </a>
                                                         <div className="more-author-post-title">
-                                                            <a href="#">
-                                                                Men&#039;s Casual Shirt-1070
-                                                            </a>
+                                                            <a href="#">Men&#039;s Casual Shirt-1070</a>
                                                         </div>
                                                     </div>
                                                 </div>

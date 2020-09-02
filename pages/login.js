@@ -20,9 +20,7 @@ class LoginComponent extends React.Component {
                                     <div className="bordered-shadow-box">
                                         <div className="bordered-shadow-box-overflow-hidden">
                                             <div className="common-padded-box registration-login-box">
-                                                <div className="registration-login-header">
-                                                    login.loginHeader
-                                                </div>
+                                                <div className="registration-login-header">login.loginHeader</div>
                                                 <div className="row">
                                                     <div className="col-lg-12">
                                                         <Formik
@@ -34,35 +32,23 @@ class LoginComponent extends React.Component {
                                                             validate={values => {
                                                                 const errors = {};
                                                                 if (!values.email) {
-                                                                    errors.email =
-                                                                        'Email is required';
+                                                                    errors.email = 'Email is required';
                                                                 } else if (
                                                                     !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(
                                                                         values.email,
                                                                     )
                                                                 ) {
-                                                                    errors.email =
-                                                                        'Invalid email address';
+                                                                    errors.email = 'Invalid email address';
                                                                 }
                                                                 if (!values.password) {
-                                                                    errors.password =
-                                                                        'Password is required';
+                                                                    errors.password = 'Password is required';
                                                                 }
                                                                 return errors;
                                                             }}
-                                                            onSubmit={(
-                                                                values,
-                                                                { setSubmitting },
-                                                            ) => {
+                                                            onSubmit={(values, { setSubmitting }) => {
                                                                 setTimeout(() => {
-                                                                    localStorage.setItem(
-                                                                        'loggedIn',
-                                                                        true,
-                                                                    );
-                                                                    localStorage.setItem(
-                                                                        'email',
-                                                                        values.email,
-                                                                    );
+                                                                    localStorage.setItem('loggedIn', true);
+                                                                    localStorage.setItem('email', values.email);
                                                                     this.props.router.push('/');
                                                                     // alert(
                                                                     //     JSON.stringify(
@@ -97,9 +83,7 @@ class LoginComponent extends React.Component {
                                                                                 id="log-email"
                                                                                 name="email"
                                                                                 placeholder="Elektron poçt"
-                                                                                onChange={
-                                                                                    handleChange
-                                                                                }
+                                                                                onChange={handleChange}
                                                                                 onBlur={handleBlur}
                                                                                 value={values.email}
                                                                             />
@@ -116,13 +100,9 @@ class LoginComponent extends React.Component {
                                                                                 id="log-password"
                                                                                 name="password"
                                                                                 placeholder="Şifrə"
-                                                                                onChange={
-                                                                                    handleChange
-                                                                                }
+                                                                                onChange={handleChange}
                                                                                 onBlur={handleBlur}
-                                                                                value={
-                                                                                    values.password
-                                                                                }
+                                                                                value={values.password}
                                                                             />
                                                                             {errors.password &&
                                                                                 touched.password &&
@@ -135,15 +115,9 @@ class LoginComponent extends React.Component {
                                                                                     type="checkbox"
                                                                                     name="checked"
                                                                                     id="log-check"
-                                                                                    onChange={
-                                                                                        handleChange
-                                                                                    }
-                                                                                    onBlur={
-                                                                                        handleBlur
-                                                                                    }
-                                                                                    value={
-                                                                                        values.checked
-                                                                                    }
+                                                                                    onChange={handleChange}
+                                                                                    onBlur={handleBlur}
+                                                                                    value={values.checked}
                                                                                 />
                                                                                 <label htmlFor="log-check">
                                                                                     Məni xatırla
@@ -157,9 +131,7 @@ class LoginComponent extends React.Component {
                                                                         </div>
                                                                         <div className="form-group">
                                                                             <button
-                                                                                disabled={
-                                                                                    isSubmitting
-                                                                                }
+                                                                                disabled={isSubmitting}
                                                                                 type="submit">
                                                                                 Login
                                                                             </button>
@@ -182,9 +154,7 @@ class LoginComponent extends React.Component {
                                                                         <span className="icon">
                                                                             <i className="fab fa-google"></i>
                                                                         </span>
-                                                                        <span className="text">
-                                                                            Google
-                                                                        </span>
+                                                                        <span className="text">Google</span>
                                                                     </a>
                                                                 </li>
                                                                 <li>
@@ -194,9 +164,7 @@ class LoginComponent extends React.Component {
                                                                         <span className="icon">
                                                                             <i className="fab fa-facebook-f"></i>
                                                                         </span>
-                                                                        <span className="text">
-                                                                            Facebook
-                                                                        </span>
+                                                                        <span className="text">Facebook</span>
                                                                     </a>
                                                                 </li>
                                                             </ul>
@@ -231,10 +199,7 @@ class LoginComponent extends React.Component {
                                         </div>
                                         <div className="registration-login-message">
                                             <h3>Buy and Sell Easy Only at Mystore</h3>
-                                            <p>
-                                                Login and feel the ease of doing transactions on
-                                                Mystore
-                                            </p>
+                                            <p>Login and feel the ease of doing transactions on Mystore</p>
                                             <Link href="/">
                                                 <a>Go to Homepage</a>
                                             </Link>

@@ -23,9 +23,7 @@ const ShoppingContents = () => {
                         </div>
                         <div className="product-filter-right-area">
                             <div className="product-grid-list-option">
-                                <button
-                                    type="button"
-                                    className="product-list-grid-option-select active">
+                                <button type="button" className="product-list-grid-option-select active">
                                     <i className="fas fa-th" />
                                 </button>
                                 <button type="button" className="product-list-grid-option-select">

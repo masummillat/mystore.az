@@ -7,14 +7,7 @@ import { categories, featured } from '../../constants/data';
 import MegaMenu, { MenuItem } from './MegaMenu';
 import AllCategoryModal from './AllCategoryModal';
 
-const HeaderBottom = ({
-    searchText,
-    category,
-    categoriesOptions,
-    handleSearch,
-    handleCategory,
-    handleSubmit,
-}) => {
+const HeaderBottom = ({ searchText, category, categoriesOptions, handleSearch, handleCategory, handleSubmit }) => {
     const [modalShow, setModalShow] = useState(false);
     return (
         <div className="header-area">
@@ -30,9 +23,7 @@ const HeaderBottom = ({
                                 </Link>
                             </div>
                             <nav className="navbar navbar-expand-lg navbar-light">
-                                <div
-                                    className="collapse navbar-collapse"
-                                    id="navbarSupportedContent">
+                                <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul className="navbar-nav mr-auto">
                                         <li className="nav-item dropdown category-area">
                                             <a
@@ -46,15 +37,10 @@ const HeaderBottom = ({
                                                 <i className="fas fa-bars"></i>
                                                 &nbsp;&nbsp;Categories
                                             </a>
-                                            <div
-                                                className="dropdown-menu"
-                                                aria-labelledby="navbarDropdown">
+                                            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                                                 <ul className="menu">
                                                     {categories.slice(0, 12).map(category => (
-                                                        <MenuItem
-                                                            category={category}
-                                                            key={category.id}
-                                                        />
+                                                        <MenuItem category={category} key={category.id} />
                                                     ))}
                                                     <li
                                                         style={{
@@ -79,10 +65,7 @@ const HeaderBottom = ({
                     <AllCategoryModal show={modalShow} onHide={() => setModalShow(false)} />
                     <div className="col-lg-8">
                         <div className="header-search-area">
-                            <Form
-                                id="search"
-                                method="GET"
-                                action="https://beta.mystore.az/search-product">
+                            <Form id="search" method="GET" action="https://beta.mystore.az/search-product">
                                 <div className="header-search-form">
                                     <Form.Group>
                                         <Form.Control
@@ -109,10 +92,7 @@ const HeaderBottom = ({
                                     </li>
                                     <li>
                                         {' '}
-                                        <a href="-Samsung-Galaxy-A51-64GB-VsMwz.html">
-                                            {' '}
-                                            Samsung Galaxy A51 64GB
-                                        </a>{' '}
+                                        <a href="-Samsung-Galaxy-A51-64GB-VsMwz.html"> Samsung Galaxy A51 64GB</a>{' '}
                                     </li>
                                     <li>
                                         {' '}
@@ -153,10 +133,7 @@ const HeaderBottom = ({
                                                 <div className="header-cart-item">
                                                     <div className="empty-content-box">
                                                         <div className="empty-content-box-icon">
-                                                            <img
-                                                                src="../../static/img/empty-cart.png"
-                                                                alt=""
-                                                            />
+                                                            <img src="../../static/img/empty-cart.png" alt="" />
                                                         </div>
                                                         <div className="empty-content-box-message">
                                                             Your cart is empty!!

@@ -11,8 +11,7 @@ i18n.use(LanguageDetector)
                 translations: {
                     //facilities
                     'Great value': 'Great value',
-                    'We offer competitive prices for products':
-                        'We offer competitive prices for products',
+                    'We offer competitive prices for products': 'We offer competitive prices for products',
                     '24/7 support center': '24/7 support center',
                     'Day and night support for a comfortable shopping experience.':
                         'Day and night support for a comfortable shopping experience.',
@@ -31,8 +30,7 @@ i18n.use(LanguageDetector)
                 translations: {
                     //facilities
                     'Great value': 'Böyük dəyər',
-                    'We offer competitive prices for products':
-                        'Məhsullara rəqabətli qiymətlər təklif edirik',
+                    'We offer competitive prices for products': 'Məhsullara rəqabətli qiymətlər təklif edirik',
                     '24/7 support center': '24/7 dəstək mərkəzi',
                     'Day and night support for a comfortable shopping experience.':
                         'Rahat bir alış-veriş təcrübəsi üçün gecə-gündüz dəstək.',

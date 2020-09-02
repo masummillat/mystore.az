@@ -5,5 +5,5 @@
     "jsxBracketSameLine": true,
     "trailingComma": "all",
     "htmlWhitespaceSensitivity": "ignore",
-    "printWidth": 100
+    "printWidth": 120
 }

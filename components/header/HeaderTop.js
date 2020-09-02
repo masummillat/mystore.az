@@ -265,13 +265,8 @@ const HeaderTop = ({
                                                                 <a
                                                                     onClick={() => {
                                                                         setIsLoggedIn(false);
-                                                                        if (
-                                                                            typeof window !==
-                                                                            'undefined'
-                                                                        ) {
-                                                                            localStorage.removeItem(
-                                                                                'loggedIn',
-                                                                            );
+                                                                        if (typeof window !== 'undefined') {
+                                                                            localStorage.removeItem('loggedIn');
                                                                         }
                                                                     }}>
                                                                     Log Out

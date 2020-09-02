@@ -14,27 +14,21 @@ const Footer = () => {
                                     </a>
                                 </div>
                                 <div className="footer-about-text">
-                                    It is a long established fact that a reader will be distracted
-                                    by the readable content of a page when looking at its layout.
-                                    The point of using Lorem Ipsum is that it has a more-or-less
-                                    normal distribution of letters, as opposed to using
-                                    &#039;Content here, content here&#039;, making it look like
-                                    readable English. Many desktop publishing packages and web page
-                                    editors now use Lorem Ipsum as their default model text, and a
-                                    search for &#039;lorem ipsum&#039; will uncover many web sites
-                                    still in their infancy. Various versions have evolved over the
-                                    years, sometimes by accident, sometimes on purpose (injected
-                                    humour and the like).
+                                    It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout. The point of using Lorem Ipsum is that
+                                    it has a more-or-less normal distribution of letters, as opposed to using
+                                    &#039;Content here, content here&#039;, making it look like readable English. Many
+                                    desktop publishing packages and web page editors now use Lorem Ipsum as their
+                                    default model text, and a search for &#039;lorem ipsum&#039; will uncover many web
+                                    sites still in their infancy. Various versions have evolved over the years,
+                                    sometimes by accident, sometimes on purpose (injected humour and the like).
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-4 offset-2">
                             <div className="newsletter-box">
                                 <h3>Yeniliklər üçün abunə olun</h3>
-                                <p>
-                                    Yeni məhsullarımız və xüsusi kampaniyalar haqqında dərhal
-                                    məlumat əldə edin!
-                                </p>
+                                <p>Yeni məhsullarımız və xüsusi kampaniyalar haqqında dərhal məlumat əldə edin!</p>
                                 <div className="newsletter-form">
                                     <form
                                         method="POST"
@@ -45,11 +39,7 @@ const Footer = () => {
                                             type="hidden"
                                             value="RfJ1YgLyUfPcMNu0u4zETpbTsVzhQOR7FsBVaJ6V"
                                         />
-                                        <input
-                                            type="email"
-                                            name="email"
-                                            placeholder="E-poçt ünvanınızı daxil edin"
-                                        />
+                                        <input type="email" name="email" placeholder="E-poçt ünvanınızı daxil edin" />
                                         <button type="submit">
                                             <i className="fas fa-location-arrow"></i>
                                         </button>
@@ -72,16 +62,12 @@ const Footer = () => {
                                             </a>
                                         </li>
                                         <li>
-                                            <a
-                                                href="https://www.instagram.com/mystore"
-                                                className="linkedin">
+                                            <a href="https://www.instagram.com/mystore" className="linkedin">
                                                 <i className="fab fa-linkedin-in"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a
-                                                href="https://www.instagram.com/"
-                                                className="instagram">
+                                            <a href="https://www.instagram.com/" className="instagram">
                                                 <i className="fab fa-instagram"></i>
                                             </a>
                                         </li>
@@ -185,14 +171,10 @@ const Footer = () => {
                                         <a href="category/2-ev-bagca.html">Ev &amp; bağça</a>
                                     </li>
                                     <li>
-                                        <a href="category/4-korpe-mehsullari.html">
-                                            Körpə məhsulları
-                                        </a>
+                                        <a href="category/4-korpe-mehsullari.html">Körpə məhsulları</a>
                                     </li>
                                     <li>
-                                        <a href="category/5-gozellik-ve-saglamliq.html">
-                                            Gözəllik və sağlamlıq
-                                        </a>
+                                        <a href="category/5-gozellik-ve-saglamliq.html">Gözəllik və sağlamlıq</a>
                                     </li>
                                 </ul>
                             </div>
@@ -203,18 +185,12 @@ const Footer = () => {
                                 <ul>
                                     <li>
                                         <a href="#">
-                                            <img
-                                                src="../../static/img/ic-download-ios.png"
-                                                alt=""
-                                            />
+                                            <img src="../../static/img/ic-download-ios.png" alt="" />
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <img
-                                                src="../../static/img/ic-download-android.png"
-                                                alt=""
-                                            />
+                                            <img src="../../static/img/ic-download-android.png" alt="" />
                                         </a>
                                     </li>
                                 </ul>

@@ -11,10 +11,7 @@ const Facilities = () => {
                         <div className="single-feature-box">
                             <div className="single-feature-icon">
                                 {/*<i class="fas fa-money-check-alt"></i> */}
-                                <img
-                                    src="../../static/uploads/documents/CompanyFeature/1.png"
-                                    alt=""
-                                />
+                                <img src="../../static/uploads/documents/CompanyFeature/1.png" alt="" />
                             </div>
                             <div className="single-feature-info">
                                 {/*<h4>{t("Great value")}</h4>*/}
@@ -27,10 +24,7 @@ const Facilities = () => {
                         <div className="single-feature-box">
                             <div className="single-feature-icon">
                                 {/*<i class="fas fa-money-check-alt"></i>*/}
-                                <img
-                                    src="../../static/uploads/documents/CompanyFeature/5.png"
-                                    alt=""
-                                />
+                                <img src="../../static/uploads/documents/CompanyFeature/5.png" alt="" />
                             </div>
                             <div className="single-feature-info">
                                 <h4>24/7 dəstək mərkəzi</h4>
@@ -42,17 +36,11 @@ const Facilities = () => {
                         <div className="single-feature-box">
                             <div className="single-feature-icon">
                                 {/*<i class="fas fa-money-check-alt"></i>*/}
-                                <img
-                                    src="../../static/uploads/documents/CompanyFeature/4.png"
-                                    alt=""
-                                />
+                                <img src="../../static/uploads/documents/CompanyFeature/4.png" alt="" />
                             </div>
                             <div className="single-feature-info">
                                 <h4>Güvənli alış-veriş</h4>
-                                <p>
-                                    İstifadəçilərimizi qorumaq klikdən təslimə qədər alışınızı əhatə
-                                    edir.
-                                </p>
+                                <p>İstifadəçilərimizi qorumaq klikdən təslimə qədər alışınızı əhatə edir.</p>
                             </div>
                         </div>
                     </div>
@@ -60,10 +48,7 @@ const Facilities = () => {
                         <div className="single-feature-box">
                             <div className="single-feature-icon">
                                 {/*<i class="fas fa-money-check-alt"></i> */}
-                                <img
-                                    src="../../static/uploads/documents/CompanyFeature/3.png"
-                                    alt=""
-                                />
+                                <img src="../../static/uploads/documents/CompanyFeature/3.png" alt="" />
                             </div>
                             <div className="single-feature-info">
                                 <h4>Təhlükəsiz Ödəniş</h4>
@@ -75,10 +60,7 @@ const Facilities = () => {
                         <div className="single-feature-box">
                             <div className="single-feature-icon">
                                 {/*<i class="fas fa-money-check-alt"></i> */}
-                                <img
-                                    src="../../static/uploads/documents/CompanyFeature/2.png"
-                                    alt=""
-                                />
+                                <img src="../../static/uploads/documents/CompanyFeature/2.png" alt="" />
                             </div>
                             <div className="single-feature-info">
                                 <h4>Ümumdünya çatdırılma</h4>

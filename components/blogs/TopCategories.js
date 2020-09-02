@@ -61,9 +61,7 @@ const TopCategories = () => {
                         </span>
                         <span className="text">Health &amp; Fitness</span>
                     </a>
-                    <a
-                        href="blog-category/4-fashion-and-beauty.html"
-                        className="single-blog-category">
+                    <a href="blog-category/4-fashion-and-beauty.html" className="single-blog-category">
                         <span className="icon">
                             <img
                                 src="../../static/uploads/documents/blog_category/cleaning%20equipment-01-01%20copy.png"
