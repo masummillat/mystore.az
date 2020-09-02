@@ -1,8 +1,13 @@
 import React from 'react';
+import Head from '../../components/Head';
 
 class Category extends React.Component {
     render() {
-        return <h1>Single Category Page</h1>;
+
+        return<>
+            <Head title="category"/>
+            <h1>Single Category Page</h1>
+        </>;
     }
 }
 

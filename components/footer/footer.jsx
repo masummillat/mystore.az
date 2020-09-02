@@ -9,9 +9,11 @@ const Footer = () => {
                         <div className="col-lg-6">
                             <div className="footer-about">
                                 <div className="footer-logo">
-                                    <a href="index.html">
-                                        <img src="../../static/img/logo3.png" alt="" />
-                                    </a>
+                                    <Link href="/">
+                                        <a>
+                                            <img src="../../static/img/logo3.png" alt="" />
+                                        </a>
+                                    </Link>
                                 </div>
                                 <div className="footer-about-text">
                                     It is a long established fact that a reader will be distracted by the readable
@@ -92,16 +94,16 @@ const Footer = () => {
 
                                 <ul>
                                     <li>
-                                        <a href="payment-method.html">Ödənişlərin edilməsi</a>
+                                        <a href="/payment-method">Ödənişlərin edilməsi</a>
                                     </li>
                                     <li>
-                                        <a href="delivery-method.html">Çatdırılma seçimləri</a>
+                                        <a href="/delivery-method">Çatdırılma seçimləri</a>
                                     </li>
                                     <li>
-                                        <a href="buyer-protection.html">Alıcının qorunması</a>
+                                        <a href="/buyer-protection">Alıcının qorunması</a>
                                     </li>
                                     <li>
-                                        <a href="user-guide.html">Yeni İstifadəçi bələdçisi</a>
+                                        <a href="/user-guide">Yeni İstifadəçi bələdçisi</a>
                                     </li>
                                 </ul>
                             </div>
