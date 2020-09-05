@@ -1,12 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
-import Head from '../components/Head';
 import Slider from 'react-slick';
+import dynamic from 'next/dynamic';
 import TopCategories from '../components/blogs/TopCategories';
 import LatestBlogs from '../components/blogs/LatestBlogs';
 import HealthAndFitness from '../components/blogs/HealthAndFitness';
 import TechAndGadgets from '../components/blogs/TechAndGadgets';
 
+const Head = dynamic(import('../components/Head'));
 const settings = {
     dots: true,
     infinite: false,

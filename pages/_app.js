@@ -3,14 +3,14 @@ import 'slick-carousel/slick/slick-theme.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import App from 'next/app';
-import MainLayout from '../components/layouts/main';
-import DefaultLayout from '../components/layouts/default';
-
+import dynamic from 'next/dynamic';
+const DefaultLayout = dynamic(import('../components/layouts/default'));
+const MainLayout = dynamic(import('../components/layouts/main'));
 class MyApp extends App {
     render() {
         const { Component, pageProps } = this.props;
         const Layout = Component.Layout || DefaultLayout;
-
+        console.log(pageProps);
         return (
             <MainLayout>
                 <Layout>

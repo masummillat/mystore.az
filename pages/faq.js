@@ -1,9 +1,10 @@
 import React from 'react';
-import Head from '../components/Head';
+import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import QueryForm from '../components/faq/QueryForm';
 import FaqCard from '../components/faq/FaqCard';
 
+const Head = dynamic(import('../components/Head'));
 const faqs = [
     {
         id: 1,

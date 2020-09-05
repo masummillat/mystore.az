@@ -1,21 +1,15 @@
 import React from 'react';
 import Link from 'next/link';
-import { useEffect } from 'react';
+import dynamic from 'next/dynamic';
 import { Modal, Button } from 'react-bootstrap';
-import Head from '../components/Head';
-import Header from '../components/header/Header';
-import Footer from '../components/footer/footer';
-import MobileMenu from '../components/mobile/MobileMenu';
-import MobileCategory from '../components/mobile/MobileCategory';
-import BannerAdArea from '../components/banner/BannerAdArea';
-import FeaturedCategories from '../components/featuredcategories/FeaturedCategories';
-import FlashDeal from '../components/flashdeal/FlashDeal';
-import ProductStatusCategory from '../components/productstatus/ProductStatusCategory';
-import FeaturedStore from '../components/featuredstore/FeaturedStore';
-import Facilities from '../components/facilities/Facilities';
+const Head = dynamic(import('../components/Head'));
+const BannerAdArea = dynamic(() => import('../components/banner/BannerAdArea'), { loading: () => <p>Loading ....</p> });
+const FeaturedCategories = dynamic(import('../components/featuredcategories/FeaturedCategories'));
+const FlashDealSlider = dynamic(import('../components/flashdeal/FlashDealSlider'));
+const ProductStatusCategory = dynamic(import('../components/productstatus/ProductStatusCategory'));
+const FeaturedStore = dynamic(import('../components/featuredstore/FeaturedStore'));
+const Facilities = dynamic(import('../components/facilities/Facilities'));
 import { featured, products } from '../constants/data';
-import DefaultLayout from '../components/layouts/default';
-import Skeleton from 'react-loading-skeleton';
 
 class Home extends React.Component {
     constructor(props) {
@@ -46,7 +40,7 @@ class Home extends React.Component {
                 <Head title="Mystore.az" />
                 <BannerAdArea />
                 <FeaturedCategories featuredCats={featuredCats} />
-                <FlashDeal handleShowWishModal={this.handleShowWishModal} flashDeals={flashDeals} />
+                <FlashDealSlider handleShowWishModal={this.handleShowWishModal} flashDeals={flashDeals} />
                 <ProductStatusCategory handleShowWishModal={this.handleShowWishModal} products={flashDeals} />
                 <FeaturedStore />
                 <Facilities />

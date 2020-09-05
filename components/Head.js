@@ -36,6 +36,9 @@ const Head = props => (
         <link href="/static/css/style.css" rel="stylesheet" />
         <link href="/static/css/responsive.css" rel="stylesheet" />
         <link href="/static/css/style-green.css" rel="stylesheet" />
+        <link href="/static/css/chat.css" rel="stylesheet" />
+        <base href="/" />
+        <link />
     </NextHead>
 );
 

@@ -1,9 +1,10 @@
 import React from 'react';
 import Slider from 'react-slick';
+import Link from 'next/link';
 
 import ProductCard from '../productcard/ProductCard';
 
-const FlashDeal = ({ flashDeals, handleShowWishModal }) => {
+const FlashDealSlider = ({ flashDeals, handleShowWishModal }) => {
     const settings = {
         dots: true,
         infinite: false,
@@ -54,7 +55,9 @@ const FlashDeal = ({ flashDeals, handleShowWishModal }) => {
                                             </h3>
                                             <div className="flash-deals-timer"></div>
                                         </div>
-                                        <a href="flash/deals/products.html">See All</a>
+                                        <Link href="/flashdeal">
+                                            <a>See All</a>
+                                        </Link>
                                     </div>
                                     <div className="flash-deals-products-carousel">
                                         <Slider {...settings}>
@@ -77,4 +80,4 @@ const FlashDeal = ({ flashDeals, handleShowWishModal }) => {
     );
 };
 
-export default FlashDeal;
+export default FlashDealSlider;

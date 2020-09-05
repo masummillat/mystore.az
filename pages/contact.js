@@ -1,6 +1,7 @@
 import React from 'react';
 import { Formik } from 'formik';
-import Head from '../components/Head';
+import dynamic from 'next/dynamic';
+const Head = dynamic(import('../components/Head'));
 
 class Contact extends React.Component {
     render() {

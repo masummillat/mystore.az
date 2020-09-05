@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import Head from '../components/Head';
+import dynamic from 'next/dynamic';
+const Head = dynamic(import('../components/Head'));
 
 const Affiliate = () => {
     return (

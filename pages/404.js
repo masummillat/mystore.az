@@ -1,45 +1,55 @@
 // pages/404.js
-import Link from 'next/link';
-import BlankLayout from '../components/layouts/blank';
 import React from 'react';
-import Head from '../components/Head';
-
+import dynamic from 'next/dynamic';
+const Head = dynamic(import('../components/Head'));
+import BlankLayout from '../components/layouts/blank';
 export default function Custom404() {
     return (
         <>
             <Head title="404-not found" />
-            <div className="wrapper">
-                <span className="fourOfour">404</span>
-                {/*<p>Page Not Found</p>*/}
-                <h3>
-                    <Link href="/">
-                        <a>BACK TO HOME</a>
-                    </Link>
-                </h3>
+            <div className="flex-center position-ref full-height">
+                <div className="code">404</div>
+
+                <div className="message" style={{ padding: '10px' }}>
+                    Not Found
+                </div>
             </div>
-            <style jsx>
+            <style global jsx>
                 {`
-                    .wrapper {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        text-align: center;
-                        align-items: center;
+                    html,
+                    body {
+                        background-color: #fff;
+                        color: #636b6f;
+                        font-family: 'Nunito', sans-serif;
+                        font-weight: 100;
                         height: 100vh;
-                        background: #2b84c8;
-                        color: white;
+                        margin: 0;
                     }
-                    .fourOfour {
-                        font-size: 150px;
-                        font-weight: 900;
+
+                    .full-height {
+                        height: 100vh;
                     }
-                    .wrapper p {
-                        font-size: 25px;
-                        font-weight: 600;
+
+                    .flex-center {
+                        align-items: center;
+                        display: flex;
+                        justify-content: center;
                     }
-                    .wrapper a {
-                        color: white;
-                        text-decoration: none;
+
+                    .position-ref {
+                        position: relative;
+                    }
+
+                    .code {
+                        border-right: 2px solid;
+                        font-size: 26px;
+                        padding: 0 15px 0 15px;
+                        text-align: center;
+                    }
+
+                    .message {
+                        font-size: 18px;
+                        text-align: center;
                     }
                 `}
             </style>

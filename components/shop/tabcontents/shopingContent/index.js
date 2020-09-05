@@ -1,8 +1,8 @@
 import React from 'react';
 
 import { products } from '../../../../constants/data';
-import ProductFilter from './ProductFilter';
-import SingleProduct from './SingleProduct';
+import ProductFilter from '../../../filter/ProductFilter';
+import SingleProduct from '../../../productcard/SingleProduct';
 
 const ShoppingContents = () => {
     return (

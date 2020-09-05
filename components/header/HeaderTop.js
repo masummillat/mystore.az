@@ -200,10 +200,7 @@ const HeaderTop = ({
                                                     <h5>Recently Received Notifications</h5>
                                                     <div className="no-notification">
                                                         <div className="no-notification-image">
-                                                            <img
-                                                                src="https://beta.mystore.az/frontend/assets/img/no-notification.png"
-                                                                alt=""
-                                                            />
+                                                            <img src="../../static/img/no-notification.png" alt="" />
                                                         </div>
                                                         <div className="no-notification-message">
                                                             No New Notifications!

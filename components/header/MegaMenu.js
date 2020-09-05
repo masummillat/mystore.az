@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Button, OverlayTrigger, Popover } from 'react-bootstrap';
 
 import { featured } from '../../constants/data';
@@ -6,19 +7,27 @@ import { featured } from '../../constants/data';
 export const MenuItem = ({ category }) => {
     return (
         <li className="dropdown-item">
-            <a>
-                <img src={category.img} alt={category.title} />
-                {category.title}
-            </a>
+            <Link href={`/category/${category.id}`}>
+                <a>
+                    <img src={category.img} alt={category.title} />
+                    {category.title}
+                </a>
+            </Link>
             <div className="megadrop">
                 {category.sub &&
                     category.sub.map(s => (
                         <div key={s.id} className="col">
-                            <h3>{s.title}</h3>
+                            <Link href={`/category/${category.id}/${s.id}`}>
+                                <h3 style={{ cursor: 'pointer' }}>
+                                    <a>{s.title}</a>
+                                </h3>
+                            </Link>
                             <ul>
                                 {s.sub.map(ss => (
                                     <li key={ss.id}>
-                                        <a href="#">{ss.title}</a>
+                                        <Link href={`/category/${category.id}/${s.id}/${ss.id}`}>
+                                            <a>{ss.title}</a>
+                                        </Link>
                                     </li>
                                 ))}
                             </ul>

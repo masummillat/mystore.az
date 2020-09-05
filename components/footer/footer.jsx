@@ -3,6 +3,27 @@ import Link from 'next/link';
 const Footer = () => {
     return (
         <div>
+            <div className="floating-chat">
+                <i className="fa fa-comments" aria-hidden="true"></i>
+                <div className="chat">
+                    <div className="header">
+                        <span className="title">what's on your mind?</span>
+                        <button>
+                            <i className="fa fa-times" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <ul className="messages">
+                        <li className="other">asdasdasasdasdasasdasdasasdasdasasdasdasasdasdasasdasdas</li>
+                        <li className="other">Are we dogs??? 🐶</li>
+                        <li className="self">no... we're human</li>
+                        <li className="other">are you sure???</li>
+                    </ul>
+                    <div className="footer">
+                        <div className="text-box" contentEditable="true" disabled></div>
+                        <button id="sendMessage">send</button>
+                    </div>
+                </div>
+            </div>
             <section className="footer-section-one-area common-padding">
                 <div className="container">
                     <div className="row">

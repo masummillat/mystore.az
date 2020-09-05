@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Link from 'next/link';
 const ProductCard = ({ product, handleShowWishModal }) => {
     const { id, name, shopName, status, online, off, sold, img } = product;
 
@@ -26,9 +26,9 @@ const ProductCard = ({ product, handleShowWishModal }) => {
                     </a>
                 </div>
                 <div className="single-product-details">
-                    <a href="#" className="single-product-title">
-                        {name}
-                    </a>
+                    <Link href={`/products/${id}`}>
+                        <a className="single-product-title">{name}</a>
+                    </Link>
                     <div className="single-product-meta-info">
                         <div className="left-info">
                             <a href="#" className="single-product-store">

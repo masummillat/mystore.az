@@ -2,9 +2,10 @@ import React from 'react';
 import { Formik } from 'formik';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import Head from '../components/Head';
+import dynamic from 'next/dynamic';
 import LoginLayout from '../components/layouts/login';
 
+const Head = dynamic(import('../components/Head'));
 class LoginComponent extends React.Component {
     render() {
         console.log(this.props);

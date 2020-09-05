@@ -1,8 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import LoginLayout from '../components/layouts/login';
-import Head from '../components/Head';
 import { Formik } from 'formik';
+const Head = dynamic(import('../components/Head'));
 
 class Registration extends React.Component {
     render() {

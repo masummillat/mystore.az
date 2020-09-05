@@ -8,7 +8,7 @@ const SingleProduct = ({ product }) => {
                 <input type="hidden" id="pro_id" value="41" />
                 <div className="single-product-image-wrapper">
                     <a href="../--HP-24fw-OtvS8.html" className="single-product-image">
-                        <img src="../../../../static/uploads/documents/products/bprQTjpEva-1594759608-jpg" alt="" />
+                        <img src="../../static/uploads/documents/products/bprQTjpEva-1594759608-jpg" alt="" />
                         <div className="off-sticker">
                             <span className="offer-number">{off} </span>
                             <span>Off</span>
