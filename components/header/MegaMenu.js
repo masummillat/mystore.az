@@ -18,9 +18,7 @@ export const MenuItem = ({ category }) => {
                     category.sub.map(s => (
                         <div key={s.id} className="col">
                             <Link href={`/category/${category.id}/${s.id}`}>
-                                <h3 style={{ cursor: 'pointer' }}>
                                     <a>{s.title}</a>
-                                </h3>
                             </Link>
                             <ul>
                                 {s.sub.map(ss => (

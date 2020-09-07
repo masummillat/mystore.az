@@ -3,8 +3,9 @@ import { useRouter } from 'next/router';
 import { products, categories } from '../../constants/data';
 import CategoryFilter from '../../components/filter/CategoryFilter';
 import SingleProduct from '../../components/productcard/SingleProduct';
-import Head from '../../components/Head';
-
+import dynamic from 'next/dynamic';
+const Head = dynamic(import('../../components/Head'));
+const SingleProduct = dynamic(()=>import('../../components/productcard/SingleProduct'))
 const Category = props => {
     const history = useRouter();
     console.log(history);
