@@ -2,10 +2,11 @@ import React from 'react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import { products } from '../constants/data';
-import FlashDealProductCard from '../components/flashdeal/FlashDealProductCard';
-
+const Skeleton = dynamic(import('react-loading-skeleton'));
 const Head = dynamic(import('../components/Head'));
-
+const FlashDealProductCard = dynamic(()=>import('../components/flashdeal/FlashDealProductCard'),{loading: ()=>{
+        return <Skeleton count={10} />
+    }, ssr: false})
 const FlashDealPage = () => {
     return (
         <>

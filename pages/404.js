@@ -3,7 +3,7 @@ import React from 'react';
 import dynamic from 'next/dynamic';
 const Head = dynamic(import('../components/Head'));
 import BlankLayout from '../components/layouts/blank';
-export default function Custom404() {
+function Custom404() {
     return (
         <>
             <Head title="404-not found" />
@@ -58,3 +58,5 @@ export default function Custom404() {
 }
 
 Custom404.Layout = BlankLayout;
+
+export default Custom404

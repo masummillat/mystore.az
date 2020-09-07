@@ -1,13 +1,23 @@
 import React from 'react';
-import Head from '../../components/Head';
-import SameShopProduct from '../../components/products/SameShopProduct';
 import { products } from '../../constants/data';
-import RelatedProduct from '../../components/products/RelatedProduct';
-import ProductImageViewer from '../../components/products/ProductImageViewer';
-import ProductInfoAre from '../../components/products/ProductInfoArea';
-import ProductInfoArea from '../../components/products/ProductInfoArea';
-import SocialMediaAndPayment from '../../components/products/SocialMediaAndPayment';
-
+const Head = dynamic(import('../../components/Head'));
+import dynamic from 'next/dynamic';
+const Skeleton = dynamic(import('react-loading-skeleton'));
+const SameShopProduct = dynamic(()=>import('../../components/products/SameShopProduct'),{loading: ()=>{
+    return <Skeleton count={10} />
+    },ssr: false})
+const RelatedProduct = dynamic(()=>import('../../components/products/RelatedProduct'),{loading: ()=>{
+        return <Skeleton count={10} />
+    },ssr: false})
+const ProductImageViewer = dynamic(()=>import('../../components/products/ProductImageViewer'),{loading: ()=>{
+        return <Skeleton count={10} />
+    },ssr: false})
+const ProductInfoArea = dynamic(()=>import('../../components/products/ProductInfoArea'),{loading: ()=>{
+        return <Skeleton count={10} />
+    },ssr: false})
+const SocialMediaAndPayment = dynamic(()=>import('../../components/products/SocialMediaAndPayment'),{loading: ()=>{
+        return <Skeleton count={10} />
+    },ssr: false})
 const ProductPage = () => {
     return (
         <>

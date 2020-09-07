@@ -1,9 +1,13 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
-import QueryForm from '../components/faq/QueryForm';
-import FaqCard from '../components/faq/FaqCard';
-
+const Skeleton = dynamic(import('react-loading-skeleton'));
+const QueryForm = dynamic(()=>import('../components/faq/QueryForm'),{loading: ()=>{
+        return <Skeleton count={25} />
+    }, ssr: false})
+const FaqCard = dynamic(()=>import('../components/faq/FaqCard'),{loading: ()=>{
+        return <Skeleton count={10} />
+    }, ssr: false})
 const Head = dynamic(import('../components/Head'));
 const faqs = [
     {

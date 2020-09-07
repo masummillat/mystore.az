@@ -1,7 +1,10 @@
 import React from 'react';
-import Slider from 'react-slick';
-import ProductCard from '../productcard/ProductCard';
-
+import dynamic from 'next/dynamic';
+const  Slider = dynamic(import('react-slick'));
+const Skeleton = dynamic(import('react-loading-skeleton'));
+const ProductCard = dynamic(()=>import('../productcard/ProductCard'),{loading:()=>{
+    return <Skeleton count={10} />
+    },ssr: false})
 const SameShopProduct = ({ products }) => {
     const settings = {
         dots: true,

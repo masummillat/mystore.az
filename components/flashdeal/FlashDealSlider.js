@@ -1,8 +1,11 @@
 import React from 'react';
 import Slider from 'react-slick';
 import Link from 'next/link';
-
-import ProductCard from '../productcard/ProductCard';
+import dynamic from 'next/dynamic';
+const Skeleton  = dynamic(import('react-loading-skeleton'));
+const ProductCard = dynamic(()=>import('../productcard/ProductCard'), {loading: ()=>{
+    return <Skeleton count={10} />
+    }})
 
 const FlashDealSlider = ({ flashDeals, handleShowWishModal }) => {
     const settings = {

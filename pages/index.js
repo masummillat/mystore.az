@@ -2,13 +2,26 @@ import React from 'react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import { Modal, Button } from 'react-bootstrap';
+const Skeleton  = dynamic(import('react-loading-skeleton'));
 const Head = dynamic(import('../components/Head'));
-const BannerAdArea = dynamic(() => import('../components/banner/BannerAdArea'), { loading: () => <p>Loading ....</p> });
-const FeaturedCategories = dynamic(import('../components/featuredcategories/FeaturedCategories'));
-const FlashDealSlider = dynamic(import('../components/flashdeal/FlashDealSlider'));
-const ProductStatusCategory = dynamic(import('../components/productstatus/ProductStatusCategory'));
-const FeaturedStore = dynamic(import('../components/featuredstore/FeaturedStore'));
-const Facilities = dynamic(import('../components/facilities/Facilities'));
+const BannerAdArea = dynamic(() => import('../components/banner/BannerAdArea'), { loading: () => {
+    return <Skeleton count={5}/>
+    } , ssr:false});
+const FeaturedCategories = dynamic(()=>import('../components/featuredcategories/FeaturedCategories'),{loading: () =>{
+    return  <Skeleton count={10} />
+    }, ssr: false});
+const FlashDealSlider = dynamic(()=>import('../components/flashdeal/FlashDealSlider'), {loading: ()=>{
+    return<Skeleton count={10} />
+    }, ssr: false});
+const ProductStatusCategory = dynamic(()=>import('../components/productstatus/ProductStatusCategory'),{loading: ()=>{
+    return <Skeleton count={10} />
+    }, ssr:false});
+const FeaturedStore = dynamic(()=>import('../components/featuredstore/FeaturedStore'),{loading: ()=>{
+    return <Skeleton count={10} />
+    },ssr:false});
+const Facilities = dynamic(()=>import('../components/facilities/Facilities'), {ssr: false, loading:()=>{
+    return <Skeleton  count={10}/>
+}});
 import { featured, products } from '../constants/data';
 
 class Home extends React.Component {
@@ -39,9 +52,9 @@ class Home extends React.Component {
             <div>
                 <Head title="Mystore.az" />
                 <BannerAdArea />
-                <FeaturedCategories featuredCats={featuredCats} />
-                <FlashDealSlider handleShowWishModal={this.handleShowWishModal} flashDeals={flashDeals} />
-                <ProductStatusCategory handleShowWishModal={this.handleShowWishModal} products={flashDeals} />
+                <FeaturedCategories featuredCats={featured} />
+                <FlashDealSlider handleShowWishModal={this.handleShowWishModal} flashDeals={products} />
+                <ProductStatusCategory handleShowWishModal={this.handleShowWishModal} products={products} />
                 <FeaturedStore />
                 <Facilities />
                 <style jsx>{``}</style>
@@ -67,11 +80,11 @@ class Home extends React.Component {
 
 export default Home;
 
-export async function getStaticProps(context) {
-    return {
-        props: {
-            flashDeals: products,
-            featuredCats: featured,
-        }, // will be passed to the page component as props
-    };
-}
+// export async function getStaticProps(context) {
+//     return {
+//         props: {
+//             flashDeals: products,
+//             featuredCats: featured,
+//         }, // will be passed to the page component as props
+//     };
+// }

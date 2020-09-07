@@ -1,8 +1,9 @@
 import React from 'react';
-
-import HeroBanner from './HeroBanner';
-import Skeleton from 'react-loading-skeleton';
-
+import dynamic from 'next/dynamic';
+const Skeleton  = dynamic(import('react-loading-skeleton'));
+const HeroBanner = dynamic(() => import('./HeroBanner'), {loading: ()=>{
+    return<Skeleton count={10}/>
+    }});
 const BannerAdArea = () => {
     return (
         <section className="banner-ad-area common-padding-top">

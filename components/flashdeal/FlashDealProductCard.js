@@ -8,7 +8,7 @@ const FlashDealProductCard = ({ product }) => {
                 <input type="hidden" id="pro_id" value="8" />
 
                 <div className="single-product-image-wrapper">
-                    <Link href={`/product/${product.id}`}>
+                    <Link href={`/products/${product.id}`}>
                         <a className="single-product-image">
                             <img src={product.img} alt="" />
                             <div className="off-sticker">
@@ -28,7 +28,7 @@ const FlashDealProductCard = ({ product }) => {
                     </Link>
                 </div>
                 <div className="single-product-details">
-                    <Link href={`/product/${product.id}`}>
+                    <Link href={`/products/${product.id}`}>
                         <a className="single-product-title">{product.title}</a>
                     </Link>
                     {/*<div class="single-product-description">*/}

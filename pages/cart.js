@@ -1,9 +1,16 @@
 import React from 'react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
-import CartSummary from '../components/cart/CartSummary';
-import ShoppingCartTable from '../components/cart/ShoppingCartTable';
-import CartToPaymentLink from '../components/cart/CartToPaymentLink';
+const Skeleton = dynamic(import('react-loading-skeleton'));
+const CartSummary = dynamic(()=>import('../components/cart/CartSummary'),{loading: ()=>{
+    return <Skeleton count={10} />
+    }, ssr: false})
+const ShoppingCartTable = dynamic(()=>import('../components/cart/ShoppingCartTable'),{loading: ()=>{
+        return <Skeleton count={10} />
+    }, ssr: false})
+const CartToPaymentLink = dynamic(()=>import('../components/cart/CartToPaymentLink'),{loading: ()=>{
+        return <Skeleton count={10} />
+    }, ssr: false})
 
 const Head = dynamic(import('../components/Head'));
 class Cart extends React.Component {

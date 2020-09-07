@@ -1,7 +1,8 @@
 import React from 'react';
-import HeaderTop from './HeaderTop';
-import HeaderBottom from './HeaderBottom';
-
+import dynamic from 'next/dynamic';
+const  Skeleton = dynamic(import('react-loading-skeleton'));
+const HeaderTop = dynamic(()=>import('./HeaderTop'), {loading: ()=><Skeleton coutn={2} />})
+const HeaderBottom = dynamic(()=>import('./HeaderBottom'), {loading: ()=><Skeleton coutn={5} />})
 const categoriesOptions = [
     { value: '', label: 'All Categories' },
     { value: '1', label: 'Elektronika' },
