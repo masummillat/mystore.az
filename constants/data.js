@@ -254,6 +254,94 @@ export const categories = [
                     // Oxuducular cassette
                 ],
             },
+            {
+                id: 14,
+                title: 'Phone and Smart Watches',
+                img: '',
+                sub: [
+                    {
+                        id: 141,
+                        title: 'Smartphones',
+                    },
+                    {
+                        id: 142,
+                        title: 'Smart watches and fitness bracelet',
+                    },
+                    {
+                        id: 143,
+                        title: 'Accessories for smartphones and phones',
+                    },
+                    { id: 144, title: 'Accessories for smart watches and fitness bracelets' },
+                    { id: 145, title: 'Mobile phones' },
+                    { id: 146, title: 'DECT phones' },
+                    { id: 147, title: 'Cable phones' },
+                ],
+            },
+            {
+                id: 15,
+                title: 'Headphones and sound equipment',
+                sub: [
+                    { id: 151, title: 'Headphones and earphones' },
+                    { id: 152, title: 'Acoustics and speakers' },
+                    { id: 153, title: 'Microphones and Accessories' },
+                    { id: 154, title: 'MP3 players' },
+                    // Radio receivers,
+                    // Vinyl readers and accessories,
+                    // Cassettes,
+                    // Studio and stage equipment,
+                    // Hi-Res players,
+                    // Voice recorders,
+                    // Music centers,
+                    // CD readers and players,
+                    // Amplifiers, receivers and DAC,
+                    // Accessories for sound equipment,
+                    // Oxuducular cassette
+                ],
+            },
+            {
+                id: 16,
+                title: 'Phone and Smart Watches',
+                img: '',
+                sub: [
+                    {
+                        id: 161,
+                        title: 'Smartphones',
+                    },
+                    {
+                        id: 162,
+                        title: 'Smart watches and fitness bracelet',
+                    },
+                    {
+                        id: 163,
+                        title: 'Accessories for smartphones and phones',
+                    },
+                    { id: 164, title: 'Accessories for smart watches and fitness bracelets' },
+                    { id: 165, title: 'Mobile phones' },
+                    { id: 166, title: 'DECT phones' },
+                    { id: 167, title: 'Cable phones' },
+                ],
+            },
+            {
+                id: 17,
+                title: 'Headphones and sound equipment',
+                sub: [
+                    { id: 171, title: 'Headphones and earphones' },
+                    { id: 172, title: 'Acoustics and speakers' },
+                    { id: 173, title: 'Microphones and Accessories' },
+                    { id: 174, title: 'MP3 players' },
+                    // Radio receivers,
+                    // Vinyl readers and accessories,
+                    // Cassettes,
+                    // Studio and stage equipment,
+                    // Hi-Res players,
+                    // Voice recorders,
+                    // Music centers,
+                    // CD readers and players,
+                    // Amplifiers, receivers and DAC,
+                    // Accessories for sound equipment,
+                    // Oxuducular cassette
+                ],
+            },
         ],
     },
     {

@@ -11749,7 +11749,7 @@ span {
     list-style: none;
     top: 0px;
     left: 227px;
-    width: 800px;
+    width: 1000px;
     min-height: 100%;
     text-align: left;
     margin-top: 30px;
@@ -11785,7 +11785,7 @@ span {
     list-style: none;
     font-size: 11px;
 }
-.menu .col h3 {
+.menu .col p {
     font-size: 15px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -11793,7 +11793,7 @@ span {
     line-height: 4;
 }
 .menu .col ul li a {
-    display: inline-block;
+    display: contents;
     font-size: 12px;
     padding: 0 0 15px 0;
     color: #111;
@@ -11816,4 +11816,32 @@ span {
 
 .megadrop {
     display: flex;
+}
+
+.search-result-wrapper {
+    position: absolute;
+    background: white;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+}
+.search-result-wrapper a {
+    padding: 5px 10px;
+    font-size: 14px !important;
+}
+.search-result-wrapper a:hover {
+    background-color: #a6daf8;
+    color: white !important;
+}
+.search-result-wrapper a img {
+    max-width: 100%;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    overflow: hidden;
 }

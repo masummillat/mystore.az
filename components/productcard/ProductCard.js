@@ -2,7 +2,6 @@ import React from 'react';
 import Link from 'next/link';
 const ProductCard = ({ product, handleShowWishModal }) => {
     const { id, product_name, shopName, status, online, sold,product_info,thumbnail, regular_price, previous_price, num_of_sale} = product;
-    console.log(product)
     return (
         <div className="item">
             <div

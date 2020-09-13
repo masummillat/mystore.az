@@ -14,13 +14,14 @@ export const MenuItem = ({ category }) => {
                 </a>
             </Link>
             <div className="megadrop">
-                {category.sub &&
+                <div className="row">
+                    {category.sub &&
                     category.sub.map(s => (
-                        <div key={s.id} className="col">
+                        <div key={s.id} className="col-3">
                             <Link href={`/category/${category.id}/${s.id}`}>
-                                    <a>
-                                        <h3>{s.title}</h3>
-                                    </a>
+                                <a>
+                                    <p style={{fontWeight: 600}}>{s.title}</p>
+                                </a>
                             </Link>
                             <ul>
                                 {s.sub.map(ss => (
@@ -33,6 +34,7 @@ export const MenuItem = ({ category }) => {
                             </ul>
                         </div>
                     ))}
+                </div>
             </div>
         </li>
     );
