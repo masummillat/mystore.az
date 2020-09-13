@@ -29,7 +29,7 @@ const FlashDealProductCard = ({ product }) => {
                 </div>
                 <div className="single-product-details">
                     <Link href={`/products/${product.id}`}>
-                        <a className="single-product-title">{product.title}</a>
+                        <a className="single-product-title">{product.product_name}</a>
                     </Link>
                     {/*<div class="single-product-description">*/}
                     {/*    <span class="info-tag">Info:</span>*/}
@@ -62,8 +62,8 @@ const FlashDealProductCard = ({ product }) => {
 
                     <div className="single-product-meta-info mb-0">
                         <div className="left-info">
-                            <div className="single-product-previous-price">{product.previousPrice}</div>
-                            <div className="single-product-new-price">{product.newPrice} </div>
+                            <div className="single-product-previous-price">{product.previous_price}</div>
+                            <div className="single-product-new-price">{product.regular_price} </div>
                         </div>
                         <div className="right-info">
                             <div className="single-product-rating single-product-rating--mobile">

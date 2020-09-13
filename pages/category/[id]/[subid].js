@@ -1,9 +1,14 @@
 import React from 'react';
-import Head from '../../../components/Head';
 import { products } from '../../../constants/data';
-import SingleProduct from '../../../components/productcard/SingleProduct';
-import SubCategoryFilter from '../../../components/filter/SubCategoryFilter';
-
+import dynamic from 'next/dynamic';
+const Head = dynamic(import('../../../components/Head'))
+const Skeleton = dynamic(()=>import('react-loading-skeleton'));
+const SingleProduct = dynamic(()=>import('../../../components/productcard/SingleProduct'), {loading: ()=>{
+        return <Skeleton count={10} />
+    }, ssr: false});
+const SubCategoryFilter = dynamic(()=>import('../../../components/filter/SubCategoryFilter'), {loading: ()=>{
+        return <Skeleton count={50} />
+    }, ssr: false});
 class SubCategory extends React.Component {
     render() {
         return (
@@ -37,7 +42,7 @@ class SubCategory extends React.Component {
                                 <div className="m-tab-header">Shopping</div>
                                 <div className="row">
                                     <div className="product-filter-col-backdrop" />
-                                    <SubCategoryFilter />
+                                    <SubCategoryFilter  />
                                     <div className="col-lg-9 product-list-col">
                                         <div className="common-padded-box">
                                             <div className="product-search-area">

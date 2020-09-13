@@ -24,6 +24,7 @@ const Facilities = dynamic(()=>import('../components/facilities/Facilities'), {s
 }});
 import { featured, products } from '../constants/data';
 
+
 class Home extends React.Component {
     constructor(props) {
         super(props);
@@ -45,16 +46,17 @@ class Home extends React.Component {
     };
 
     render() {
-        const { featuredCats, flashDeals } = this.props;
+        const { featuredCats, flashDeals, homePageSlider } = this.props;
         const { wishModalShow } = this.state;
+        console.log(homePageSlider)
 
         return (
             <div>
                 <Head title="Mystore.az" />
-                <BannerAdArea />
+                <BannerAdArea homePageSlider={homePageSlider} />
                 <FeaturedCategories featuredCats={featured} />
-                <FlashDealSlider handleShowWishModal={this.handleShowWishModal} flashDeals={products} />
-                <ProductStatusCategory handleShowWishModal={this.handleShowWishModal} products={products} />
+                <FlashDealSlider handleShowWishModal={this.handleShowWishModal} flashDeals={flashDeals} />
+                <ProductStatusCategory handleShowWishModal={this.handleShowWishModal} products={featuredCats} />
                 <FeaturedStore />
                 <Facilities />
                 <style jsx>{``}</style>
@@ -78,13 +80,34 @@ class Home extends React.Component {
     }
 }
 
-export default Home;
 
-// export async function getStaticProps(context) {
-//     return {
-//         props: {
-//             flashDeals: products,
-//             featuredCats: featured,
-//         }, // will be passed to the page component as props
-//     };
-// }
+
+export async function getStaticProps(context) {
+    
+    try {
+        const featuredRequest = await fetch('https://beta.mystore.az/api/home-page-product?type=FEATURED')
+        const featured = await featuredRequest.json();
+
+        const flashDealsRequest = await fetch('https://beta.mystore.az/api/flash-deals');
+        const flashDeals = await flashDealsRequest.json();
+
+        const homePageSliderRequest = await fetch('https://beta.mystore.az/api/sliders');
+        const homePageSlider = await homePageSliderRequest.json();
+        return {
+            props: {
+                flashDeals: flashDeals.data,
+                featuredCats: featured.data,
+                homePageSlider: homePageSlider.data
+            }, // will be passed to the page component as props
+        };
+    }catch (e){
+        return {
+            props: {
+                error: e
+            }
+        }
+    }
+
+}
+
+export default Home;

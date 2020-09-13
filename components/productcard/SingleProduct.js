@@ -1,7 +1,7 @@
 import React from 'react';
 
 const SingleProduct = ({ product }) => {
-    const { id, name, shopName, status, online, off, sold, img, previousPrice, newPrice } = product;
+    const { id, discount, discount_type, product_name, shopName, status, online, off, sold, img, previous_price, regular_price } = product;
     return (
         <div className="col-lg-4 col-sm-6">
             <div className="single-product-box single-product-box-2">
@@ -10,8 +10,8 @@ const SingleProduct = ({ product }) => {
                     <a href="../--HP-24fw-OtvS8.html" className="single-product-image">
                         <img src="../../static/uploads/documents/products/bprQTjpEva-1594759608-jpg" alt="" />
                         <div className="off-sticker">
-                            <span className="offer-number">{off} </span>
-                            <span>Off</span>
+                            <span className="offer-number">{discount} </span>
+                            <span>{discount_type}</span>
                         </div>
 
                         {/* <div class="discount-offers">*/}
@@ -25,7 +25,7 @@ const SingleProduct = ({ product }) => {
                 </div>
                 <div className="single-product-details">
                     <a href="../--HP-24fw-OtvS8.html" className="single-product-title">
-                        {name}
+                        {product_name}
                     </a>
                     {/*<div class="single-product-description">*/}
                     {/*    <span class="info-tag">Info:</span>*/}
@@ -50,8 +50,8 @@ const SingleProduct = ({ product }) => {
                     </div>
                     <div className="single-product-meta-info mb-0">
                         <div className="left-info">
-                            <div className="single-product-previous-price">{previousPrice}</div>
-                            <div className="single-product-new-price">{newPrice}</div>
+                            <div className="single-product-previous-price">{previous_price}</div>
+                            <div className="single-product-new-price">{regular_price}</div>
                         </div>
                         <div className="right-info">
                             <div className="single-product-rating single-product-rating--mobile">

@@ -1,14 +1,20 @@
 import React from 'react';
 import { Form } from 'react-bootstrap';
 import { Formik, Field } from 'formik';
-import { categories, featured } from '../../constants/data';
-import CategoryItem from '../category/CategoryItem';
-import ShippingOptionFilter from './ShippingOptionFilter';
-import PriceRangeFilter from './PriceRangeFilter';
-import ReviewsFilter from './ReviewsFilter';
-import PaymentOptionFilter from './PaymentOptionFilter';
-import CategoryOptionFilter from './CategoryOptionFilter';
-import OffersFilter from './OffersFilter';
+import dynamic from 'next/dynamic';
+const Skeleton = dynamic(import('react-loading-skeleton'));
+const PriceRangeFilter = dynamic(()=>import('./PriceRangeFilter'), {loading: ()=>{
+    return <Skeleton  count={10}/>
+    }, ssr: false})
+const ReviewsFilter = dynamic(()=>import('./ReviewsFilter'), {loading: ()=>{
+    return <Skeleton  count={10}/>
+    }, ssr: false})
+const CategoryOptionFilter = dynamic(()=>import('./CategoryOptionFilter'), {loading: ()=>{
+    return <Skeleton  count={30}/>
+    }, ssr: false})
+const OffersFilter = dynamic(()=>import('./OffersFilter'), {loading: ()=>{
+    return <Skeleton  count={10}/>
+    }, ssr: false})
 
 const offersType = [
     { id: 1, title: 'Cashback' },

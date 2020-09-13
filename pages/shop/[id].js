@@ -1,12 +1,13 @@
 import { useRouter } from 'next/router';
 import React from 'react';
+import dynamic from 'next/dynamic';
+const  Skeleton = dynamic(import('react-loading-skeleton'));
+const Head = dynamic(import('../../components/Head'));
+const ShopDetailPageArea = dynamic(()=>import('../../components/shop'), {loading: ()=>{
+        return <Skeleton count={80} />
+    }, ssr: false})
 
-import Footer from '../../components/footer/footer';
-import Head from '../../components/Head';
-import Header from '../../components/header/Header';
-import MobileCategory from '../../components/mobile/MobileCategory';
-import MobileMenu from '../../components/mobile/MobileMenu';
-import ShopDetailPageArea from '../../components/shop';
+
 
 const Shop = () => {
     const router = useRouter();
@@ -14,14 +15,10 @@ const Shop = () => {
     return (
         <>
             <Head title="Mystore.az" />
-            <Header />
-            <MobileMenu />
-            <MobileCategory />
-            <div className="header-fixed-content-layout" />
+            <div className="header-fixed-content-layout" >
+             <ShopDetailPageArea />
+            </div>
 
-            <ShopDetailPageArea />
-
-            <Footer />
         </>
     );
 };

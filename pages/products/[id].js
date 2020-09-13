@@ -360,11 +360,13 @@ const ProductPage = () => {
                         </div>
                     </div>
                 </section>
-                <SameShopProduct products={products} />
-                <RelatedProduct products={products} />
+                <SameShopProduct products={[]} />
+                <RelatedProduct products={[]} />
             </div>
         </>
     );
 };
+
+
 
 export default ProductPage;

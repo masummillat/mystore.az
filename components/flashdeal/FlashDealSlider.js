@@ -8,6 +8,7 @@ const ProductCard = dynamic(()=>import('../productcard/ProductCard'), {loading: 
     }})
 
 const FlashDealSlider = ({ flashDeals, handleShowWishModal }) => {
+    console.log(flashDeals)
     const settings = {
         dots: true,
         infinite: false,
@@ -58,7 +59,7 @@ const FlashDealSlider = ({ flashDeals, handleShowWishModal }) => {
                                             </h3>
                                             <div className="flash-deals-timer"></div>
                                         </div>
-                                        <Link href="/flashdeal">
+                                        <Link href="/flashdeals">
                                             <a>See All</a>
                                         </Link>
                                     </div>

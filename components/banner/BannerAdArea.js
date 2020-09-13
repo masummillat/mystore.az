@@ -4,7 +4,7 @@ const Skeleton  = dynamic(import('react-loading-skeleton'));
 const HeroBanner = dynamic(() => import('./HeroBanner'), {loading: ()=>{
     return<Skeleton count={10}/>
     }});
-const BannerAdArea = () => {
+const BannerAdArea = ({homePageSlider}) => {
     return (
         <section className="banner-ad-area common-padding-top">
             <div className="container">
@@ -12,7 +12,7 @@ const BannerAdArea = () => {
                     <div className="col-lg-8">
                         <div className="bordered-shadow-box">
                             <div className="bordered-shadow-box-overflow-hidden">
-                                <HeroBanner />
+                                <HeroBanner homePageSlider={homePageSlider}/>
                             </div>
                         </div>
                     </div>
