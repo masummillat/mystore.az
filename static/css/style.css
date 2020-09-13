@@ -11699,8 +11699,7 @@ div.single-product-rating div.rateit-reset:hover {
 .menu a:visited,
 .menu a:focus,
 span {
-    /*color: #fff;*/
-    text-decoration: none;
+    display: inline-block;
 }
 .menu a:hover {
     color: #227087;
@@ -11718,7 +11717,7 @@ span {
     -ms-flex-align: center;
     align-items: center;
     white-space: nowrap;
-    padding: 7px 10px;
+    padding: 4px 10px;
     font-size: 14px;
     text-transform: capitalize;
 }
@@ -11727,6 +11726,7 @@ span {
 }
 .menu .dropdown-item {
     padding: 0.25rem .5rem;
+    transition: .3s;
 }
 .navbar-nav .dropdown-menu {
     width: 260px;
@@ -11761,6 +11761,13 @@ span {
     /*border-top: 2px solid #227087;*/
     /*border-right: 2px solid #227087;*/
     /*border-bottom: 2px solid #227087;*/
+}
+.form-group pre {
+    font-size: 12px;
+    font-weight: 700;
+    display: block;
+    line-height: 12px;
+    overflow: hidden;
 }
 .menu > li:hover .megadrop {
     opacity: 1;
@@ -11811,6 +11818,14 @@ span {
 
 .megadrop {
     display: flex;
+}
+.megadrop ul li a {
+    display: inline-block;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.megadrop ul li a:hover {
+    text-decoration: underline;
 }
 
 .search-result-wrapper {
