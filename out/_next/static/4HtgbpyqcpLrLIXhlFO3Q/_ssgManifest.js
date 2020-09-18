@@ -1,1 +1,0 @@
-self.__SSG_MANIFEST=new Set(["\u002Fflashdeals","\u002F","\u002Fcategory\u002F[id]","\u002Fcategory\u002F[id]\u002F[subid]\u002F[subsubid]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
