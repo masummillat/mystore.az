@@ -131,7 +131,7 @@ const SubSubCategory = ({ categories }) => {
 export async function getStaticPaths() {
     return {
         paths: [{ params: { id: '*', subid: '*', subsubid: '*' } }],
-        fallback: false,
+        fallback: true,
     };
 }
 

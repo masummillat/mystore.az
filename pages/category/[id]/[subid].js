@@ -124,7 +124,7 @@ class SubCategory extends React.Component {
 export async function getStaticPaths() {
     return {
         paths: [{ params: { id: '*', subid: '*',  } }],
-        fallback: false,
+        fallback: true,
     };
 }
 
