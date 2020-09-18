@@ -53,10 +53,10 @@ class Home extends React.Component {
         return (
             <div>
                 <Head title="Mystore.az" />
-                <BannerAdArea homePageSlider={homePageSlider} />
+                <BannerAdArea homePageSlider={homePageSlider || []} />
                 <FeaturedCategories featuredCats={featured} />
-                <FlashDealSlider handleShowWishModal={this.handleShowWishModal} flashDeals={flashDeals} />
-                <ProductStatusCategory handleShowWishModal={this.handleShowWishModal} products={featuredCats} />
+                <FlashDealSlider handleShowWishModal={this.handleShowWishModal} flashDeals={flashDeals || []} />
+                <ProductStatusCategory handleShowWishModal={this.handleShowWishModal} products={featuredCats || []} />
                 <FeaturedStore />
                 <Facilities />
                 <style jsx>{``}</style>
@@ -82,7 +82,7 @@ class Home extends React.Component {
 
 
 
-export async function getStaticProps(context) {
+export async function getInitialProps(context) {
     
     try {
         const featuredRequest = await fetch('https://beta.mystore.az/api/home-page-product?type=FEATURED')

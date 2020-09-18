@@ -15,7 +15,7 @@ const SubSubCategory = ({ categories }) => {
     const history = useRouter();
     const { id, subid, subsubid } = history.query;
     const category = categories && categories.filter(cate => cate.id === id)[0];
-    const subCategories = (categories && category.sub) || [];
+    const subCategories = (category && category.sub) || [];
     const subCategory = subCategories && subCategories.filter(sc => sc.id === parseInt(subid))[0];
     const subsubCats = (subCategory && subCategory.sub) || [];
     let subsubCat = subsubCats && subsubCats.filter(ss => ss.id === parseInt(subsubid))[0];
@@ -30,14 +30,14 @@ const SubSubCategory = ({ categories }) => {
                             <div className="col-lg-12">
                                 <div className="common-padded-box-header">
                                     <h3>
-                                        Category: <span>{categories && subsubCat.title}</span>
+                                        Category: <span>{subsubCat && subsubCat.title}</span>
                                     </h3>
                                     <div className="product-breadcumb">
                                         <ul>
                                             <li>
                                                 <a href="../shopping.html">Shopping Products</a>
                                             </li>
-                                            <li className="active">{categories && subsubCat.title}</li>
+                                            <li className="active">{subsubCat && subsubCat.title}</li>
                                         </ul>
                                     </div>
                                     <div className="product-filter-btn">
@@ -50,7 +50,7 @@ const SubSubCategory = ({ categories }) => {
                             {/*<div className="m-tab-header">Shopping</div>*/}
                             <div className="row">
                                 <div className="product-filter-col-backdrop" />
-                                <CategoryFilter categories={(categories && subsubCat.sub) || []} />
+                                <CategoryFilter categories={(subsubCat && subsubCat.sub) || []} />
                                 <div className="col-lg-9 product-list-col">
                                     <div className="common-padded-box">
                                         <div className="product-search-area">
@@ -131,7 +131,7 @@ const SubSubCategory = ({ categories }) => {
 export async function getStaticPaths() {
     return {
         paths: [{ params: { id: '*', subid: '*', subsubid: '*' } }],
-        fallback: true,
+        fallback: false,
     };
 }
 

@@ -128,7 +128,7 @@ const Category = props => {
 export async function getStaticPaths() {
     return {
         paths: [{ params: { id: '*' } }],
-        fallback: true,
+        fallback: false,
     };
 }
 export async function getStaticProps(context) {

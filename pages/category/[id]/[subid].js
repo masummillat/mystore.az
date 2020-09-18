@@ -1,5 +1,5 @@
 import React from 'react';
-import { products } from '../../../constants/data';
+import { categories, products } from '../../../constants/data';
 import dynamic from 'next/dynamic';
 const Head = dynamic(import('../../../components/Head'))
 const Skeleton = dynamic(()=>import('react-loading-skeleton'));
@@ -119,6 +119,22 @@ class SubCategory extends React.Component {
             </div>
         );
     }
+}
+
+export async function getStaticPaths() {
+    return {
+        paths: [{ params: { id: '*', subid: '*',  } }],
+        fallback: false,
+    };
+}
+
+export async function getStaticProps(context) {
+    return {
+        props: {
+            categories: [],
+            context,
+        }, // will be passed to the page component as props
+    };
 }
 
 export default SubCategory;
