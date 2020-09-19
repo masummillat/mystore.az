@@ -4,8 +4,8 @@ import 'slick-carousel/slick/slick-theme.css';
 import React from 'react';
 import App from 'next/app';
 import dynamic from 'next/dynamic';
-const DefaultLayout = dynamic(()=>import('../components/layouts/default'),{loading: ()=><p>Loading........</p>});
-const MainLayout = dynamic(()=>import('../components/layouts/main'), {loading: ()=><p>Loading......</p>});
+const DefaultLayout = dynamic(() => import('../components/layouts/default'), { loading: () => <p>Loading........</p> });
+const MainLayout = dynamic(() => import('../components/layouts/main'), { loading: () => <p>Loading......</p> });
 
 //
 // class MyApp extends App {
@@ -34,4 +34,3 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default MyApp;
-

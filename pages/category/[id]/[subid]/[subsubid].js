@@ -3,15 +3,21 @@ import { useRouter } from 'next/router';
 import { categories, products } from '../../../../constants/data';
 import dynamic from 'next/dynamic';
 const Head = dynamic(import('../../../../components/Head'));
-const Skeleton = dynamic(()=>import('react-loading-skeleton'));
-const SingleProduct = dynamic(()=>import('../../../../components/productcard/SingleProduct'), {loading: ()=>{
-        return <Skeleton count={10} />
-    }, ssr: false});
-const CategoryFilter = dynamic(()=>import('../../../../components/filter/CategoryFilter'), {loading: ()=>{
-        return <Skeleton count={50} />
-    }, ssr: false});
+const Skeleton = dynamic(() => import('react-loading-skeleton'));
+const SingleProduct = dynamic(() => import('../../../../components/productcard/SingleProduct'), {
+    loading: () => {
+        return <Skeleton count={10} />;
+    },
+    ssr: false,
+});
+const CategoryFilter = dynamic(() => import('../../../../components/filter/CategoryFilter'), {
+    loading: () => {
+        return <Skeleton count={50} />;
+    },
+    ssr: false,
+});
 const SubSubCategory = ({ categories }) => {
-    console.log(categories)
+    console.log(categories);
     const history = useRouter();
     const { id, subid, subsubid } = history.query;
     const category = categories && categories.filter(cate => cate.id === id)[0];
@@ -19,7 +25,7 @@ const SubSubCategory = ({ categories }) => {
     const subCategory = subCategories && subCategories.filter(sc => sc.id === parseInt(subid))[0];
     const subsubCats = (subCategory && subCategory.sub) || [];
     let subsubCat = subsubCats && subsubCats.filter(ss => ss.id === parseInt(subsubid))[0];
-    console.log(subsubCats)
+    console.log(subsubCats);
     return (
         <>
             <Head title="Sub Sub Category" />

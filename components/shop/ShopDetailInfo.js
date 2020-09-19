@@ -2,21 +2,33 @@ import React from 'react';
 import dynamic from 'next/dynamic';
 const Skeleton = dynamic(import('react-loading-skeleton'));
 
-const HomeContents = dynamic(()=>import('./tabcontents/HomeContents'), {loading: ()=>{
-        return <Skeleton count={30} />
-    }, ssr: false})
+const HomeContents = dynamic(() => import('./tabcontents/HomeContents'), {
+    loading: () => {
+        return <Skeleton count={30} />;
+    },
+    ssr: false,
+});
 
-const ReviewContents = dynamic(()=>import('./tabcontents/ReviewContents'), {loading: ()=>{
-        return <Skeleton count={30} />
-    }, ssr: false})
+const ReviewContents = dynamic(() => import('./tabcontents/ReviewContents'), {
+    loading: () => {
+        return <Skeleton count={30} />;
+    },
+    ssr: false,
+});
 
-const ShoppingContents = dynamic(()=>import('./tabcontents/shopingContent'), {loading: ()=>{
-        return <Skeleton count={30} />
-    }, ssr: false})
+const ShoppingContents = dynamic(() => import('./tabcontents/shopingContent'), {
+    loading: () => {
+        return <Skeleton count={30} />;
+    },
+    ssr: false,
+});
 
-const StoreInformation = dynamic(()=>import('./tabcontents/StoreInformation'), {loading: ()=>{
-        return <Skeleton count={30} />
-    }, ssr: false})
+const StoreInformation = dynamic(() => import('./tabcontents/StoreInformation'), {
+    loading: () => {
+        return <Skeleton count={30} />;
+    },
+    ssr: false,
+});
 
 const ShopDetailInfo = () => {
     return (

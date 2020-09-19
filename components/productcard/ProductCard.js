@@ -1,11 +1,22 @@
 import React from 'react';
 import Link from 'next/link';
 const ProductCard = ({ product, handleShowWishModal }) => {
-    const { id, product_name, shopName, status, online, sold,product_info,thumbnail, regular_price, previous_price, num_of_sale} = product;
+    const {
+        id,
+        product_name,
+        shopName,
+        status,
+        online,
+        sold,
+        product_info,
+        thumbnail,
+        regular_price,
+        previous_price,
+        num_of_sale,
+    } = product;
     return (
         <div className="item">
-            <div
-                className="single-product-box single-product-box-2 single-product-box-skull">
+            <div className="single-product-box single-product-box-2 single-product-box-skull">
                 <div className="single-product-image-wrapper">
                     <a href="#" className="single-product-image">
                         <img src={thumbnail} alt={product_name} />
@@ -26,7 +37,9 @@ const ProductCard = ({ product, handleShowWishModal }) => {
                 </div>
                 <div className="single-product-details">
                     <Link href={`/products/${id}`}>
-                        <a title={product_name} className="single-product-title">{product_name}</a>
+                        <a title={product_name} className="single-product-title">
+                            {product_name}
+                        </a>
                     </Link>
                     <div className="single-product-meta-info">
                         <div className="left-info">
@@ -49,7 +62,7 @@ const ProductCard = ({ product, handleShowWishModal }) => {
                     </div>
 
                     <div className="single-product-sold-count">
-                        <div className="single-product-sold-count-number">{ num_of_sale || 0} Sold</div>
+                        <div className="single-product-sold-count-number">{num_of_sale || 0} Sold</div>
                         <div className="single-product-sold-count-bar" data-sold-count="0" data-total-count="0"></div>
                     </div>
 

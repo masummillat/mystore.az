@@ -1,10 +1,12 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
 
-const Skeleton  = dynamic(import('react-loading-skeleton'));
-const ProductCard = dynamic(()=>import('../productcard/ProductCard'),{ loading: ()=>{
-        return <Skeleton count={10} />
-    }})
+const Skeleton = dynamic(import('react-loading-skeleton'));
+const ProductCard = dynamic(() => import('../productcard/ProductCard'), {
+    loading: () => {
+        return <Skeleton count={10} />;
+    },
+});
 const ProductStatusCategory = ({ products, handleShowWishModal }) => {
     return (
         <section className="all-products-area common-padding">

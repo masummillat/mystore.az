@@ -3,13 +3,19 @@ import { useRouter } from 'next/router';
 import { products, categories } from '../../constants/data';
 import dynamic from 'next/dynamic';
 const Head = dynamic(import('../../components/Head'));
-const Skeleton = dynamic(()=>import('react-loading-skeleton'));
-const SingleProduct = dynamic(()=>import('../../components/productcard/SingleProduct'), {loading: ()=>{
-    return <Skeleton count={10} />
-    }, ssr: false});
-const CategoryFilter = dynamic(()=>import('../../components/filter/CategoryFilter'), {loading: ()=>{
-        return <Skeleton count={50} />
-    }, ssr: false});
+const Skeleton = dynamic(() => import('react-loading-skeleton'));
+const SingleProduct = dynamic(() => import('../../components/productcard/SingleProduct'), {
+    loading: () => {
+        return <Skeleton count={10} />;
+    },
+    ssr: false,
+});
+const CategoryFilter = dynamic(() => import('../../components/filter/CategoryFilter'), {
+    loading: () => {
+        return <Skeleton count={50} />;
+    },
+    ssr: false,
+});
 const Category = props => {
     const history = useRouter();
     console.log(history);

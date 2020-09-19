@@ -3,12 +3,32 @@ import { Form } from 'react-bootstrap';
 import { Formik, Field } from 'formik';
 import { categories, featured } from '../../constants/data';
 import dynamic from 'next/dynamic';
-const Skeleton = dynamic(()=>import('react-loading-skeleton'));
+const Skeleton = dynamic(() => import('react-loading-skeleton'));
 
-const PriceRangeFilter = dynamic(()=>import('./PriceRangeFilter'),{loading:()=>{ return <Skeleton count={10}/>}, ssr:false})
-const ReviewsFilter = dynamic(()=>import('./ReviewsFilter'),{loading:()=>{ return <Skeleton count={10}/>}, ssr:false})
-const CategoryOptionFilter = dynamic(()=>import('./CategoryOptionFilter'),{loading:()=>{ return <Skeleton count={10}/>}, ssr:false})
-const OffersFilter = dynamic(()=>import('./OffersFilter'),{loading:()=>{ return <Skeleton count={10}/>}, ssr:false})
+const PriceRangeFilter = dynamic(() => import('./PriceRangeFilter'), {
+    loading: () => {
+        return <Skeleton count={10} />;
+    },
+    ssr: false,
+});
+const ReviewsFilter = dynamic(() => import('./ReviewsFilter'), {
+    loading: () => {
+        return <Skeleton count={10} />;
+    },
+    ssr: false,
+});
+const CategoryOptionFilter = dynamic(() => import('./CategoryOptionFilter'), {
+    loading: () => {
+        return <Skeleton count={10} />;
+    },
+    ssr: false,
+});
+const OffersFilter = dynamic(() => import('./OffersFilter'), {
+    loading: () => {
+        return <Skeleton count={10} />;
+    },
+    ssr: false,
+});
 
 const offersType = [
     { id: 1, title: 'Cashback' },

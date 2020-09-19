@@ -1,5 +1,6 @@
 import React from 'react';
 import Select from 'react-select';
+import MobileCategory from './MobileCategory';
 
 const langOptions = [
     { value: 'Azerbaijani', label: 'Azerbaijani' },
@@ -13,7 +14,7 @@ const currencyOptions = [
 ];
 const MobileMenu = ({ lang, currency, handleCurrency, handleLang }) => {
     return (
-        <div className="drawer-menu-area d-xl-none">
+        <div className="drawer-menu-area mobile-menu d-xl-none">
             <div className="drawer-menu-backdrop"></div>
             <div className="drawer-menu">
                 <span className="drawer-menu-close">
@@ -23,10 +24,10 @@ const MobileMenu = ({ lang, currency, handleCurrency, handleLang }) => {
                     <h4>Mystore-a xoş gəlmisiniz!</h4>
 
                     <div className="top-bar-account-buttons">
-                        <a href="registration.html" className="active">
+                        <a href="/registration" className="active">
                             Join Now
                         </a>
-                        <a href="login.html">Sign In</a>
+                        <a href="/login">Sign In</a>
                     </div>
                 </div>
 
@@ -36,21 +37,21 @@ const MobileMenu = ({ lang, currency, handleCurrency, handleLang }) => {
                 <div className="mobile-main-menu">
                     <ul>
                         <li>
-                            <a href="about.html">header.About Mystore</a>
+                            <a href="/about">header.About Mystore</a>
                         </li>
                         <li>
-                            <a href="user-guide.html">Cashback necə qazanmaq</a>
+                            <a href="/user-guide">Cashback necə qazanmaq</a>
                         </li>
                         <li>
-                            <a href="customer-service.html">Müştəri xidməti</a>
+                            <a href="/customer-service">Müştəri xidməti</a>
                         </li>
                         <li>
-                            <a href="contact.html">Bizimlə əlaqə</a>
+                            <a href="/contact">Bizimlə əlaqə</a>
                         </li>
                     </ul>
                 </div>
                 <div className="mobile-category-mega-menu-button-wrapper">
-                    <button type="button" className="mobile-category-mega-menu-button">
+                    <button type="button" className="mobile-category-mega-menu-button ">
                         All Categories
                     </button>
                 </div>

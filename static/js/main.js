@@ -73,8 +73,14 @@
         });
 
         $(document).on('click', '.menu-bar-button', function() {
-            $('.drawer-menu-area').removeClass('active');
-            $('.drawer-menu-area').addClass('active');
+            $('.mobile-menu').removeClass('active');
+            $('.mobile-menu').addClass('active');
+        });
+
+        $(document).on('click', '.mobile-category-mega-menu-button', function() {
+            $('.mobile-category').removeClass('active');
+            $('.mobile-menu').removeClass('active');
+            $('.mobile-category').addClass('active');
         });
 
         $(document).on(

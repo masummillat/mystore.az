@@ -7,7 +7,15 @@ import { categories, featured } from '../../constants/data';
 import MegaMenu, { MenuItem } from './MegaMenu';
 import AllCategoryModal from './AllCategoryModal';
 
-const HeaderBottom = ({ searchText, category, categoriesOptions, handleSearch, handleCategory, handleSubmit, searchedResult }) => {
+const HeaderBottom = ({
+    searchText,
+    category,
+    categoriesOptions,
+    handleSearch,
+    handleCategory,
+    handleSubmit,
+    searchedResult,
+}) => {
     const [modalShow, setModalShow] = useState(false);
     return (
         <div className="header-area">
@@ -83,14 +91,17 @@ const HeaderBottom = ({ searchText, category, categoriesOptions, handleSearch, h
                                     </Button>
                                 </div>
                             </Form>
-                            <div className='search-result-wrapper'>
-                                {
-                                    searchedResult.slice(0,12).map(product=>{
-                                        return(<Link key={product.id} href={`/products/${product.id}`}>
-                                                <a title={product.name} key={product.id}><img src={product.img}/>{product.name}</a>
-                                        </Link>);
-                                    })
-                                }
+                            <div className="search-result-wrapper">
+                                {searchedResult.slice(0, 12).map(product => {
+                                    return (
+                                        <Link key={product.id} href={`/products/${product.id}`}>
+                                            <a title={product.name} key={product.id}>
+                                                <img src={product.img} />
+                                                {product.name}
+                                            </a>
+                                        </Link>
+                                    );
+                                })}
                             </div>
                             <div id="product_right_search_autocomplete"></div>
                             <div className="popular-search-list">

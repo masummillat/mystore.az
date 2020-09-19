@@ -1,10 +1,12 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
 const Slider = dynamic(import('react-slick'));
-const Skeleton  = dynamic(import('react-loading-skeleton'));
-const FeatureCateCard = dynamic(()=>import('./FeaturedCateCard'),{ loading: ()=>{
-    return <Skeleton count={10} />
-    }})
+const Skeleton = dynamic(import('react-loading-skeleton'));
+const FeatureCateCard = dynamic(() => import('./FeaturedCateCard'), {
+    loading: () => {
+        return <Skeleton count={10} />;
+    },
+});
 
 const FeaturedCategories = ({ featuredCats }) => {
     var settings = {

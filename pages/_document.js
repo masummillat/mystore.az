@@ -24,7 +24,7 @@ class MyDocument extends Document {
                     {/*<script src="../static/vendor/bootstrap-timepicker/bootstrap-timepicker.min.js"></script>*/}
                     {/*<script src="../../static/js/moment.min.js"></script>*/}
                     {/*<script src="../../static/js/hc-offcanvas-nav.js"></script>*/}
-                    {/*<script src="../../static/js/main.js"></script>*/}
+                    <script src="../../static/js/main.js"></script>
                 </body>
             </Html>
         );

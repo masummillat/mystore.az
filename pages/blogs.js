@@ -2,20 +2,32 @@ import React from 'react';
 import Link from 'next/link';
 import Slider from 'react-slick';
 import dynamic from 'next/dynamic';
-const  Skeleton = dynamic(import('react-loading-skeleton'));
+const Skeleton = dynamic(import('react-loading-skeleton'));
 const Head = dynamic(import('../components/Head'));
-const TopCategories = dynamic(()=>import('../components/blogs/TopCategories'), {loading: ()=>{
-    return <Skeleton count={10} />
-    }, ssr: false})
-const LatestBlogs = dynamic(()=>import('../components/blogs/LatestBlogs'), {loading: ()=>{
-    return <Skeleton count={10}/>
-    }, ssr: false})
-const HealthAndFitness = dynamic(()=>import('../components/blogs/HealthAndFitness'), {loading: ()=>{
-        return <Skeleton count={10}/>
-    }, ssr: false})
-const TechAndGadgets = dynamic(()=>import('../components/blogs/TechAndGadgets'), {loading: ()=>{
-        return <Skeleton count={10}/>
-    }, ssr: false})
+const TopCategories = dynamic(() => import('../components/blogs/TopCategories'), {
+    loading: () => {
+        return <Skeleton count={10} />;
+    },
+    ssr: false,
+});
+const LatestBlogs = dynamic(() => import('../components/blogs/LatestBlogs'), {
+    loading: () => {
+        return <Skeleton count={10} />;
+    },
+    ssr: false,
+});
+const HealthAndFitness = dynamic(() => import('../components/blogs/HealthAndFitness'), {
+    loading: () => {
+        return <Skeleton count={10} />;
+    },
+    ssr: false,
+});
+const TechAndGadgets = dynamic(() => import('../components/blogs/TechAndGadgets'), {
+    loading: () => {
+        return <Skeleton count={10} />;
+    },
+    ssr: false,
+});
 const settings = {
     dots: true,
     infinite: false,

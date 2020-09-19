@@ -1,9 +1,9 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
 import { products } from '../../constants/data';
-const  Skeleton = dynamic(import('react-loading-skeleton'));
-const HeaderTop = dynamic(()=>import('./HeaderTop'), {loading: ()=><Skeleton coutn={2} />})
-const HeaderBottom = dynamic(()=>import('./HeaderBottom'), {loading: ()=><Skeleton coutn={5} />})
+const Skeleton = dynamic(import('react-loading-skeleton'));
+const HeaderTop = dynamic(() => import('./HeaderTop'), { loading: () => <Skeleton coutn={2} /> });
+const HeaderBottom = dynamic(() => import('./HeaderBottom'), { loading: () => <Skeleton coutn={5} /> });
 const categoriesOptions = [
     { value: '', label: 'All Categories' },
     { value: '1', label: 'Elektronika' },
@@ -45,19 +45,18 @@ class Header extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            products:[],
+            products: [],
             searchText: '',
             category: '',
-            searchedResult:[],
+            searchedResult: [],
         };
     }
     componentDidMount() {
         // api call for product here
         this.setState({
-            products: products
-        })
+            products: products,
+        });
     }
-
 
     handleSubmit = e => {
         e.preventDefault();
@@ -77,31 +76,33 @@ class Header extends React.Component {
     };
 
     handleSearch = e => {
-        this.setState({
-            searchText: e.target.value,
-        },()=>{
-            this.findProducts();
-        });
+        this.setState(
+            {
+                searchText: e.target.value,
+            },
+            () => {
+                this.findProducts();
+            },
+        );
     };
-    findProducts = () =>{
+    findProducts = () => {
         // remember on thing when you will implement backend for searching you must
         // cancel api request before calling the next api
         // otherwise it will be a cause of memory lick
-        if (this.state.searchText.length > 0){
+        if (this.state.searchText.length > 0) {
             this.setState({
-                searchedResult: products.filter(product=>product.name.match(this.state.searchText)),
+                searchedResult: products.filter(product => product.name.match(this.state.searchText)),
             });
-        }else {
+        } else {
             this.setState({
                 searchedResult: [],
-            })
+            });
         }
-
-    }
+    };
     render() {
         const { lang, currency, handleCurrency, handleLang } = this.props;
         const { searchText, category, products } = this.state;
-        console.log(products)
+        console.log(products);
         return (
             <div>
                 <div className="header-fixed">

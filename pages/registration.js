@@ -75,15 +75,15 @@ class Registration extends React.Component {
                                                             // if (!values.phone_number) {
                                                             //     errors.phone_number = 'Phone number is required';
                                                             // } else
-                                                               if(values.phone_number){
-                                                                   if (
-                                                                       !/^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/i.test(
-                                                                           values.phone_number,
-                                                                       )
-                                                                   ) {
-                                                                       errors.phone_number = 'Invalid phone number';
-                                                                   }
-                                                               }
+                                                            if (values.phone_number) {
+                                                                if (
+                                                                    !/^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/i.test(
+                                                                        values.phone_number,
+                                                                    )
+                                                                ) {
+                                                                    errors.phone_number = 'Invalid phone number';
+                                                                }
+                                                            }
                                                             if (!values.password) {
                                                                 errors.password = 'Password is required';
                                                             }
@@ -99,16 +99,18 @@ class Registration extends React.Component {
                                                             return errors;
                                                         }}
                                                         onSubmit={(values, { setSubmitting }) => {
-                                                            fetch('https://beta.mystore.az/api/auth/signup',{
+                                                            fetch('https://beta.mystore.az/api/auth/signup', {
                                                                 method: 'POST',
                                                                 headers: {
-                                                                    'Accept': 'application/json',
-                                                                    'Content-Type': 'application/json'
+                                                                    Accept: 'application/json',
+                                                                    'Content-Type': 'application/json',
                                                                 },
-                                                                body: JSON.stringify(values)
-                                                            }).then(res=>{
-                                                                console.log(res)
-                                                            }).catch(err=>console.error(err))
+                                                                body: JSON.stringify(values),
+                                                            })
+                                                                .then(res => {
+                                                                    console.log(res);
+                                                                })
+                                                                .catch(err => console.error(err));
                                                             setTimeout(() => {
                                                                 alert(JSON.stringify(values, null, 2));
                                                                 setSubmitting(false);

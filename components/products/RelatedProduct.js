@@ -1,11 +1,14 @@
 import React from 'react';
 import { array } from 'prop-types';
 import dynamic from 'next/dynamic';
-const  Slider = dynamic(import('react-slick'));
+const Slider = dynamic(import('react-slick'));
 const Skeleton = dynamic(import('react-loading-skeleton'));
-const ProductCard = dynamic(()=>import('../productcard/ProductCard'),{loading:()=>{
-        return <Skeleton count={10} />
-    },ssr: false})
+const ProductCard = dynamic(() => import('../productcard/ProductCard'), {
+    loading: () => {
+        return <Skeleton count={10} />;
+    },
+    ssr: false,
+});
 
 const RelatedProduct = ({ products }) => {
     const settings = {

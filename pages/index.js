@@ -2,28 +2,45 @@ import React from 'react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import { Modal, Button } from 'react-bootstrap';
-const Skeleton  = dynamic(import('react-loading-skeleton'));
+const Skeleton = dynamic(import('react-loading-skeleton'));
 const Head = dynamic(import('../components/Head'));
-const BannerAdArea = dynamic(() => import('../components/banner/BannerAdArea'), { loading: () => {
-    return <Skeleton count={5}/>
-    } , ssr:false});
-const FeaturedCategories = dynamic(()=>import('../components/featuredcategories/FeaturedCategories'),{loading: () =>{
-    return  <Skeleton count={10} />
-    }, ssr: false});
-const FlashDealSlider = dynamic(()=>import('../components/flashdeal/FlashDealSlider'), {loading: ()=>{
-    return<Skeleton count={10} />
-    }, ssr: false});
-const ProductStatusCategory = dynamic(()=>import('../components/productstatus/ProductStatusCategory'),{loading: ()=>{
-    return <Skeleton count={10} />
-    }, ssr:false});
-const FeaturedStore = dynamic(()=>import('../components/featuredstore/FeaturedStore'),{loading: ()=>{
-    return <Skeleton count={10} />
-    },ssr:false});
-const Facilities = dynamic(()=>import('../components/facilities/Facilities'), {ssr: false, loading:()=>{
-    return <Skeleton  count={10}/>
-}});
+const BannerAdArea = dynamic(() => import('../components/banner/BannerAdArea'), {
+    loading: () => {
+        return <Skeleton count={5} />;
+    },
+    ssr: false,
+});
+const FeaturedCategories = dynamic(() => import('../components/featuredcategories/FeaturedCategories'), {
+    loading: () => {
+        return <Skeleton count={10} />;
+    },
+    ssr: false,
+});
+const FlashDealSlider = dynamic(() => import('../components/flashdeal/FlashDealSlider'), {
+    loading: () => {
+        return <Skeleton count={10} />;
+    },
+    ssr: false,
+});
+const ProductStatusCategory = dynamic(() => import('../components/productstatus/ProductStatusCategory'), {
+    loading: () => {
+        return <Skeleton count={10} />;
+    },
+    ssr: false,
+});
+const FeaturedStore = dynamic(() => import('../components/featuredstore/FeaturedStore'), {
+    loading: () => {
+        return <Skeleton count={10} />;
+    },
+    ssr: false,
+});
+const Facilities = dynamic(() => import('../components/facilities/Facilities'), {
+    ssr: false,
+    loading: () => {
+        return <Skeleton count={10} />;
+    },
+});
 import { featured, products } from '../constants/data';
-
 
 class Home extends React.Component {
     constructor(props) {
@@ -48,7 +65,7 @@ class Home extends React.Component {
     render() {
         const { featuredCats, flashDeals, homePageSlider } = this.props;
         const { wishModalShow } = this.state;
-        console.log(homePageSlider)
+        console.log(homePageSlider);
 
         return (
             <div>
@@ -80,12 +97,9 @@ class Home extends React.Component {
     }
 }
 
-
-
 export async function getInitialProps(context) {
-    
     try {
-        const featuredRequest = await fetch('https://beta.mystore.az/api/home-page-product?type=FEATURED')
+        const featuredRequest = await fetch('https://beta.mystore.az/api/home-page-product?type=FEATURED');
         const featured = await featuredRequest.json();
 
         const flashDealsRequest = await fetch('https://beta.mystore.az/api/flash-deals');
@@ -97,17 +111,16 @@ export async function getInitialProps(context) {
             props: {
                 flashDeals: flashDeals.data,
                 featuredCats: featured.data,
-                homePageSlider: homePageSlider.data
+                homePageSlider: homePageSlider.data,
             }, // will be passed to the page component as props
         };
-    }catch (e){
+    } catch (e) {
         return {
             props: {
-                error: e
-            }
-        }
+                error: e,
+            },
+        };
     }
-
 }
 
 export default Home;

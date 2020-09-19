@@ -12,12 +12,14 @@ var settings = {
     // settings: "unslick"
     // instead of a settings object
 };
-const HeroBanner = ({homePageSlider}) => {
+const HeroBanner = ({ homePageSlider }) => {
     return (
         <Slider {...settings}>
-            {
-                homePageSlider.map(slider=><Link href={slider.link}><img className="d-block w-100" src={slider.slider_image}/></Link>)
-            }
+            {homePageSlider.map(slider => (
+                <Link href={slider.link}>
+                    <img className="d-block w-100" src={slider.slider_image} />
+                </Link>
+            ))}
             <img className="d-block w-100" src="../../static/uploads/documents/slider/b-4.jpg" alt="First slide" />
             <img className="d-block w-100" src="../../static/uploads/documents/slider/b-3.jpg" alt="Second slide" />
 

@@ -2,10 +2,13 @@ import React from 'react';
 
 import { featuredStore } from '../../constants/data';
 import dynamic from 'next/dynamic';
-const Skeleton  = dynamic(import('react-loading-skeleton'));
-const StoreCard = dynamic(()=>import('./StoreCard'),{ loading: ()=>{
-        return <Skeleton count={10} />
-    }, ssr: false})
+const Skeleton = dynamic(import('react-loading-skeleton'));
+const StoreCard = dynamic(() => import('./StoreCard'), {
+    loading: () => {
+        return <Skeleton count={10} />;
+    },
+    ssr: false,
+});
 const FeaturedStore = () => {
     return (
         <section className="featured-store-area common-padding">

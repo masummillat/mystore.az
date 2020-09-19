@@ -1,7 +1,20 @@
 import React from 'react';
 
 const SingleProduct = ({ product }) => {
-    const { id, discount, discount_type, product_name, shopName, status, online, off, sold, img, previous_price, regular_price } = product;
+    const {
+        id,
+        discount,
+        discount_type,
+        product_name,
+        shopName,
+        status,
+        online,
+        off,
+        sold,
+        img,
+        previous_price,
+        regular_price,
+    } = product;
     return (
         <div className="col-lg-4 col-sm-6">
             <div className="single-product-box single-product-box-2">

@@ -2,7 +2,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
     enabled: process.env.ANALYZE === 'true',
 });
 module.exports = withBundleAnalyzer({
-    basePath: '',
+    // basePath: '',
     // exportPathMap: async function (
     //     defaultPathMap,
     //     { dev, dir, outDir, distDir, buildId }

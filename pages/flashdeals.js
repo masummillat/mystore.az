@@ -4,11 +4,14 @@ import dynamic from 'next/dynamic';
 import { products } from '../constants/data';
 const Skeleton = dynamic(import('react-loading-skeleton'));
 const Head = dynamic(import('../components/Head'));
-const FlashDealProductCard = dynamic(()=>import('../components/flashdeal/FlashDealProductCard'),{loading: ()=>{
-        return <Skeleton count={10} />
-    }, ssr: false})
-const FlashDealPage = ({flashDeals}) => {
-    console.log(flashDeals)
+const FlashDealProductCard = dynamic(() => import('../components/flashdeal/FlashDealProductCard'), {
+    loading: () => {
+        return <Skeleton count={10} />;
+    },
+    ssr: false,
+});
+const FlashDealPage = ({ flashDeals }) => {
+    console.log(flashDeals);
     return (
         <>
             <Head title="Flash deals" />
@@ -38,9 +41,10 @@ const FlashDealPage = ({flashDeals}) => {
                         <div className="col-lg-12">
                             <div className="product-list-area">
                                 <div className="row">
-                                    { flashDeals && flashDeals.map(product => (
-                                        <FlashDealProductCard key={product.id} product={product} />
-                                    ))}
+                                    {flashDeals &&
+                                        flashDeals.map(product => (
+                                            <FlashDealProductCard key={product.id} product={product} />
+                                        ))}
                                 </div>
                             </div>
                         </div>
@@ -54,13 +58,12 @@ const FlashDealPage = ({flashDeals}) => {
 export async function getInitialProps(context) {
     const flashDealsRequest = await fetch('https://beta.mystore.az/api/flash-deals');
     const flashDeals = await flashDealsRequest.json();
-    console.log(flashDeals)
+    console.log(flashDeals);
     return {
         props: {
             flashDeals: flashDeals.data || [],
         }, // will be passed to the page component as props
     };
 }
-
 
 export default FlashDealPage;

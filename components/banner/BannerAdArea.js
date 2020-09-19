@@ -1,10 +1,12 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
-const Skeleton  = dynamic(import('react-loading-skeleton'));
-const HeroBanner = dynamic(() => import('./HeroBanner'), {loading: ()=>{
-    return<Skeleton count={10}/>
-    }});
-const BannerAdArea = ({homePageSlider}) => {
+const Skeleton = dynamic(import('react-loading-skeleton'));
+const HeroBanner = dynamic(() => import('./HeroBanner'), {
+    loading: () => {
+        return <Skeleton count={10} />;
+    },
+});
+const BannerAdArea = ({ homePageSlider }) => {
     return (
         <section className="banner-ad-area common-padding-top">
             <div className="container">
@@ -12,7 +14,7 @@ const BannerAdArea = ({homePageSlider}) => {
                     <div className="col-lg-8">
                         <div className="bordered-shadow-box">
                             <div className="bordered-shadow-box-overflow-hidden">
-                                <HeroBanner homePageSlider={homePageSlider}/>
+                                <HeroBanner homePageSlider={homePageSlider} />
                             </div>
                         </div>
                     </div>

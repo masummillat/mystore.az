@@ -16,24 +16,24 @@ export const MenuItem = ({ category }) => {
             <div className="megadrop">
                 <div className="row">
                     {category.sub &&
-                    category.sub.map(s => (
-                        <div key={s.id} className="col-3">
-                            <Link href={`/category/${category.id}/${s.id}`}>
-                                <a>
-                                    <p style={{fontWeight: 600}}>{s.title}</p>
-                                </a>
-                            </Link>
-                            <ul>
-                                {s.sub.map(ss => (
-                                    <li key={ss.id}>
-                                        <Link href={`/category/${category.id}/${s.id}/${ss.id}`}>
-                                            <a>{ss.title}</a>
-                                        </Link>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    ))}
+                        category.sub.map(s => (
+                            <div key={s.id} className="col-3">
+                                <Link href={`/category/${category.id}/${s.id}`}>
+                                    <a>
+                                        <p style={{ fontWeight: 600 }}>{s.title}</p>
+                                    </a>
+                                </Link>
+                                <ul>
+                                    {s.sub.map(ss => (
+                                        <li key={ss.id}>
+                                            <Link href={`/category/${category.id}/${s.id}/${ss.id}`}>
+                                                <a>{ss.title}</a>
+                                            </Link>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
                 </div>
             </div>
         </li>

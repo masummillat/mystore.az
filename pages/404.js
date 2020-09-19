@@ -59,4 +59,4 @@ function Custom404() {
 
 Custom404.Layout = BlankLayout;
 
-export default Custom404
+export default Custom404;

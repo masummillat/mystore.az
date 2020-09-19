@@ -11855,3 +11855,10 @@ span {
     margin-right: 10px;
     overflow: hidden;
 }
+.mobile-category-mega-menu-button {
+    background: #2d8acf;
+    width: 100%;
+    padding: 3px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}

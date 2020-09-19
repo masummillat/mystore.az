@@ -3,21 +3,36 @@ import { products } from '../../constants/data';
 const Head = dynamic(import('../../components/Head'));
 import dynamic from 'next/dynamic';
 const Skeleton = dynamic(import('react-loading-skeleton'));
-const SameShopProduct = dynamic(()=>import('../../components/products/SameShopProduct'),{loading: ()=>{
-    return <Skeleton count={10} />
-    },ssr: false})
-const RelatedProduct = dynamic(()=>import('../../components/products/RelatedProduct'),{loading: ()=>{
-        return <Skeleton count={10} />
-    },ssr: false})
-const ProductImageViewer = dynamic(()=>import('../../components/products/ProductImageViewer'),{loading: ()=>{
-        return <Skeleton count={10} />
-    },ssr: false})
-const ProductInfoArea = dynamic(()=>import('../../components/products/ProductInfoArea'),{loading: ()=>{
-        return <Skeleton count={10} />
-    },ssr: false})
-const SocialMediaAndPayment = dynamic(()=>import('../../components/products/SocialMediaAndPayment'),{loading: ()=>{
-        return <Skeleton count={10} />
-    },ssr: false})
+const SameShopProduct = dynamic(() => import('../../components/products/SameShopProduct'), {
+    loading: () => {
+        return <Skeleton count={10} />;
+    },
+    ssr: false,
+});
+const RelatedProduct = dynamic(() => import('../../components/products/RelatedProduct'), {
+    loading: () => {
+        return <Skeleton count={10} />;
+    },
+    ssr: false,
+});
+const ProductImageViewer = dynamic(() => import('../../components/products/ProductImageViewer'), {
+    loading: () => {
+        return <Skeleton count={10} />;
+    },
+    ssr: false,
+});
+const ProductInfoArea = dynamic(() => import('../../components/products/ProductInfoArea'), {
+    loading: () => {
+        return <Skeleton count={10} />;
+    },
+    ssr: false,
+});
+const SocialMediaAndPayment = dynamic(() => import('../../components/products/SocialMediaAndPayment'), {
+    loading: () => {
+        return <Skeleton count={10} />;
+    },
+    ssr: false,
+});
 const ProductPage = () => {
     return (
         <>
@@ -366,7 +381,5 @@ const ProductPage = () => {
         </>
     );
 };
-
-
 
 export default ProductPage;
