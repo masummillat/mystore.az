@@ -293,16 +293,6 @@ body {
     border: none;
     font-size: 13px;
 }
-.header-search-form {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    border: 2px solid #ff7800;
-    border-radius: 5px;
-}
 .header-search-form .select2-container .select2-selection--single {
     height: 30px;
     border-radius: 0;
@@ -6559,7 +6549,6 @@ a.order-details-print:hover {
 .header-fixed .header-search-form button {
     border-radius: 0 5px 5px 0;
     overflow: hidden;
-    margin-top: -16px;
     background-color: rgb(229, 231, 233);
 }
 .header-fixed .header-search-form button:hover {
@@ -6625,7 +6614,7 @@ a.order-details-print:hover {
     margin: 0;
 }
 .header-fixed .menu-bar-button {
-    color: #f5f5f5;
+    color: rgb(207, 210, 212);
 }
 .header-fixed .menu-cart-button {
     padding-right: 10px;
@@ -11856,9 +11845,11 @@ span {
     overflow: hidden;
 }
 .mobile-category-mega-menu-button {
+    font-weight: 600;
     background: #2d8acf;
     width: 100%;
-    padding: 3px;
+    padding: 12px;
     margin-bottom: 15px;
     cursor: pointer;
+    color: #fff;
 }
