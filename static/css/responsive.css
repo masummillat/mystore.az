@@ -1524,12 +1524,6 @@
     .header-fixed .header-area {
         background: transparent !important;
     }
-    .header-fixed {
-        background: #ff9230;
-        background: -webkit-linear-gradient(top, #ff9230 0%, #ff7901 50%, #d46501 100%);
-        background: linear-gradient(to bottom, #ff9230 0%, #ff7901 50%, #d46501 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9230', endColorstr='#d46501', GradientType=0);
-    }
     .header-fixed .header-area {
         padding: 0 0 25px;
     }
