@@ -29,7 +29,7 @@ class DefaultLayout extends React.Component {
                 <Header handleCurrency={this.handleCurrency} handleLang={this.handleLang} />
                 <MobileMenu handleCurrency={this.handleCurrency} handleLang={this.handleLang} />
                 <MobileCategory />
-                <div className="header-fixed-content-layout" />
+                {/*<div className="header-fixed-content-layout" />*/}
                 <div className="main">{children}</div>
                 <Footer />
             </>

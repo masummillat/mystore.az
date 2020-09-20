@@ -4,9 +4,16 @@ import 'slick-carousel/slick/slick-theme.css';
 import React from 'react';
 import App from 'next/app';
 import dynamic from 'next/dynamic';
-const DefaultLayout = dynamic(() => import('../components/layouts/default'), { loading: () => <p>Loading........</p> });
-const MainLayout = dynamic(() => import('../components/layouts/main'), { loading: () => <p>Loading......</p> });
+import "nprogress/nprogress.css";
+const Skeleton = dynamic(import('react-loading-skeleton'));
+const DefaultLayout = dynamic(() => import('../components/layouts/default'), { loading: () => <Skeleton count={100} />, ssr: false, });
+const MainLayout = dynamic(() => import('../components/layouts/main'), { loading: () => <Skeleton count={100} />, ssr: false, });
 
+
+const TopProgressBar = dynamic(
+    () => import("../components/topProgressBar"),
+    { ssr: false },
+);
 //
 // class MyApp extends App {
 //     render() {
@@ -27,6 +34,7 @@ function MyApp({ Component, pageProps }) {
     return (
         <MainLayout>
             <Layout>
+                <TopProgressBar />
                 <Component {...pageProps} />
             </Layout>
         </MainLayout>

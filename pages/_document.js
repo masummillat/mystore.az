@@ -18,13 +18,13 @@ class MyDocument extends Document {
                     <script src="../../static/js/popper.min.js"></script>
                     <script src="../../static/js/bootstrap.min.js"></script>
                     <script src="../../static/js/owl.carousel.min.js"></script>
-                    <script src="../static/js/chat.js"></script>
                     {/*<script src="../../static/js/select2.min.js"></script>*/}
                     {/*<script src="../../static/js/jquery.fancybox.min.js"></script>*/}
                     {/*<script src="../static/vendor/bootstrap-timepicker/bootstrap-timepicker.min.js"></script>*/}
                     {/*<script src="../../static/js/moment.min.js"></script>*/}
                     {/*<script src="../../static/js/hc-offcanvas-nav.js"></script>*/}
                     <script src="../../static/js/main.js"></script>
+                    <script src="../static/js/chat.js"></script>
                 </body>
             </Html>
         );
