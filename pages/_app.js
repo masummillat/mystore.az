@@ -5,9 +5,12 @@ import React from 'react';
 import App from 'next/app';
 import dynamic from 'next/dynamic';
 import "nprogress/nprogress.css";
-const Skeleton = dynamic(import('react-loading-skeleton'));
-const DefaultLayout = dynamic(() => import('../components/layouts/default'), { loading: () => <Skeleton count={100} />, ssr: false, });
-const MainLayout = dynamic(() => import('../components/layouts/main'), { loading: () => <Skeleton count={100} />, ssr: false, });
+import DefaultLayout from '../components/layouts/default';
+import MainLayout from '../components/layouts/main';
+// const Skeleton = dynamic(import('react-loading-skeleton'));
+// const DefaultLayout = dynamic(() => import('../components/layouts/default'), { loading: () => <Skeleton count={100} />, ssr: true, });
+// const MainLayout = dynamic(() => import('../components/layouts/main'), { loading: () => <Skeleton count={100} />, ssr: true, });
+
 
 
 const TopProgressBar = dynamic(

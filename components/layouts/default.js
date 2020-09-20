@@ -1,9 +1,11 @@
 //default layout
 import React from 'react';
-import Header from '../header/Header';
-import MobileMenu from '../mobile/MobileMenu';
-import MobileCategory from '../mobile/MobileCategory';
-import Footer from '../footer/footer';
+import dynamic from 'next/dynamic';
+const Skeleton = dynamic(import('react-loading-skeleton'));
+const Header = dynamic(()=>import('../header/Header'), {loading: ()=><Skeleton count={10}/>,ssr: false })
+const MobileMenu = dynamic(()=>import('../mobile/MobileMenu'), {loading: ()=><Skeleton count={10}/>,ssr: false })
+const MobileCategory = dynamic(()=>import('../mobile/MobileCategory'), {loading: ()=><Skeleton count={10}/>,ssr: false })
+const Footer = dynamic(()=>import('../footer/footer'), {loading: ()=><Skeleton count={10}/>,ssr: false })
 class DefaultLayout extends React.Component {
     constructor(props) {
         super(props);
